@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="USimages/favicon_2.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+   <link rel="stylesheet" href="../css/cart.css">
+   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+    </style>
+    <title>Shopping Cart</title>
+</head>
+<body>
+    <header>
+        <div class="navs">
+            <div class="logo">
+                <a href="us.html">
+                    <img src="USimages/edifice-logo.jpg" alt="edifice">
+                </a>
+            </div>
+            <div class="cart">
+                <div class="bag-number">
+                    <a href="#">
+                        <img src="USimages/bag.svg" alt="">
+                        <span class="notification" ></span>
+                    </a>
+                </div>
+                <a href="pre-register.html">
+                    <img src="USimages/login.svg" alt="" width="22">
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="shoppingheader">
+            <h2>Shopping Cart</h2>
+        </div>
+        <div class="division">
+            <section id="main">
+                <div class="grid-container" id="product-id">
+                    <div class="flex-container">
+                        <div class="line">
+                            <div class="main-section" id="main-section">
+                                <div class="image-productid">
+                                    <div class="image">
+                                        <img src="USimages/watch1.png" alt="" width="200" heigth="250">
+                                    </div>
+                                    <div class="productid-qty-trash">
+                                        <div class="productid bold-text">EFB8244D5AW</div>
+                                        <div class="decrease-qty-increase">
+                                            <span>
+                                                <i class="bi bi-dash"></i>
+                                            </span>
+                                            <span id="${search.id}" class="quantity">
+                                            0
+                                            </span>
+                                            <span>
+                                                <i class="bi bi-plus"></i>
+                                            </span>
+                                        </div>
+                                        <div class="trash">
+                                            <i class="bi bi-trash3"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="price bold-text">
+                                    <p>$750</p>
+                                </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="sumarry-section" id="summary-section">
+            <div class="summary-header bold-text">Summary</div>
+                    <div class="summary-details">
+                        <p class="subtotal">
+                            <span>Cart Subtotal: <i class="bi bi-question-circle-fill"></i></span>
+                            <span class="estimatedTotal-amount bold-text" ></span>
+                        </p>
+                        <p class="subtotal">
+                            <span>Shipping: <i class="bi bi-question-circle-fill"></i></span>
+                            <span>$0.00</span>
+                        </p>
+                        <p class="subtotal">
+                            <span>Tax: <i class="bi bi-question-circle-fill"></i></span>
+                            <span>$0.00</span>
+                        </p>
+                        <p class="subtotal bold-text">
+                            <span>Estimated Total</span>
+                            <span class="estimatedTotal-amount bold-text" ></span>
+                        </p>
+                    </div>
+                    <div class="proceedToCheckout-button">
+                        <a href="checkout.html">
+                            <button>PROCEED TO CHECKOUT</button>
+                        </a>
+                    </div>
+            </div>
+        </div>
+        <div class="order-summary" id="order-summary">
+            <div class="sumarry-section" id="order-summary-section">
+                <div class="summary-header bold-text">Order Summary</div>
+                <div class="summary-details" id="summary-details">
+                    <p class="subtotal">
+                        <span>Cart Subtotal: <i class="bi bi-question-circle-fill"></i></span>
+                        <span  class="estimatedTotal-amount bold-text"></span>
+                    </p>
+                    <p class="subtotal">
+                        <span>Shipping: <i class="bi bi-question-circle-fill"></i></span>
+                        <span>$0.00</span>
+                    </p>
+                    <p class="subtotal">
+                        <span>Tax: <i class="bi bi-question-circle-fill"></i></span>
+                        <span>$0.00</span>
+                    </p>
+                    <p class="subtotal bold-text background">
+                        <span>Estimated Total</span>
+                        <span class="estimatedTotal-amount bold-text"></span>
+                    </p>
+                </div>
+                <div class="proceedToCheckout-button">
+                    <a href="checkout.html">
+                        <button>PROCEED TO CHECKOUT</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="privacy-terms-cookies">
+            <span>Privacy Policy</span>
+            <span>Terms of Sale</span>
+            <span>Cookie Policy</span>
+        </div>
+        <div class="copyrights">
+            <p>© 2022 CASIO AMERICA, INC.</p>
+        </div>
+    </footer>
+</body>
+</html>

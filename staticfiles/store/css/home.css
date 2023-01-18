@@ -1,0 +1,278 @@
+*{
+        margin: 0;
+    }
+    a{
+        text-decoration: none;
+        cursor: pointer;
+        color: inherit;
+    }
+    ol{
+        list-style-type:none;
+    }
+    ol a{
+        color:black;
+    }
+    .head{
+        width: 100%;
+        padding: 25px 0 0 0;
+        background-color: #f4f5f8;
+    }
+    .navs,
+    .end-navs{
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding: 4px 28px;
+    }
+    .end-navs{
+        justify-content: flex-start;
+        padding-top: 80px;
+        gap: 4px;
+    }
+    .navs i{
+        font-family: 'Abel', sans-serif;
+        font-style: none;
+    }
+    .casio{
+        position: relative;
+        bottom: 20px;
+    }
+    i{
+        cursor: pointer;
+    }
+    .search{
+        position: relative;
+        right: 22px;
+    }
+    input[type="search"]{
+        border: none;
+        border-bottom: 1px solid #dbdada;
+        box-shadow: 1px  1px #f4f5f8;
+    }
+    .freeshipping{
+        text-align: center;
+        font-weight:bolder;
+        padding: 8px;
+    }
+    .sportcar-image img{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    main{
+        padding: 15px 40px;
+    }
+    .watches-gshockwebsite{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+    }
+    .watches p{
+        font-size: 28px;
+    }
+    .gshockwebsite{
+        padding-top: 10px;
+    }
+    .gshockwebsite a{
+       color:black;
+       margin-right:35px;
+       font-size: 15px;
+       font-family: 'Oswald', sans-serif;
+       font-weight:bolder;
+       font-size:12px;
+    }
+    .allNewproducts-filter{
+        position:sticky;
+        width: 100%;
+        background-color: #fff;
+        border-top: 1px solid #e3e3e3;
+        border-bottom: 1px solid #e3e3e3;
+        display: flex;
+        justify-content: space-between;
+        padding: 19px 0;
+        top: 0;
+    }
+    .allNewproducts a{
+        margin-left: 10px;
+    }
+    .allNewproducts-filter a{
+        color: #686868;
+    }
+    .font-type{
+        color: black;
+        font-weight:bolder;
+    }
+    .filter-image{
+        background-size: contain;
+        vertical-align: middle;
+    }
+    .filter{
+        margin-right: 30px;
+    }
+    .grid-columns {
+        display: grid;
+        grid-template-columns: repeat(4, 24%);
+        gap: 14px;
+    }
+    .boxes{
+        background-color: #e3e3e3;
+        border: none;
+    }
+    .boxes:hover,
+    .boxes:active{
+        border: 1px solid black;
+    }
+    .boxes button {
+        padding: 10px 77px;
+        background-color: black;
+        color: #fff;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        cursor: pointer;
+        border: none;
+    }
+    .boxes button::after{
+        display: inline-block;
+        background: url({% static 'store/USimages/bag2.svg' %}) no-repeat 50% 50%;
+        vertical-align: middle;
+        content: "";
+        width: 20px;
+        height: 20px;
+        margin-left: 10px;
+    }
+    .brand-id-amount,
+    .buynow{
+        background-color: #fff;
+        padding: 10px;
+        transition: all 550ms ease-in-out;
+    }
+    .buynow button:hover,
+    .buynow button:active{
+        background-color: #868484;
+        transition: all 550ms ease-in-out;
+    }
+    .brand-id-amount{
+        line-height: 25px;
+    }
+    .new-heart{
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .new-heart p{
+        background-color: #fff;
+        padding: 3px 2px;
+    }
+    .amount{
+        margin-top: 55px;
+        font-weight:bolder;
+        font-family: 'Abel', sans-serif;
+    }
+    section{
+        padding: 40px 5px;
+    }
+    .ed-suspension-learnmore {
+       position: absolute;
+        left: 4%;
+        top: 27%;
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+}
+    .ed-suspension {
+        display: flex;
+        flex-direction: column;
+        line-height: 1.5rem;
+        font-size: 20px;
+        font-weight: bold;
+}
+span.ed{
+    font-style: italic;
+}
+.learnmore {
+    padding: 40px;
+}
+.learnmore button{
+    min-height: 3.07467vw;
+    min-width: 20.64422vw;
+    background-color: transparent;
+    border:1px solid black;
+    transition: all 550ms ease-in-out;
+}
+.learnmore button a:hover{
+    color: #b8b5b5;
+    transition: all 550ms ease-in-out;
+}
+.learnmore button a{
+    color:black;
+}
+.items::after {
+margin-left: 5px;
+margin-right: 3px;
+content: "";
+display: inline-block;
+background: url({% static 'store/USimages/icon_slash.svg' %});
+background-repeat: no-repeat;
+background-position: 50%;
+width: 5.485px;
+height: 9.862px;
+}
+.bold-header{
+    font-weight:bold;
+    font-size:18px;
+}
+footer{
+    background-color: #e3e3e3;
+    padding-left: 5%;
+}
+.footer-grids{
+    display: grid;
+    grid-template-columns: repeat(3,308px);
+    gap: 10px;
+    background-color: #e3e3e3;
+    padding:25px 0;
+}
+.shift-inside li {
+    padding: 5px;
+    width: 266px;
+    box-sizing: unset;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+}
+.follow img{
+    width: 30px;
+    margin-left: 20px;
+}
+.communcate span{
+    margin-left: 25px;
+    font-weight: 700;
+}
+
+.communcate {
+
+    padding: 20px;
+}
+.copy-right span {
+font-weight: 700;
+}
+.cart-notification {
+   display: flex;
+    position: relative;
+}
+.notification {
+    width: 20px;
+    height: 20px;
+    background: black;
+    position: absolute;
+    border-radius: 50%;
+    top: -29%;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    font-family: none;
+    left: 49%;
+}

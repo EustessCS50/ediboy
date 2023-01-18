@@ -1,0 +1,340 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="The Official EDIFICE Site. Metallic analog watches that combine dynamic designs with cutting-edge technology. ">
+    <meta name="description" content="The Official EDIFICE Site. Metallic analog watches that combine dynamic designs with cutting-edge technology. EDIFICE is an official partner of Scuderia AlphaTauri">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'store/css/usMediaQuerie.css' %}">
+    <link rel="icon" type="image/x-icon" href="{% static 'store/USimages/favicon.png' %}">
+    <title>EDIFICE_CASIO - Available online, newest</title>
+</head>
+<script>
+        var user = '{{ request.user }}'
+
+        console.log(user)
+
+        function getToken(name) {
+            var cookieValue = null;
+            if (document.cookie && document.cookie !== ''){
+                var cookies = document.cookie.split(';');
+                for (var i=0; i<cookies.length; i++){
+                    var cookie = cookies[i].trim();
+                    // Does this cookie string begin with the name we want ?
+                    if (cookie.substring(0, name.length + 1) === (name + '=')){
+                        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                        break;
+                    }
+                }
+            }
+            return cookieValue;
+        }
+        var csrftoken = getToken('csrftoken');
+
+        function getCookie(name){
+            // split cookie strings and get individual name=values pairs in an array
+            var cookieArr = document.cookie.split(";");
+
+            // Loop through the array elements
+            for (var i=0; i < cookieArr.length; i++){
+                var cookiePair = cookieArr[i].split("=");
+
+                // Removing whitespaces at the beginning of the cookie name
+                // and compare it with the given string
+                if (name == cookiePair[0].trim()){
+                    // Decode the cookie value and return
+                    return decodeURIComponent(cookiePair[1]);
+                }
+
+            }
+            // Return null if not found
+            return null;
+        }
+        var cart = JSON.parse(getCookie('cart'))
+
+        if (cart == undefined){
+            cart = {}
+            console.log('Cart Created!', cart)
+            document.cookie = 'cart=' + JSON.stringify(cart) + ";domain=;path=/"
+        }
+        console.log('cart:', cart)
+
+
+        var updateBtns = document.getElementsByClassName('update-cart')
+
+
+        for(var i=0; i < updateBtns.length; i++){
+            updateBtns[i].addEventListener('click', function(){
+                var productId = this.dataset.product
+                var action = this.dataset.action
+                console.log('productId:', productId, 'action:', action)
+
+                console.log('USER:', user)
+                if(user === 'AnonymousUser'){
+                    addCookieItem()
+                }else{
+                    updateUserOrder(productId, action)
+                }
+            })
+        }
+
+        function addCookieItem(productId, action){
+            console.log("Not Logged in...")
+            if (action == 'add'){
+                if (cart[productId] == undefined){
+                    cart[productId] = {'quantity':1}
+                }else if (cart[productId]['quantity'] < 3) {
+                    cart[productId]['quantity'] += 1
+                }
+            }
+
+            if (action == 'remove'){
+                cart[productId]['quantity'] -= 1
+
+                if (cart[productId]['quantity'] <= 0){
+                    console.log("Item should be deleted")
+                    delete cart[productId];
+                }
+            }
+
+            if (action == 'delete'){
+                    console.log("Item should be deleted")
+                    delete cart[productId];
+            }
+            console.log("Cart: ", cart)
+            document.cookie = 'cart=' + JSON.stringify(cart) + ";domain=;path=/"
+
+
+        //    cart = {
+        //          1:{'quantity':2},
+        //          3:{'quantity':1},
+        //          4:{'quantity':1},
+        //    }
+        }
+
+        function updateUserOrder(productId, action){
+            console.log('User is logged in, sending Data..')
+
+            var url = '/update_item'
+
+            fetch(url, {
+                method: 'POST',
+                headers:{
+                    'Content-Type':'application/json',
+                    'X-CSRFToken': csrftoken,
+                },
+                body:JSON.stringify({'productId':productId, 'action': action})
+            })
+            .then((response) =>response.json())
+            .then((data) =>{
+                console.log('data:', data['data'])
+        //        location.reload()
+                if (data['exceed'] == true){
+                    alert('Maximum order/product is 3!.');
+                }
+            })
+        }
+
+    </script>
+<body>
+    <header>
+        <div class="head">
+            <div class="navs">
+                <i>
+                    <a class="edifice-casioimages">
+                        <img width="100" src="{% static 'store/USimages/edifice1.jpg' %}" alt="">
+                        <img width="100" src="{% static 'store/USimages/casio.png' %}" alt=""  class="casio">
+                    </a>
+                </i>
+                <div class="other-devices">
+                    <i>G-SHOCK</i>
+                    <i>WATCHES</i>
+                    <i>ELECTRONIC MUSICAL INSTRUMENTS</i>
+                    <i>CALCULATORS</i>
+                    <i>MEDICAL DEVICES </i>
+                </div>
+                <i> <input placeholder="Search..."> <img src="{% static 'store/USimages/search.webp' %}" alt="" width="14" class="search"> </i>
+                <i class="cart-notification">
+                    <b class="notification">{{ order.total_items }}</b>
+                    <a href="{% url 'cart' %}">
+                        <img src="{% static 'store/USimages/bag.svg' %}" alt="" width="22">
+                    </a>
+                </i>
+                <i>
+                        <img src="{% static 'store/USimages/heart.svg' %}" alt="" width="22">
+                </i>
+                <i>
+                    <a href="{% url 'register' %}"> <img src="{% static 'store/USimages/login.svg' %}" alt="" width="22"></a>
+                </i>
+            </div>
+            <p class="freeshipping">Free Shipping on Watches, Calculators and Musical Instruments over $99</p>
+            <div class="sportcar-image">
+                <picture>
+                    <source media="(min-width:769px)" Srcset="{% static 'store/USimages/background-large.jpeg' %}">
+                    <source media="(max-width:768px)" Srcset="{% static 'store/USimages/backgroung-small.jpg' %}">
+                    <img src="{% static 'store/USimages/background-large.jpeg' %}" alt="">
+                </picture>
+            </div>
+
+        </div>
+    </header>
+    <div class="ed-suspension-learnmore">
+        <div class="ed-suspension">
+            <span class="ed">EDIFICE</span>
+            <span class="suspension">SUSPENSION ARM DESIGN</span>
+            <span class="code">ECB2000</span>
+        </div>
+        <div class="learnmore">
+            <button> <a href="#"> LEARN MORE</a></button>
+        </div>
+    </div>
+    <main>
+        <div class="watches-gshockwebsite">
+            <div class="watches">
+                <p>Watches</p>
+            </div>
+            <div class="gshockwebsite">
+                <a href="#">G-SHOCK Website</a>
+                <a href="#">Store Search</a>
+                <a href="#">Support</a>
+            </div>
+            <div class="toggle-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="allNewproducts-filter">
+            <div class="allNewproducts">
+                <a href="#">All</a>
+                <a href="#">Newproducts</a>
+                <a class="font-type" href="#">G-SHOCK</a>
+                <a class="font-type" href="#">BABY-G</a>
+                <a class="font-type" href="#">EDIFICE</a>
+                <a class="font-type" href="#">OCEANUS</a>
+                <a class="font-type" href="#">OCEANUS</a>
+                <a class="font-type" href="#">CASIO</a>
+            </div>
+            <div class="filter">
+                <a href="#"> Filter <img src="{% static 'store/USimages/filter.svg' %}" alt="" class="filter-image"> </a>
+            </div>
+        </div>
+        <section>
+            <div class="grid-columns" id="shop-items">
+                {% for product in products %}
+                <div id="product-id-${id}" class="boxes">
+                    <div class="new-heart">
+                        <p class="availabilty">NEW</p>
+                        <img src="{% static 'store/USimages/heart.svg' %}" alt="" width="18">
+                    </div>
+                    <div class="product-image">
+                        <a href="{% url 'product-detail' %}"><img class="image" src="{{ product.imageURL }}" alt="" width="200" ></a>
+                    </div>
+                    <div class="brand-id-amount">
+                        <p class="product-name" >{{ product.name }}</p>
+                        <B class="product-id">{{ product.model }}</B>
+                        <p class="amount">$ {{ product.price }}</p>
+                    </div>
+                    <div class="buynow">
+                       <a href="{% url 'checkout' %}">
+                        <button id="${id}">BUY <span>NOW</span> </button></a>
+                        <a href="{% url 'cart' %}"><button class="view-cart" style="background-color:red;">View</button></a>
+                    </div>
+                    <button data-product="{{ product.id }}" data-action="add" class="update-cart">Add-to-Cart</button>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="links">
+                <ol class="end-navs">
+                    <li class="items">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="items">
+                        <a href="#">Watches</a>
+                    </li>
+                    <li class="items">
+                        <a href="#">Edifice</a>
+                    </li>
+                </ol>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-grids">
+            <div class="products shift-inside">
+                <ol>
+                    <li class="bold-header">
+                        <a href="#">Products</a>
+                        <div class="footer-toggle-btn">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </li>
+                   <div class="products-list description lock">
+                     <li><a href="#">Watches</a></li>
+                    <li><a href="#"><span>Electronic</span> <span>Musical</span> Instruments</span></a></li>
+                    <li><a href="#">Calculators</a></li>
+                    <li><a href="#">Medical Devices</a></li>
+                   </div>
+                </ol>
+            </div>
+            <div class="products shift-inside">
+                <ol>
+                    <li class="bold-header">
+                        <a href="#">Products</a>
+                        <div class="footer-toggle-btn">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </li>
+                   <div class="products-list description lock">
+                     <li><a href="#">Watches</a></li>
+                    <li><a href="#"><span>Electronic</span> <span>Musical</span> Instruments</span></a></li>
+                    <li><a href="#">Calculators</a></li>
+                    <li><a href="#">Medical Devices</a></li>
+                   </div>
+                </ol>
+            </div>
+        </div>
+        <div class="follow">
+            <span>
+                <a href="#"><img src="{% static 'store/USimages/fb_icon.png' %}" alt=""></a>
+            </span>
+            <span>
+                <a href="#"><img src="{% static 'store/USimages/tw_icon.png' %}" alt=""></a>
+            </span>
+            <span>
+                <a href="#"><img src="{% static 'store/USimages/ins.png' %}" alt=""></a>
+            </span>
+            <span>
+                <a href="#"><img src="{% static 'store/USimages/youtube_icon.png' %}" alt=""></a>
+            </span>
+        </div>
+        <div class="communcate">
+            <span>Privacy Policy</span>
+            <span> ADA compliance</span>
+            <span>Terms Of sale</span>
+            <span>Return Policy</span>
+            <span>Site Map</span>
+            <span>United States</span>
+        </div>
+        <div class="copy-right">
+            <span>&copy; 2022 CASIO AMERICA, INC.</span>
+        </div>
+    </footer>
+<!--    <script src="{% static 'store/scripts/cart2.js' %}"></script>-->
+    <script src="{% static 'store/scripts/responsiveness.js' %}" async></script>
+</body>
+</html>

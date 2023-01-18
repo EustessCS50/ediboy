@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="title" content="Checkout | CASIO">
+    <meta name="keywords" content="Magento, Varien, E-commerce">
+    <meta name="robots" content="INDEX,FOLLOW">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="USimages/favicon_2.png">
+    <link rel="stylesheet" href="../css/registerEmail.css">
+    <link rel="stylesheet" href="../css/media.css">
+     <script defer src="../scripts/Data.js" ></script>
+     <script defer src="../scripts/cart.js" ></script>
+    <title>Checkout _ CASIO</title>
+</head>
+<body>
+    <header>
+        <div class="navs">
+            <div class="logo">
+                <a href="us.html">
+                    <img src="USimages/edifice-logo.jpg" alt="edifice">
+                </a>
+            </div>
+            <div class="cart">
+                <div class="bag-number">
+                    <a href="cart.html">
+                    <img src="USimages/bag.svg" alt="">
+                    <span class="notification" ></span></a>
+                </div>
+            </div>
+        </div>
+        <main>
+            <div class="progress-bar">
+                    <div class="stoke">
+                       <img src="USimages/progressbar.jpg" alt="">
+                    </div>
+            </div>
+            <div class="continue-mandatory">
+               <a href="us.html"> <p class="continue">&lt; Continue Shopping</p></a>
+                <p class="mandatory">* Mandatory Field</p>
+            </div>
+            <div class="grid-container" style="grid-template-columns: repeat(1,100%);">
+                <div class="content">
+                        <div class="method-id-buttons">
+                            <div class="method">
+                                <p>1. Purchase Method</p>
+                                <a href="checkout.html"><u>Change</u></a>
+                            </div>
+                    </div>
+                    <div class="sidebar height" style="display:none;">
+                        <div class="general-style sum-edit">
+                            <span class="summary">Order Summary</span>
+                            <span class="edit"><a href="#"><u> Edit</u></a></span>
+                        </div>
+                        <div class="image-code-price">
+                            <div class="image">
+                                <img src="USimages/watch1.png" alt="watch-id" width="60" >
+                            </div>
+                            <div class="code-quantiy">
+                                <div class="code">ECB2000PB-1A</div>
+                                <div class="quantity">Quantity: 3</div>
+                            </div>
+                            <div class="price">$700.00</div>
+                        </div>
+                        <div class="general-style  amount">Order Amount</div>
+                        <div class="total-shipping-tax">
+                            <div class="total">
+                                <span>Cart Subtotal</span>
+                                <span id="sub-total-price">$700.00</span>
+                            </div>
+                            <div class="total">
+                                <span>Shipping</span>
+                                <span id="shipping">$0.00</span>
+                            </div>
+                            <div class="total">
+                                <span>Tax</span>
+                                <span id="tax">$0.00</span>
+                            </div>
+                        </div>
+                        <div class="general-style" id="estimatedTotal">
+                            <span id="est-total">Estimated Total</span>
+                            <span class="estimated-total" >$ 700.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="shippinginfo-payment">
+                    <div class="shippinginfo bg-border">
+                        <p>2. Shipping Information</p>
+                    </div>
+                    <form action="" id="registrationForm" action="/formsubmit" method="POST">
+                        <div class="formGroup">
+                            <label for="">Phone number*</label>
+                            <input
+                            required
+                            placeholder="Last Name"
+                            type="text"
+                            >
+                            <span class="check" style="visibility: hidden;">
+                                <i class="fa-solid fa-check"></i>
+                            </span>
+                            <span class="xmark" style="visibility: hidden;">
+                                <i class="fa-solid fa-xmark"></i>
+                            </span>
+                            <div class="error">
+                            </div>
+                        </div>
+                        <div class="formGroup">
+                            <label for="">First Name*</label>
+                            <input
+                            required
+                            placeholder="Last Name"
+                            type="text"
+                            >
+                            <span class="check" style="visibility: hidden;">
+                                <i class="fa-solid fa-check"></i>
+                            </span>
+                            <span class="xmark" style="visibility: hidden;">
+                                <i class="fa-solid fa-xmark"></i>
+                        </span>
+                            <div class="error">
+                            </div>
+                        </div>
+                        <div class="formGroup">
+                            <label for="">Last Name*</label>
+                            <input
+                            required
+                            placeholder="Last Name"
+                            type="text"
+                            >
+                            <span class="check" style="visibility: hidden;">
+                                <i class="fa-solid fa-check"></i>
+                            </span>
+                            <span class="xmark" style="visibility: hidden;">
+                                <i class="fa-solid fa-xmark"></i>
+                            </span>
+                            <div class="error">
+                            </div>
+                        </div>
+                        <div class="formGroup">
+                            <label for="">Address Line 1*</label>
+                            <input
+                            required
+                            type="text"
+                            >
+                            <span class="check" style="visibility: hidden;">
+                                <i class="fa-solid fa-check"></i>
+                            </span>
+                            <span class="xmark" style="visibility: hidden;">
+                                <i class="fa-solid fa-xmark"></i>
+                            </span>
+                            <div class="error">
+                            </div>
+                        </div>
+                        <div class="formGroup">
+                            <label for="">Address Line 2*</label>
+                            <input
+                            required
+                            type="text"
+                            >
+                            <span class="check" style="visibility: hidden;">
+                                <i class="fa-solid fa-check"></i>
+                            </span>
+                            <span class="xmark" style="visibility: hidden;">
+                                <i class="fa-solid fa-xmark"></i>
+                            </span>
+                            <div class="error">
+                            </div>
+                        </div>
+                        <div class="formGroup">
+                            <label for="">City*</label>
+                            <input
+                            required
+                            type="text"
+                            >
+                            <span class="check" style="visibility: hidden;">
+                                <i class="fa-solid fa-check"></i>
+                            </span>
+                            <span class="xmark" style="visibility: hidden;">
+                                <i class="fa-solid fa-xmark"></i>
+                            </span>
+                            <div class="error">
+                            </div>
+                        </div>
+                        <div class="formGroup">
+                            <label for="Country">State/Province*</label>
+                            <select required name="" id="country" class="country">
+                                <option value="Select" class="blur">Please Select a region, state or province</option>
+                                <option value="Afghanistan">Albama</option>
+                                <option value="Albania">Alaska</option>
+                                <option value="Algeria">Arizona</option>
+                                <option value="Andorra">Arkansas</option>
+                            </select>
+                            <div class="error">
+                            </div>
+                        </div>
+                        <div class="formGroup">
+                            <label for="">Company Name*</label>
+                            <input
+                            required
+                            type="text"
+                            >
+                            <span class="check" style="visibility: hidden;">
+                                <i class="fa-solid fa-check"></i>
+                            </span>
+                            <span class="xmark" style="visibility: hidden;">
+                                <i class="fa-solid fa-xmark"></i>
+                            </span>
+                            <div class="error">
+                            </div>
+                        </div>
+                        <div class="formGroup">
+                            <label for="">Zip/Postal Code*</label>
+                            <input
+                            required
+                            type="text"
+                            >
+                            <span class="check" style="visibility: hidden;">
+                                <i class="fa-solid fa-check"></i>
+                            </span>
+                            <span class="xmark" style="visibility: hidden;">
+                                <i class="fa-solid fa-xmark"></i>
+                            </span>
+                            <div class="error">
+                            </div>
+                        </div>
+                        <div class="formGroup">
+                            <label for="Country">Country*</label>
+                            <select required name="" id="country" class="country">
+                                <option value="Select" class="blur" selected hidden>United States</option>
+                            <div class="error">
+                            </div>
+                        </div>
+                         <!----- THE CHECK BOX   ----->
+                         <div class="formGroup formGroup-checkbox">
+                            <input
+                            type="checkbox"
+                            required
+                            name=""
+                            id="check">
+                            <label for="check" class="checkbox-label">Yes, i'd like to receive emails about special offers and new products*</label>
+                            <div class="error">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="payment ">
+                    <p>3. Payment</p>
+                </div>
+            </div>
+        </main>
+    </header>
+    <footer>
+        <div class="privacy-terms-cookies">
+            <span>Privacy Policy</span>
+            <span>Terms of Sale</span>
+            <span>Cookie Policy</span>
+        </div>
+        <div class="copyrights">
+            <p>© 2022 CASIO AMERICA, INC.</p>
+        </div>
+    </footer>
+    <script src="../scripts/registerEmail.js" ></script>
+</body>
+</html>

@@ -1,0 +1,343 @@
+{% load static %}
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="The Official EDIFICE Site. Metallic analog watches that combine dynamic designs with cutting-edge technology. ">
+    <meta name="description" content="The Official EDIFICE Site. Metallic analog watches that combine dynamic designs with cutting-edge technology. EDIFICE is an official partner of Scuderia AlphaTauri">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'store/css/usMediaQuerie.css' %}">
+    <link rel="icon" type="image/x-icon" href="{% static 'store/USimages/favicon.png' %}">
+    <title>EDIFICE_CASIO -{% blocktrans %} Available online, newest {% endblocktrans %}</title>
+</head>
+<body>
+    <header>
+        <div class="head">
+            <div class="navs">
+                <i>
+                    <a class="edifice-casioimages">
+                        <img width="100" src="{% static 'store/USimages/edifice1.jpg' %}" alt="">
+                        <img width="100" src="{% static 'store/USimages/casio.png' %}" alt=""  class="casio">
+                    </a>
+                </i>
+                <div class="other-devices">
+                    <i>G-SHOCK</i>
+                    <i>{% blocktrans %}WATCHES{% endblocktrans %}</i>
+                    <i>{% blocktrans %}ELECTRONIC MUSICAL INSTRUMENTS{% endblocktrans %}</i>
+                    <i>{% blocktrans %}CALCULATORS{% endblocktrans %}</i>
+                    <i>{% blocktrans %}MEDICAL DEVICES{% endblocktrans %}</i>
+                </div>
+                <i> <input placeholder="{% blocktrans %}Search...{% endblocktrans %}"> <img src="{% static 'store/USimages/search.webp' %}" alt="" width="14" class="search"> </i>
+                <i class="cart-notification">
+                    <b class="notification">{{ cartItems }}</b>
+                    <a href="{% url 'cart' %}">
+                        <img src="{% static 'store/USimages/bag.svg' %}" alt="" width="22">
+                    </a>
+                </i>
+                <i>
+                        <img src="{% static 'store/USimages/heart.svg' %}" alt="" width="22">
+                </i>
+                <i>
+                    <a href="{% url 'register' %}"> <img src="{% static 'store/USimages/login.svg' %}" alt="" width="22"></a>
+                </i>
+            </div>
+            <p class="freeshipping">{% blocktrans %}Free Shipping on Watches, Calculators and Musical Instruments over $99{% endblocktrans %}</p>
+            <div class="sportcar-image">
+                <picture>
+                    <source media="(min-width:769px)" Srcset="{% static 'store/USimages/background-large.jpeg' %}">
+                    <source media="(max-width:768px)" Srcset="{% static 'store/USimages/backgroung-small.jpg' %}">
+                    <img src="{% static 'store/USimages/background-large.jpeg' %}" alt="">
+                </picture>
+            </div>
+
+        </div>
+    </header>
+    <div class="ed-suspension-learnmore">
+        <div class="ed-suspension">
+            <span class="ed">EDIFICE</span>
+            <span class="suspension">{% blocktrans %}SUSPENSION ARM DESIGN{% endblocktrans %}</span>
+            <span class="code">ECB2000</span>
+        </div>
+        <div class="learnmore">
+            <button> <a href="#"> {% blocktrans %}LEARN MORE{% endblocktrans %}</a></button>
+        </div>
+    </div>
+    <main>
+        <div class="watches-gshockwebsite">
+            <div class="watches">
+                <p>{% trans 'Watches' %}</p>
+            </div>
+            <div class="gshockwebsite">
+                <a href="#">{% blocktrans %}G-SHOCK Website{% endblocktrans %}</a>
+                <a href="#">{% blocktrans %}Store Search{% endblocktrans %}</a>
+                <a href="#">{% blocktrans %}SUSPENSION ARM DESIGN{% endblocktrans %}</a>
+            </div>
+            <div class="toggle-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="allNewproducts-filter">
+            <div class="allNewproducts">
+                <a href="#">{% trans 'All' %}</a>
+                <a href="#">{% blocktrans %}New products{% endblocktrans %}</a>
+                <a class="font-type" href="#">G-SHOCK</a>
+                <a class="font-type" href="#">BABY-G</a>
+                <a class="font-type" href="#">EDIFICE</a>
+                <a class="font-type" href="#">OCEANUS</a>
+                <a class="font-type" href="#">OCEANUS</a>
+                <a class="font-type" href="#">CASIO</a>
+            </div>
+            <div class="filter">
+                <a href="#"> Filter <img src="{% static 'store/USimages/filter.svg' %}" alt="" class="filter-image"> </a>
+            </div>
+        </div>
+        <section>
+            <div class="grid-columns" id="shop-items">
+                {% for product in products %}
+                <div id="product-id-${id}" class="boxes">
+                    <div class="new-heart">
+                        <p class="availabilty">{% trans 'NEW' %}</p>
+                        <img src="{% static 'store/USimages/heart.svg' %}" alt="" width="18">
+                    </div>
+                    <div class="product-image">
+                        <a href="{% url 'product-detail' product.id %}"><img class="image" src="{{ product.imageURL }}" alt="" width="200" ></a>
+                    </div>
+                    <div class="brand-id-amount">
+                        <p class="product-name" >{{ product.name }}</p>
+                        <B class="product-id">{{ product.model }}</B>
+                        <p class="amount">$ {{ product.price }}</p>
+                    </div>
+                    <div class="buynow">
+                        <button id="${id}"><a href="{% url 'cart' %}">{% blocktrans %} BUY NOW {% endblocktrans %}</a><img data-product="{{ product.id }}" data-action="add" class="update-cart" src="{% static 'store/USimages/bag2.svg' %}"></button>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="links">
+                <ol class="end-navs">
+                    <li class="items">
+                        <a href="#">{% trans 'Home' %}</a>
+                    </li>
+                    <li class="items">
+                        <a href="#">{% trans 'Watches' %}</a>
+                    </li>
+                    <li class="items">
+                        <a href="#">{% trans 'Edifice' %}</a>
+                    </li>
+                </ol>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-grids">
+            <div class="products shift-inside">
+                <ol>
+                    <li class="bold-header">
+                        <a href="#">{% trans 'Products' %}</a>
+                        <div class="footer-toggle-btn">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </li>
+                   <div class="products-list description lock">
+                     <li><a href="#">{% trans 'Watches' %}</a></li>
+                    <li><a href="#">Electronic Musical Instruments</a></li>
+                    <li><a href="#">{% trans 'Calculators' %}</a></li>
+                    <li><a href="#">{% blocktrans %}Medical Devices{% endblocktrans %}</a></li>
+                   </div>
+                </ol>
+            </div>
+            <div class="products shift-inside">
+                <ol>
+                    <li class="bold-header">
+                        <a href="#">{% trans 'Products' %}</a>
+                        <div class="footer-toggle-btn">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </li>
+                   <div class="products-list description lock">
+                     <li><a href="#">{% trans 'Watches' %}</a></li>
+                    <li><a href="#">{% blocktrans %}Electronic Musical Instruments{% endblocktrans %}</a></li>
+                    <li><a href="#">{% trans 'Calculators' %}</a></li>
+                    <li><a href="#">{% blocktrans %}Medical Devices{% endblocktrans %}</a></li>
+                   </div>
+                </ol>
+            </div>
+        </div>
+        <div class="follow">
+            <span>
+                <a href="#"><img src="{% static 'store/USimages/fb_icon.png' %}" alt=""></a>
+            </span>
+            <span>
+                <a href="#"><img src="{% static 'store/USimages/tw_icon.png' %}" alt=""></a>
+            </span>
+            <span>
+                <a href="#"><img src="{% static 'store/USimages/ins.png' %}" alt=""></a>
+            </span>
+            <span>
+                <a href="#"><img src="{% static 'store/USimages/youtube_icon.png' %}" alt=""></a>
+            </span>
+        </div>
+        <div class="communcate">
+            <span>{% blocktrans %}Privacy Policy{% endblocktrans %}</span>
+            <span>{% blocktrans%} ADA compliance{% endblocktrans %}</span>
+            <span>{% blocktrans %}Terms Of sale{% endblocktrans %}</span>
+            <span>{% blocktrans %}Return Policy{% endblocktrans %}</span>
+            <span>{% blocktrans %}Site Map{% endblocktrans %}</span>
+            <span>United States</span>
+        </div>
+        <div class="copy-right">
+            <span>&copy; 2022 CASIO ASIA, INC.</span>
+        </div>
+    </footer>
+
+    <script>
+        var user = '{{ request.user }}'
+
+        console.log(user)
+
+
+        function getToken(name) {
+            var cookieValue = null;
+            if (document.cookie && document.cookie !== ''){
+                var cookies = document.cookie.split(';');
+                for (var i=0; i<cookies.length; i++){
+                    var cookie = cookies[i].trim();
+                    // Does this cookie string begin with the name we want ?
+                    if (cookie.substring(0, name.length + 1) === (name + '=')){
+                        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                        break;
+                    }
+                }
+            }
+            return cookieValue;
+        }
+        var csrftoken = getToken('csrftoken');
+
+        function getCookie(name){
+            // split cookie strings and get individual name=values pairs in an array
+            var cookieArr = document.cookie.split(";");
+
+            // Loop through the array elements
+            for (var i=0; i < cookieArr.length; i++){
+                var cookiePair = cookieArr[i].split("=");
+
+                // Removing whitespaces at the beginning of the cookie name
+                // and compare it with the given string
+                if (name == cookiePair[0].trim()){
+                    // Decode the cookie value and return
+                    return decodeURIComponent(cookiePair[1]);
+                }
+
+            }
+            // Return null if not found
+            return null;
+        }
+        var cart = JSON.parse(getCookie('cart'))
+
+        if (cart == undefined){
+            cart = {}
+            console.log('Cart Created!', cart)
+            document.cookie = 'cart=' + JSON.stringify(cart) + ";domain=;path=/"
+        }
+        console.log('cart:', cart)
+
+
+        var updateBtns = document.getElementsByClassName('update-cart')
+
+
+        for(var i=0; i < updateBtns.length; i++){
+            updateBtns[i].addEventListener('click', function(){
+                var productId = this.dataset.product
+                var action = this.dataset.action
+                console.log('productId:', productId, 'action:', action)
+
+                console.log('USER:', user)
+                if(user === 'AnonymousUser'){
+                    addCookieItem(productId, action)
+                }else{
+                    updateUserOrder(productId, action)
+                }
+            })
+        }
+
+        function addCookieItem(productId, action){
+            console.log("Not Logged in...")
+            if (action == 'add'){
+                if (cart[productId] == undefined){
+                    cart[productId] = {'quantity':1}
+                }else if (cart[productId]['quantity'] < 3) {
+                    cart[productId]['quantity'] += 1
+                }
+            }
+
+            if (action == 'remove'){
+                cart[productId]['quantity'] -= 1
+
+                if (cart[productId]['quantity'] <= 0){
+                    console.log("Item should be deleted")
+                    delete cart[productId];
+                }
+            }
+
+            if (action == 'delete'){
+                    console.log("Item should be deleted")
+                    delete cart[productId];
+            }
+            console.log("Cart: ", cart)
+            document.cookie = 'cart=' + JSON.stringify(cart) + ";domain=;path=/"
+            location.reload()
+
+
+        //    cart = {
+        //          1:{'quantity':2},
+        //          3:{'quantity':1},
+        //          4:{'quantity':1},
+        //    }
+        }
+
+        function updateUserOrder(productId, action){
+            console.log('User is logged in, sending Data..')
+
+            var url = '/update_item'
+
+            fetch(url, {
+                method: 'POST',
+                headers:{
+                    'Content-Type':'application/json',
+                    'X-CSRFToken': csrftoken,
+                },
+                body:JSON.stringify({'productId':productId, 'action': action})
+            })
+            .then((response) =>response.json())
+            .then((data) =>{
+                console.log('data:', data['data'])
+                location.reload()
+                var max_message = "{% blocktrans %}Maximum order per Watch is 3 !{%endblocktrans%}"
+                if (data['exceed'] == true){
+                    alert(max_message);
+                }
+            })
+        }
+
+    </script>
+
+<!--    <script src="{% static 'store/scripts/cart2.js' %}"></script>-->
+    <script src="{% static 'store/scripts/responsiveness.js' %}" async></script>
+</body>
+</html>

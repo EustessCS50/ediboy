@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="title" content="Checkout | CASIO">
+    <meta name="keywords" content="Magento, Varien, E-commerce">
+    <meta name="robots" content="INDEX,FOLLOW">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="{% static 'store/USimages/favicon_2.png' %}">
+    <link rel="stylesheet" href="{% static 'store/css/checkout.css' %}">
+    <title>Checkout _ CASIO</title>
+</head>
+<body>
+    <header>
+        <div class="navs">
+            <div class="logo">
+                <a href="{% url 'us' %}">
+                    <img src="{% static 'store/USimages/edifice-logo.jpg' %}" alt="edifice">
+                </a>
+            </div>
+            <div class="cart">
+                <div class="bag-number">
+                    <a href="{% url 'cart' %}">
+                    <img src="{% static 'store/USimages/bag.svg' %}" alt="">
+                    <span class="notification" ></span></a>
+                </div>
+            </div>
+        </div>
+        <main>
+            <div class="progress-bar">
+                    <div class="stoke">
+                       <img src="{% static 'USimages/progressbar.jpg' %}" alt="">
+                    </div>
+            </div>
+            <div class="continue-mandatory">
+               <a href="{% url 'us' %}"> <p class="continue">&lt; Continue Shopping</p></a>
+                <p class="mandatory">* Mandatory Field</p>
+            </div>
+            <div class="grid-container">
+                    <div class="content">
+                        <div class="method-id-buttons">
+                            <div class="method">1. Purchase Method</div>
+                            <div class="id">
+                                <span>Use CASIO ID Account</span>
+                                <P class="text">Log in or create a CASIO ID account to easily manage and track your order. An account is required for Tax Exempt orders.</P>
+                            </div>
+                            <div class="buttons line">
+                                <button>LOG IN</button>
+                                <button>JOIN US</button>
+                            </div>
+                        </div>
+                        <div class="guest-input-buttons">
+                            <div class="guest">
+                                <b>Continue as guest</b>
+                            </div>
+                            <div class="input">
+                                <form action="" method="POST">
+                                    {% csrf_token %}
+                                    <label for="">Email Address*</label>
+                                    <input type="email" name="guest-email" id="email" required>
+                                    <button id="asguest-button">CONTINUE AS GUEST</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebar height">
+                        <div class="general-style sum-edit">
+                            <span class="summary">Order Summary</span>
+                            <span class="edit"><a href="{% url 'cart' %}"><u> Edit</u></a></span>
+                        </div>
+                        {% for item in items %}
+                        <div class="image-code-price">
+                            <div class="image">
+                                <img src="{% static 'store/USimages/watch1.png' %}" alt="watch-id" width="60" >
+                            </div>
+                            <div class="code-quantiy">
+                                <div class="code">{{ item.product.model }}</div>
+                                <div class="quantity">Quantity: {{ item.quantity }}</div>
+                            </div>
+                            <div class="price">${{ item.product.price|floatformat:2 }}</div>
+                        </div>
+                        {% endfor %}
+                        <div class="general-style  amount">Order Amount</div>
+                        <div class="total-shipping-tax">
+                            <div class="total">
+                                <span>Cart Subtotal</span>
+                                <span id="sub-total-price">${{ order.total_amount|floatformat:2 }}</span>
+                            </div>
+                            <div class="total">
+                                <span>Shipping</span>
+                                <span id="shipping">$0.00</span>
+                            </div>
+                            <div class="total">
+                                <span>Tax</span>
+                                <span id="tax">$0.00</span>
+                            </div>
+                        </div>
+                        <div class="general-style" id="estimatedTotal">
+                            <span id="est-total">Estimated Total</span>
+                            <span class="estimated-total" >$ {{ order.total_amount|floatformat:2 }}</span>
+                        </div>
+                    </div>
+            </div>
+            <div class="shippinginfo-payment">
+                <div class="shippinginfo bg-border">
+                    <p>2. Shipping Information</p>
+                </div>
+                <div class="payment bg-border">
+                    <p>3. Payment</p>
+                </div>
+            </div>
+        </main>
+    </header>
+    <footer>
+        <div class="privacy-terms-cookies">
+            <span>Privacy Policy</span>
+            <span>Terms of Sale</span>
+            <span>Cookie Policy</span>
+        </div>
+        <div class="copyrights">
+            <p>© 2022 CASIO AMERICA, INC.</p>
+        </div>
+    </footer>
+    <script defer src="{% static 'store/scripts/base.js' %}" ></script>
+    <script defer src="{% static 'store/scripts/checkout.js' %}" ></script>
+</body>
+</html>

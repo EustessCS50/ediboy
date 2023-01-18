@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    Main Page
+    {% for continent in continents %}
+    <ul>
+        <hr>
+        <li>{{ continent.name }}</li>
+    </ul>
+        {% for country in continent.country_set.all %}
+        <ol>
+        <li>{{country.name}}</li>
+        </ol>
+        {% endfor %}
+    {% endfor %}
+</body>
+</html>

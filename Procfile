@@ -1,0 +1,1 @@
+web: gunicorn edifice.wsgi --log-file -

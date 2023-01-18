@@ -1,0 +1,410 @@
+*{
+    margin: 0;
+}
+/*
+UNIVERSAL DECLERATIONS
+*/
+a{
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: normal;
+  }
+  ul li, ol li {
+    margin-left: 0;
+    list-style-type: none;
+  }
+.casio-id {
+    font-family: "din-2014", 'noto-sans-cjk-jp','source-han-sans-traditional', 'noto-sans-cjk-kr',"ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", Arial, "メイリオ", Meiryo, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+.casio-id-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.casio-id-header {
+    height: 50px;
+}
+.casio-id-header-logo {
+    padding-left: 15px;
+}
+.casio-id a {
+    color: #000;
+}
+.casio-id-container main {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+.casio-id-header-logo a img {
+    width: 90px;
+    height: 16px;
+  }
+.casio-id-contents {
+    margin-left: 16px;
+    margin-right: 16px;
+}
+.casio-id h1 {
+    font-size: 22px;
+    padding-bottom: 40px;
+  }
+.casio-id h2 {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+.casio-id-entry-mail .casio-id-contents {
+    padding-bottom: 40px;
+  }
+
+  .casio-id-btn {
+    font-size: 12px;
+  }
+  .casio-id-btn {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border: 1px solid #000;
+    min-height: 45px;
+    width: 100%;
+    text-decoration: none;
+    background-color: #000;
+    color: #FFF;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  .casio-id-btn img {
+    margin-left: 5px;
+    width: 20px;
+    height: 20px;
+  }
+  .casio-id-contents-fluid {
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .casio-id-guide {
+    margin-top: 30px;
+  }
+  .casio-id-guide a{
+    font-weight: bolder;
+    font-size: 11px;
+    text-decoration: underline;
+  }
+
+.casio-id-entry-sns .casio-id-contents {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-top: 1px solid #BFBFBF;
+}
+.casio-id h2 {
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .casio-id-sns {
+    margin-bottom: -20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  ul, ol {
+    margin: 0;
+    padding-left: 0;
+  }
+  .casio-id-sns li {
+    -ms-flex-preferred-size: calc(100% - 7px);
+    flex-basis: calc(100% - 7px);
+    max-width: calc(100% - 7px);
+    height: 40px;
+    margin-bottom: 20px;
+  }
+  .casio-id-apple {
+    text-decoration: none;
+    font-size: 18px;
+  }
+  .casio-id-apple a{
+    text-decoration: none;
+  }
+  .casio-id-apple p {
+    border: 1px solid #bebebe;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #fff;
+    height: 40px;
+    width: 100%;
+  }
+  .casio-id-apple p img {
+  width: 25px;
+  height: auto;
+  margin-left: 10px;
+}
+.casio-id-apple p span {
+    margin-left: 10px;
+  }
+  .casio-id-facebook {
+    text-decoration: none;
+    font-size: 18px;
+  }
+  .casio-id-facebook a{
+    text-decoration: none;
+  }
+  .casio-id-facebook p {
+    border: 1px solid #bebebe;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #fff;
+    height: 40px;
+    width: 100%;
+  }
+  .casio-id-facebook p img {
+  width: 25px;
+  height: auto;
+  margin-left: 10px;
+}
+.casio-id-facebook p span {
+    margin-left: 10px;
+  }
+  .casio-id-google {
+    text-decoration: none;
+    font-size: 18px;
+  }
+  .casio-id-google a{
+    text-decoration: none;
+  }
+  .casio-id-google p {
+    border: 1px solid #bebebe;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #fff;
+    height: 40px;
+    width: 100%;
+  }
+  .casio-id-google p img {
+  width: 25px;
+  height: auto;
+  margin-left: 10px;
+}
+.casio-id-google p span {
+    margin-left: 10px;
+  }
+  .casio-id-twiter {
+    text-decoration: none;
+    font-size: 18px;
+  }
+  .casio-id-twiter a{
+    text-decoration: none;
+  }
+  .casio-id-twiter p {
+    border: 1px solid #bebebe;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #fff;
+    height: 40px;
+    width: 100%;
+  }
+  .casio-id-twiter p img {
+  width: 25px;
+  height: auto;
+  margin-left: 10px;
+}
+.casio-id-twiter p span {
+    margin-left: 10px;
+  }
+  .casio-id-footer {
+    margin-top: 80px;
+    padding-top: 16px;
+    padding-left: 27px;
+    background-color: #f7f8fa;
+  }
+  .casio-id-footer-links {
+    padding-bottom: 24px;
+    font-size:11px;
+  }
+  .casio-id-footer-utility ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .casio-id-footer-utility ul li {
+    margin-right: 20px;
+    font-size: 9px;
+  }
+  .casio-id-footer a {
+    text-decoration: none;
+  }
+  .casio-id-footer-copyright {
+    font-size: 9px;
+  }
+  .casio-id-footer-copyright a {
+    color: #a1a1a1;
+  }
+  .casio-id-footer {
+    font-size: 11px;
+  }
+  .casio-id-btn:hover {
+    background-color: #7f7f7f;
+    border: 1px solid #7f7f7f;
+  }
+  .casio-id a:hover,
+  .casio-id a:focus {
+    text-decoration: none;
+  }
+  .casio-id-apple p:hover {
+    border: 1px solid #000;
+  }
+  .casio-id-google p:hover {
+    border: 1px solid #000;
+  }
+  .casio-id-twiter p:hover {
+    border: 1px solid #000;
+  }
+  .casio-id-facebook p:hover {
+    border: 1px solid #000;
+  }
+  /*
+  RESPOSIVENESS @MEDIA QUERRIES
+  */
+  @media screen and (min-width: 767px){
+    .casio-id-entry-mail,
+    .casio-id-contents{
+        padding-bottom: 60px;
+    }
+    .casio-id__contents--btn {
+        max-width: 100%;
+      }
+      .casio-id-btn {
+        font-size: 12px;
+      }
+      .casio-id-entry-sns .casio-id-contents {
+        padding-top: 40px;
+        padding-bottom: 40px;
+      }
+  }
+  @media screen and (min-width: 995px){
+    .casio-id-header{
+        margin-bottom: 40px;
+        height: 60px;
+        display: flex;
+    }
+    .casio-id-header-logo{
+        padding-left: 50px;
+        margin-top: -1px;
+        display: flex;
+    }
+    .casio-id-header-logo img{
+        width: 95px;
+        height: 18px;
+    }
+    .casio-id-contents{
+        margin-left: 50px;
+        margin-right: 50px;
+        max-width: 930px;
+    }
+    .casio-id h1{
+        font-size: 32px;
+        font-weight: bold;
+    }
+    .casio-id h1{
+        margin-bottom: 40px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .casio-id__contents--btn {
+        width: 100%;
+        max-width: 285px;
+      }
+      .casio-id-entry-sns .casio-id-contents {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        border-top: 1px solid #BFBFBF;
+      }
+      .casio-id-sns li {
+        -ms-flex-preferred-size: calc((100% - 88px) / 3);
+        flex-basis: calc((100% - 88px) / 3);
+        max-width: calc((100% - 88px) / 3);
+      }
+      .casio-id-sns-btn-apple p img {
+        width: 25px;
+        height: auto;
+        margin-left: 18px;
+      }
+      .casio-id-sns-btn-google p img {
+        width: 25px;
+        height: auto;
+        margin-left: 18px;
+      }
+      .casio-id-sns-btn-facebook p img {
+        width: 25px;
+        height: auto;
+        margin-left: 18px;
+      }
+      .casio-id-sns-btn-twiter p img {
+        width: 25px;
+        height: auto;
+        margin-left: 18px;
+      }
+      .casio-id-footer {
+        background-color: #f7f8fa;
+        margin-top: 120px;
+        padding-top: 14px;
+        padding-right: 16px;
+        padding-bottom: 7px;
+        padding-left: 56px;
+        font-size: 11px;
+      }
+      .casio-id-footer-links {
+        padding-bottom: 5px;
+      }
+      li {
+        margin-right: 45px;
+        font-size: 9px;
+      }
+      .casio-id-header-logo a img {
+        width: 95px;
+        height: 18px;
+      }
+  }

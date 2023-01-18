@@ -1,0 +1,26 @@
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h2>LOGIN</h2>
+    <br>
+    <form method="POST" action="">
+        {% csrf_token %}
+        {{ form.errors }}
+        <br>
+        {{ form.username.label }}
+        {{ form.username}}
+        <br>
+        <br>
+        {{ form.password1.label }}
+        {{ form.password1 }}
+        <br>
+        <input type="submit" value="{% blocktrans %}LOGIN{% endblocktrans %}">
+    </form>
+    <a href="{% url 'social:begin' 'facebook' %}">{% blocktrans %}Facebook Login{% endblocktrans %}</a>
+</body>
+</html>

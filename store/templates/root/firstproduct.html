@@ -1,0 +1,626 @@
+{% load static %}
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Official EDIFICE Site. Metallic analog watches that combine dynamic designs with cutting-edge technology. ">
+    <meta name="description" content="The Official EDIFICE Site. Metallic analog watches that combine dynamic designs with cutting-edge technology. EDIFICE is an official partner of Scuderia AlphaTauri">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="{% static 'store/USimages/favicon.png' %}">
+    <link rel="stylesheet" href="{% static 'store/css/firstProductStyles.css' %}">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+        </style>
+    <title>product Description</title>
+</head>
+<body>
+    <header>
+        <div class="head">
+            <div class="navs">
+                <i>
+                    <a class="edifice-casioimages">
+                        <img width="100" src="{% static 'store/USimages/edifice1.jpg' %}" alt="" >
+                        <img width="100" src="{% static 'store/USimages/casio.png' %}" alt=""  class="casio">
+                    </a>
+                </i>
+                <div class="other-devices">
+                    <i>G-SHOCK</i>
+                    <i>WATCHES</i>
+                    <i>ELECTRONIC MUSICAL INSTRUMENTS</i>
+                    <i>CALCULATORS</i>
+                    <i>MEDICAL DEVICES </i>
+                </div>
+                <i> <input type="search" name="" id="" placeholder="Search..."> <img src="..{% static 'store/USimages/search.webp' %}" alt="" width="14" class="search"> </i>
+                <i class="cart-notification">
+                    <b class="notification">{{ cartItems }}</b>
+                    <a href="{% url 'cart' %}">
+                        <img src="{% static 'store/USimages/bag.svg' %}" alt="" width="22">
+                    </a>
+                </i>
+                <i>
+                        <img src="{% static 'store/USimages/heart.svg' %}" alt="" width="22">
+                </i>
+                <i>
+                    <a href="{% url 'register' %}"> <img src="{% static 'store/USimages/login.svg' %}" alt="" width="22"></a>
+                </i>
+            </div>
+            <p class="freeshipping">Free Shipping on Watches, Calculators and Musical Instruments over $99</p>
+        </div>
+    </header>
+    <main>
+        <div class="contents">
+            <section id="main-content">
+                <div class="pictures">
+                    <div class="images">
+                        <div class="additionalInfo">
+                            <p class="watchType">Standard Chronograph</p>
+                            <h1 id="watchid"><b>{{ product.model }}</b> </h1>
+                            <div class="price">${{ product.price|floatformat:2 }}</div>
+                        </div>
+                        <img src="{{ product.imageURL }}" alt="" width="350">
+                    </div>
+                    <div class="images">
+                        <img src="{{ product.imageURL }}" alt="" width="350">
+                    </div>
+                    <div class="images">
+                        <img src="{% static 'store/USimages/casualbackground.webp' %}" alt="" width="350">
+                    </div>
+                    <div class="images">
+                        <img src="{% static 'store/USimages/orangebackgroungwatch.webp' %}" alt="" width="350">
+                    </div>
+                    <div class="images fixup">
+                        <img src="{% static 'store/USimages/solar.webp' %}" alt="" width="200">
+                        <p>{% blocktrans %}Stable solar power{% endblocktrans %}</p>
+                    </div>
+                    <div class="images fixup">
+                        <img src="{% static 'store/USimages/travel.webp' %}" alt="" width="200">
+                        <p>{% blocktrans %}Keeps yourself in time{% endblocktrans %}</p>
+                    </div>
+                    <div class="images fixup">
+                        <img src="{% static 'store/USimages/smartphone.webp' %}" alt="" width="200">
+                        <p>{% blocktrans %}Easy to operate via smartphone{% endblocktrans %}</p>
+                    </div>
+                    <div class="images fixup">
+                        <img src="{% static 'store/USimages/productCar.png' %}" alt="" width="200">
+                        <p>{% blocktrans %}Great for motorsports{% endblocktrans %}</p>
+                    </div>
+                </div>
+                <div class="specifications">
+                    <h1 class="horizontal-line spacing">
+                        <p>{% trans 'Specifications' %}</p>
+                    </h1>
+                    <div class="detailedSpecification">
+                        <div class="basic-information">
+                            <div class="heading">
+                                <p>{% blocktrans %}Basic Information{% endblocktrans %}</p>
+                                <div class="toggle-btn">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="description lock">
+                                <div class="grid-container"><!--display:grid-->
+                                    <div class="grids"><!--display:flex-->
+                                        <div class="topic">{% blocktrans %}Case size (L× W× H){% endblocktrans %}</div>
+                                        <div class="desc">
+                                            <i>55.6 × 47.8 × 10.8 mm</i>
+                                        </div>
+                                    </div>
+                                    <div class="grids"><!--display:flex-->
+                                        <div class="topic">{% trans 'Weight' %}</div>
+                                        <div class="desc">
+                                            <i>170g</i>
+                                        </div>
+                                    </div>
+                                    <div class="grids"><!--display:flex-->
+                                        <div class="topic">{% trans 'Weight' %}</div>
+                                        <div class="desc">
+                                            <i>170g</i>
+                                        </div>
+                                    </div>
+                                    <div class="grids"><!--display:flex-->
+                                        <div class="topic">{% trans 'Weight' %}</div>
+                                        <div class="desc">
+                                            <i>170g</i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="basic-information">
+                            <div class="heading">
+                                <p>{% blocktrans %}SmartPhone link/ App Connectivity Feautures{% endblocktrans %}</p>
+                                <div class="toggle-btn">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="description lock">
+                                <div class="grid-container"><!--display:grid-->
+                                    <div class="grids"><!--display:flex-->
+                                        <div class="topic">{% blocktrans %}Smartphone Link feature{% endblocktrans %}</div>
+                                        <div class="desc">
+                                            <i>{% blocktrans %}Mobile link (Wireless linking using Bluetooth®){% endblocktrans %}</i>
+                                        </div>
+                                    </div>
+                                    <div class="grids"><!--display:flex-->
+                                        <div class="topic">{% trans 'Apps' %}</div>
+                                        <div class="desc">
+                                            <i>{% blocktrans %}CASIO WATCHES{% endblocktrans %}</i>
+                                        </div>
+                                    </div>
+                                    <div class="grids"><!--display:flex-->
+                                        <div class="topic">{% blocktrans %}App connectivity feature{% endblocktrans%}</div>
+                                        <div class="desc">
+                                            <i>{% blocktrans %}Auto time adjustment{% endblocktrans %}</i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="basic-information">
+                            <div class="heading">
+                                <p>{% blocktrans %}SmartPhone link/ App Connectivity Feautures{% endblocktrans %}</p>
+                                <div class="toggle-btn">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="description lock">
+                                <div class="grid-container"><!--display:grid-->
+                                    <div class="grids"><!--display:flex-->
+                                        <div class="topic">{% blocktrans %}Smartphone Link feature{% endblocktrans %}</div>
+                                        <div class="desc">
+                                            <i>{% blocktrans %}Mobile link (Wireless linking using Bluetooth®){% endblocktrans %}</i>
+                                        </div>
+                                    </div>
+                                    <div class="grids"><!--display:flex-->
+                                        <div class="topic">{% trans 'Apps' %}</div>
+                                        <div class="desc">
+                                            <i>{% blocktrans %}CASIO WATCHES{% endblocktrans %}</i>
+                                        </div>
+                                    </div>
+                                    <div class="grids"><!--display:flex-->
+                                        <div class="topic">{% blocktrans %}App connectivity feature{% endblocktrans %}</div>
+                                        <div class="desc">
+                                            <i>{% blocktrans %}Auto time adjustment{% endblocktrans %}</i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="operationalGuide">
+                        <div class="box">
+                            <p>{% blocktrans %}Operational Guide{% endblocktrans %}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="another">
+                    <div class="grid-container2">
+                        <div class="grids2">
+                            <div class="image2"><!--grid-column:span2;-->
+                                <img src="{% static 'store/USimages/span2.webp' %}" alt="" width="100%">
+                            </div>
+                        </div>
+                        <div class="grids2"><!--display:flex;-->
+                            <div class="image3">
+                                <img src="{% static 'store/USimages/description-m.webp' %}" alt="" width="100%">
+                            </div>
+                            <div class="text-besideImage"><!--Flex-direction:cloumn-->
+                                <p class="bold">
+                                    {% blocktrans %}The form, functionality, and sophistication to support racing teams — offered to all motorsports fans{% endblocktrans %}</p>
+                                <p>{% blocktrans %}Integrating the advanced technologies and design of the EDIFICE line, with features including a new case shape inspired by the suspension arms on formula race cars, precision timekeeping, and the enhanced convenience of world time offered by Smartphone Link. A high-performance chronograph born of a “real motorsports” concept.{% endblocktrans%}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="thesameFormat">
+                    <div class="format">
+                        <div class="picture-text">
+                            <div class="picture">
+                                <img src="{% static 'store/USimages/format.webp' %}" alt="" width="100%">
+                            </div>
+                            <div class="text2">
+                                <p>{% blocktrans %}Unique case design with a motif inspired by formula car suspension. Just like the four-arm double wishbone suspension used in race cars, with two arms above and two below, the lugs are configured in a four-arm arrangement.{% endblocktrans %}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="format">
+                        <div class="picture-text">
+                            <div class="picture">
+                                <img src="{% static 'store/USimages/feature-02.webp' %}" alt="" width="100%">
+                            </div>
+                            <div class="text2">
+                                <p>{% blocktrans %}Unique case design with a motif inspired by formula car suspension. Just like the four-arm double wishbone suspension used in race cars, with two arms above and two below, the lugs are configured in a four-arm arrangement.{% endblocktrans %}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="format">
+                        <div class="picture-text">
+                            <div class="picture">
+                                <img src="{% static 'store/USimages/feature-03-m.webp' %}" alt="" width="100%">
+                            </div>
+                            <div class="text2">
+                                <p>{% blocktrans %}Unique case design with a motif inspired by formula car suspension. Just like the four-arm double wishbone suspension used in race cars, with two arms above and two below, the lugs are configured in a four-arm arrangement.{% endblocktrans %}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="watchDetails">
+                    <h2 class="bold">{% trans 'DETAILS' %}</h2>
+                    <div class="grid3-container"><!--display:grid-->
+                        <div class="grids3"><!--flex-direction:column;-->
+                            <div class="grids-image">
+                                <img src="{% static 'store/USimages/point-01.webp' %}" alt="" width="100%">
+                            </div>
+                            <div class="grids3-text">
+                                <p>{% blocktrans %}Insert dials alone transmit enough light for power, freeing up dial design{% endblocktrans %}</p>
+                                <p>{% blocktrans %}The insert dials, solar-receptive area alone takes in plenty of light to power the watch, enabling the use of opaque materials even with solar dial design.{% endblocktrans %} <br>
+                                <span>{% blocktrans %}*Graphic is included for illustrative purposes.{% endblocktrans %}</span></p>
+                            </div>
+                        </div>
+                        <div class="grids3"><!--flex-direction:column;-->
+                            <div class="grids-image">
+                                <img src="{% static 'store/USimages/point-01.webp' %}" alt="" width="100%">
+                            </div>
+                            <div class="grids3-text">
+                                <p>{% blocktrans %}Black IP for a confident look{% endblocktrans %}</p>
+                                <p>{% blocktrans %}Black IP is applied to the stainless-steel bezel, which is engraved with tachymeter markings. {% endblocktrans %}<br>
+                                <span></span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="pic-multiple-h2">
+                        <div class="pic-multiple">
+                            <img src="{% static 'store/USimages/app-icon.webp' %}" alt="" width="90">
+                            <div class="multple">
+                                <p>{% blocktrans %}Multiple functions, all at your fingertips{% endblocktrans %}</p>
+                            </div>
+                        </div>
+                        <div class="h2">
+                            <div class="bold">{% blocktrans %}CASIO WATCHES{% endblocktrans%}</div>
+                        </div>
+                    </div>
+                    <div class="container-items">
+                        <ul>
+                            <li><b>- {% blocktrans %}Automatic time adjustment (four times a day){% endblocktrans %}</b></li>
+                            <li><b>- {% blocktrans %}Easy watch setting:{% endblocktrans %}</b></li>
+                            <li><b>{% blocktrans %}-Stopwatch data transfer:{% endblocktrans %}</b>
+                                <span>{% blocktrans %}Displays lap times down to the millisecond.See lap time differences and fastest time at a glance.{% endblocktrans %}</span>
+                            </li>
+                            <li><b>- {% blocktrans %}World time{% endblocktrans %} </b>(about 300 cities)</li>
+                            <li><b>- {% blocktrans %}Phone finder{% endblocktrans %}</b></li>
+                        </ul>
+
+                    </div>
+                    <div class="operationalGuide">
+                        <div class="box adjust">
+                            <p>{% blocktrans %}Operational Guide{% endblocktrans %}</p>
+                        </div>
+                    </div>
+                    <div class="specifications">
+                        <div class="header ">
+                            <h2>{% trans 'SPECIFICATIONS' %}</h2>
+                        </div>
+                        <div class="specifications-contents">
+                            <ul>
+                                <li><b>{% blocktrans %}10-bar water resistance{% endblocktrans %}</b></li>
+                                <li><b>{% blocktrans %}Tough Solar{% endblocktrans%}</b> {% blocktrans %}(solar powered){% endblocktrans %}</li>
+                                <li><b>{% blocktrans %}Smartphone Link{% endblocktrans %}</b></li>
+                                <li><b>{% blocktrans %}Dual time{% endblocktrans %}</b></li>
+                                <li><b>{% trans 'Stopwatch' %}</b></li>
+                                <li><b>{% blocktrans %}Daily alarm{% endblocktrans %}</b></li>
+                                <li><b>{% blocktrans %}Date and day display{% endblocktrans %}</b></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="links">
+                        <ol class="end-navs">
+                            <li class="items">
+                                <a href="#">{% trans 'Home' %}</a>
+                            </li>
+                            <li class="items">
+                                <a href="#">{% trans 'Watches' %}</a>
+                            </li>
+                            <li class="items">
+                                <a href="#">{% trans 'Edifice' %}</a>
+                            </li>
+                        </ol>
+                    </div>
+                    <footer>
+                        <div class="footer-grids">
+                        <div class="products shift-inside">
+                            <ol>
+                                <li class="bold-header"><a href="#">{% trans 'Products' %}</a></li>
+                                <li><a href="#">{% trans 'Home' %}</a></li>
+                        </div>
+                        <div class="supoprt shift-inside">
+                            <ol>
+                                <li class="bold-header"><a href="#">{% blocktrans %}Customer Support{% endblocktrans %}</a></li>
+                                <li><a href="#">{% trans 'Support' %}</a></li>
+                            </ol>
+                        </div>
+                        <div class="corporate shift-inside">
+                            <ol>
+                                <li class="bold-header">
+                                    <a href="#">{% trans 'Corporate' %}</a>
+                                </li>
+                                <li><a href="#"></a>{% trans 'Corporate' %}</li>
+                            </ol>
+                        </div>
+                        </div>
+                        <div class="casio-id-footer">
+                            <div class="casio-id-footer-links">
+                                <div class="casio-id-footer-utility">
+                                    <ul>
+                                        <li>
+                                            <a href="#" target="_blank" rel="noopener ">Privacy Notice</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank" rel="noopener ">Cookie policy</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank" rel="noopener ">Contact Us</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank" rel="noopener ">International</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="casio-id-footer-copyright">
+                                    <a href="#" target="_blank" rel="noopener">© 2022 CASIO COMPUTER CO., LTD.</a>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+                    </section>
+            <section id="sidebar-content">
+                <div class="productname-code-availability-date">
+                    <div class="productname">
+                        <p>EDIFICE SOSPENSIONE</p>
+                    </div>
+                    <div class="code">
+                        <h2>{{ product.model }}</h2>
+                    </div>
+                    <div class="availability">
+                        <p>{% trans 'New' %}</p>
+                        <div class="date">
+                            <p>09/2022</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="linksToOtherWatches">
+                    <li>
+                        <a href="{% url 'product-detail' product.id %}">
+                            <img src="{% static 'store/USimages/watch6.webp' %}" alt="" width="80">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% url 'product-detail' product.id %}">
+                            <img src="{% static 'store/USimages/watch5.webp' %}" alt="" width="80">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% url 'product-detail' product.id %}">
+                            <img src="{% static 'store/USimages/watch4.png' %}" alt="" width="80">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% url 'product-detail' product.id %}">
+                            <img src="{% static 'store/USimages/watch6.webp' %}" alt="" width="80">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% url 'product-detail' product.id %}">
+                            <img src="{% static 'store/USimages/watch6.webp' %}" alt="" width="80">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% url 'product-detail' product.id %}">
+                            <img src="{% static 'store/USimages/watch2.png' %}" alt="" width="80">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% url 'product-detail' product.id %}">
+                            <img src="{% static 'store/USimages/watch1.png' %}" alt="" width="80">
+                        </a>
+                    </li>
+                     <li>
+                        <a href="{% url 'product-detail' product.id %}">
+                            <img src="{% static 'store/USimages/watch5.webp' %}" alt="" width="80">
+                        </a>
+                    </li>
+                </div>
+                <div class="storeLocator-favorite">
+                    <button>{% trans 'FAVORITE' %}
+                        <span><img src="{% static 'store/USimages/heart.svg' %}" alt="" width="22"></span>
+                    </button>
+                    <button id="buy-btn"><a href="{% url 'cart' %}" data-product="{{ product.id }}" data-action="add" class="update-cart">{% blocktrans %}ADD TO CART{% endblocktrans %}</a>
+                        <img src="{% static 'store/USimages/bag.svg' %}" alt="">
+                    </button>
+                    <button id="storeLocator">{% blocktrans %}Store Locator{% endblocktrans%}</button>
+                </div>
+                <div class="paragraphs">
+                    <p>{% blocktrans %}Introducing true motorsports form, functionality, and sophistication with the flagship EDIFICE chronograph, the SOSPENSIONE EQB-2000.{% endblocktrans %}</p>
+                    <p>{% blocktrans %}Bringing innovation and high-performance technology to EDIFICE Speed & Intelligence, the four-arm lug configuration is inspired by the four-arm double wishbone suspension on formula race cars. Key dial components are color-coded like race car steering wheels to deliver quick recognition. The red second hand provides the stand-out visibility that racing teams need to make every second count. The ion-plated bezel and band and the sapphire crystal make for a scratch-resistant timepiece with the look and feel of a race car.{% endblocktrans %}</p>
+                    <p>{% blocktrans %}It’s a snap to sync with your smartphone via Bluetooth®. Tap into the app to access functions that are so important for racing teams — get automatically adjusted to-the-second precision timekeeping, effortlessly manage world time, and transfer stopwatch data measured to the millisecond for up to 200 lap times to your smartphone.{% endblocktrans %}</p>
+                    <p>{% blocktrans %}Tough Solar can charge the watch from sunlight or even fluorescent lamp light, storing enough power for 5 months of normal use.{% endblocktrans%}</p>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="follow">
+            <span>
+                <a href="#"><img src="{% static 'store/USimages/fb_icon.png' %}" alt=""></a>
+            </span>
+            <span>
+                <a href="#"><img src="{% static 'store/USimages/tw_icon.png' %}" alt=""></a>
+            </span>
+            <span>
+                <a href="#"><img src="{% static 'store/USimages/ins.png' %}" alt=""></a>
+            </span>
+            <span>
+                <a href="#"><img src="{% static 'store/USimages/youtube_icon.png' %}" alt=""></a>
+            </span>
+        </div>
+        <div class="communcate">
+            <span>{% blocktrans %}Privacy Policy{% endblocktrans %}</span>
+            <span>{% blocktrans%} ADA compliance{% endblocktrans %}</span>
+            <span>{% blocktrans %}Terms Of sale{% endblocktrans %}</span>
+            <span>{% blocktrans %}Return Policy{% endblocktrans %}</span>
+            <span>{% blocktrans %}Site Map{% endblocktrans %}</span>
+            <span>{% blocktrans %}United States{% endblocktrans %}</span>
+        </div>
+        <div class="copy-right">
+            <span>&copy; 2022 CASIO, INC.</span>
+        </div>
+    </footer>
+    <script>
+        var user = '{{ request.user }}'
+
+        console.log(user)
+
+
+        function getToken(name) {
+            var cookieValue = null;
+            if (document.cookie && document.cookie !== ''){
+                var cookies = document.cookie.split(';');
+                for (var i=0; i<cookies.length; i++){
+                    var cookie = cookies[i].trim();
+                    // Does this cookie string begin with the name we want ?
+                    if (cookie.substring(0, name.length + 1) === (name + '=')){
+                        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                        break;
+                    }
+                }
+            }
+            return cookieValue;
+        }
+        var csrftoken = getToken('csrftoken');
+
+        function getCookie(name){
+            // split cookie strings and get individual name=values pairs in an array
+            var cookieArr = document.cookie.split(";");
+
+            // Loop through the array elements
+            for (var i=0; i < cookieArr.length; i++){
+                var cookiePair = cookieArr[i].split("=");
+
+                // Removing whitespaces at the beginning of the cookie name
+                // and compare it with the given string
+                if (name == cookiePair[0].trim()){
+                    // Decode the cookie value and return
+                    return decodeURIComponent(cookiePair[1]);
+                }
+
+            }
+            // Return null if not found
+            return null;
+        }
+        var cart = JSON.parse(getCookie('cart'))
+
+        if (cart == undefined){
+            cart = {}
+            console.log('Cart Created!', cart)
+            document.cookie = 'cart=' + JSON.stringify(cart) + ";domain=;path=/"
+        }
+        console.log('cart:', cart)
+
+
+        var updateBtns = document.getElementsByClassName('update-cart')
+
+
+        for(var i=0; i < updateBtns.length; i++){
+            updateBtns[i].addEventListener('click', function(){
+                var productId = this.dataset.product
+                var action = this.dataset.action
+                console.log('productId:', productId, 'action:', action)
+
+                console.log('USER:', user)
+                if(user === 'AnonymousUser'){
+                    addCookieItem(productId, action)
+                }else{
+                    updateUserOrder(productId, action)
+                }
+            })
+        }
+
+        function addCookieItem(productId, action){
+            console.log("Not Logged in...")
+            if (action == 'add'){
+                if (cart[productId] == undefined){
+                    cart[productId] = {'quantity':1}
+                }else if (cart[productId]['quantity'] < 3) {
+                    cart[productId]['quantity'] += 1
+                }
+            }
+
+            if (action == 'remove'){
+                cart[productId]['quantity'] -= 1
+
+                if (cart[productId]['quantity'] <= 0){
+                    console.log("Item should be deleted")
+                    delete cart[productId];
+                }
+            }
+
+            if (action == 'delete'){
+                    console.log("Item should be deleted")
+                    delete cart[productId];
+            }
+            console.log("Cart: ", cart)
+            document.cookie = 'cart=' + JSON.stringify(cart) + ";domain=;path=/"
+            location.reload()
+
+
+        //    cart = {
+        //          1:{'quantity':2},
+        //          3:{'quantity':1},
+        //          4:{'quantity':1},
+        //    }
+        }
+
+        function updateUserOrder(productId, action){
+            console.log('User is logged in, sending Data..')
+
+            var url = '/update_item'
+
+            fetch(url, {
+                method: 'POST',
+                headers:{
+                    'Content-Type':'application/json',
+                    'X-CSRFToken': csrftoken,
+                },
+                body:JSON.stringify({'productId':productId, 'action': action})
+            })
+            .then((response) =>response.json())
+            .then((data) =>{
+                console.log('data:', data['data'])
+                location.reload()
+                var max_message = "{% blocktrans %}Maximum order per Watch is 3 !{%endblocktrans%}"
+                if (data['exceed'] == true){
+                    alert(max_message);
+                }
+            })
+        }
+
+    </script>
+
+</body>
+</html>

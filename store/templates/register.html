@@ -1,0 +1,118 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="{% static 'store/USimages/favicon_2.png' %}">
+    <link rel="stylesheet" href="{% static 'store/css/register.css' %}">
+    <title>Casio Register</title>
+</head>
+<body>
+    <div class="casio-id">
+        <div class="casio-id-entry">
+            <div class="casio-id-container">
+                <header>
+                    <div class="casio-id-header">
+                        <div class="casio-id-header-logo">
+                            <a href="#">
+                                <img src="{% static 'store/USimages/casioBlue.png' %}" alt="" width="50">
+                            </a>
+                        </div>
+                    </div>
+                </header>
+                <main>
+                    <article>
+                        <div class="casio-id-contents">
+                            <h1 style="padding-bottom: 30px;">{% blocktrans %}Register CASIO ID{% endblocktrans %}</h1>
+                        </div>
+                        <section class="casio-id-entry-mail">
+                            <div class="casio-id-contents">
+                                <h2>{% blocktrans %}Register with email address{% endblocktrans %}</h2>
+                                <div class="casio-id__contents--btn">
+                                   <a href="{% url 'email-sign' %}"><button class="casio-id-btn">
+                                       {% trans 'CONTINUE' %}
+                                            <img src="" alt="">
+                                    </button></a>
+                                </div>
+                                <div>
+                                    <div class="casio-id-contents-fluid">
+                                        <p class="casio-id-guide" style="font-weight: bold;">
+                                            <a href="{% url 'login' %}">{% blocktrans %}Already a Member? Log in here{% endblocktrans %}</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="casio-id-entry-sns">
+                            <div class="casio-id-contents">
+                                <h2>{% blocktrans %}Register with a social media account{% endblocktrans %}</h2>
+                                <ul class="casio-id-sns">
+                                    <li class="snslink" id="sns-link-apple">
+                                        <a href="#" class="casio-id-apple" style="text-decoration: none;">
+                                            <p>
+                                                <img src="" alt="">
+                                                <span>{% blocktrans %}Continue with Apple{% endblocktrans %}</span>
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li class="snslink" id="sns-link-facebook">
+                                        <a href="{% url 'social:begin' 'facebook' %}" class="casio-id-facebook"  style="text-decoration: none;">
+                                            <p>
+                                                <img src="" alt="">
+                                                <span>{% blocktrans %}Continue with Facebook{% endblocktrans %}</span>
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li class="snslink" id="sns-link-google">
+                                        <a href="#" class="casio-id-google"  style="text-decoration: none;">
+                                            <p>
+                                                <img src="" alt="">
+                                                <span>{% blocktrans %}Continue with Google{% endblocktrans %}</span>
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li class="snslink" id="sns-link-twiter">
+                                        <a href="#" class="casio-id-twiter"  style="text-decoration: none;">
+                                            <p>
+                                                <img src="" alt="">
+                                                <span>{% blocktrans %}Continue with Twitter{% endblocktrans %}</span>
+                                            </p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                    </article>
+                </main>
+                <footer>
+                    <div class="casio-id-footer">
+                        <div class="casio-id-footer-links">
+                            <div class="casio-id-footer-utility">
+                                <ul>
+                                    <li>
+                                        <a href="#" target="_blank" rel="noopener ">{% blocktrans %}Privacy Notice{% endblocktrans %}</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank" rel="noopener ">{% blocktrans %}Cookie policy{% endblocktrans %}</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank" rel="noopener ">{% blocktrans %}What is the CASIO ID{% endblocktrans %}</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank" rel="noopener ">{% blocktrans %}FAQ{% endblocktrans %}</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="casio-id-footer-copyright">
+                                <a href="#" target="_blank" rel="noopener">© 2022 CASIO COMPUTER CO., LTD.</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

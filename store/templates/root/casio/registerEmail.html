@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="USimages/favicon_2.png">
+    <link rel="stylesheet" href="../css/pre-register.css">
+    <link rel="stylesheet" href="../css/registerEmail.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+        </style>
+    <title>CASIO ID</title>
+</head>
+<body>
+    <div class="casio-id">
+        <div class="casio-id-entry">
+                <div class="casio-id-container">
+                    <header>
+                        <div class="casio-id-header">
+                            <div class="casio-id-header-logo">
+                                <a href="#">
+                                    <img src="USimages/casioBlue.png" alt="" width="50">
+                                </a>
+                            </div>
+                        </div>
+                    </header>
+                    <main>
+                        <article>
+                            <div class="casio-id-contents">
+                                <h1 style="padding-bottom: 30px;">Register CASIO ID</h1>
+                            </div>
+                        </article>
+                        <form action="" id="registrationForm" action="" method="POST">
+                            <div class="formGroup">
+                                <label for="Country">Country/Region*</label>
+                                <select required name="" id="country" class="country">
+                                    <option value="Select" class="blur">Select</option>
+                                    <option value="Afghanistan">Afghanistan</option>
+                                    <option value="Albania">Albania</option>
+                                    <option value="Algeria">Algeria</option>
+                                    <option value="Andorra">Andorra</option>
+                                </select>
+                                <div class="error">
+                                </div>
+                            </div>
+                            <div class="dateofbirth">
+                                    <p>Date of birth*</p>
+                                    <div class="formGroup adjust-width">
+                                        <label for="">Day</label>
+                                        <select required name="" id="day">
+                                            <option value="Day">Day</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                        </select>
+                                        <div class="error">
+                                        </div>
+                                    </div>
+                                    <div class="formGroup adjust-width">
+                                        <label for="">Month</label>
+                                        <select required name="" id="month">
+                                            <option value="Month">Month</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                            <option value="12">12</option>
+                                        </select>
+                                        <div class="error">
+                                        </div>
+                                    </div>
+                                    <div class="formGroup adjust-width">
+                                        <label for="">Year</label>
+                                        <select required name="" id="year">
+                                            <option value="Year">Year</option>
+                                            <option value="2022">2022</option>
+                                            <option value="2021">2021</option>
+                                            <option value="2020">2020</option>
+                                            <option value="2019">2019</option>
+                                            <option value="2017">2017</option>
+                                            <option value="2016">2016</option>
+                                            <option value="2015">2015</option>
+                                            <option value="2014">2014</option>
+                                            <option value="2013">2013</option>
+                                            <option value="2012">2012</option>
+                                            <option value="2011">2011</option>
+                                            <option value="2010">2010</option>
+                                            <option value="2009">2009</option>
+                                        </select>
+                                        <div class="error">
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="formGroup">
+                                <label for="">Email Address*</label>
+                                <input
+                                required
+                                pattern="^(.+)@(.+)$"
+                                placeholder="example@casio.com"
+                                type="email"
+                                >
+
+                                <span class="check" style="visibility: hidden;">
+                                    <i class="fa-solid fa-check"></i>
+                                </span>
+                                <span class="xmark" style="visibility: hidden;">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </span>
+
+                                <div class="error">
+                                </div>
+                            </div>
+                            <div class="formGroup">
+                                <label for="">Password*</label>
+                                <input
+                                required
+                                placeholder="Password"
+                                type="password"
+                                minlength="8"
+                                >
+                                <span class="check" style="visibility: hidden;">
+                                    <i class="fa-solid fa-check"></i>
+                                </span>
+                                <span class="xmark" style="visibility: hidden;">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </span>
+                                <p>*The password must be at least 8 characters including uppercase letters, lowercase letters and numbers. </p>
+                                <div class="error">
+                                </div>
+                            </div>
+                            <div class="formGroup">
+                                <label for="">First Name*</label>
+                                <input
+                                required
+                                placeholder="First Name"
+                                type="text"
+                                >
+                                <span class="check" style="visibility: hidden;">
+                                    <i class="fa-solid fa-check"></i>
+                                </span>
+                                <span class="xmark" style="visibility: hidden;">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </span>
+                                <div class="error">
+                                </div>
+                            </div>
+                            <div class="formGroup">
+                                <label for="">Last Name*</label>
+                                <input
+                                required
+                                placeholder="Last Name"
+                                type="text"
+                                >
+                                <span class="check" style="visibility: hidden;">
+                                    <i class="fa-solid fa-check"></i>
+                                </span>
+                                <span class="xmark" style="visibility: hidden;">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </span>
+                                <div class="error">
+                                </div>
+                            </div>
+
+                            <div class="terms-conditions">
+                                <div class="privacy-noticehear">
+                                    <h1>CASIO ID Privacy Notice</h1>
+                                </div>
+                                <div class="privacy-paragragphs">
+                                    <p>
+
+                                        Effective: Oct 14, 2021 <br>
+
+                                        This Casio ID Privacy Notice (“Privacy Notice”) sets forth the ways in which we, Casio Computer Co., Ltd., (hereinafter “Casio”, “our”, or “us”) collect, use and disclose your information when you register for and use your CASIO ID. This Privacy Notice applies to the creation and use of your CASIO ID only. Each Casio service provided through Casio or its affiliates’ website or apps which requires or linked with CASIO ID (“Casio Service(s)”) has its own privacy policy, so when you use any Casio Services, the privacy policy for each such Casio Service applies to you. Casio’s affiliates mean local corporations in each country which operates or provides Casio Services.<br>
+
+                                        This website uses cookies. For further information please read our cookie policy – which you will find here.<br>
+
+                                        Please read the following carefully to understand how we will treat your information provided via your creation and use of CASIO ID.<br>
+                                        </p>
+
+                                        <p class="orderedLis">
+                                            . Your Information
+
+                                            When you register for a CASIO ID, we collect the following information about you: full name, email address, gender, birth date and country. It is necessary for you to supply these categories of information to us to register. If you do not provide us with these categories of information, you may not be able to receive all of our services including Casio Service and CASIO ID itself.
+                                            In addition, if you make a transaction facilitated by us with CASIO ID, including purchases on our platform, we may collect information about the purchase. This information could include contact information such as your name, billing address, shipping address, and the date, billing amount, our products and services which you purchased; provided, however, payment information, such as your credit card number and account authentication information that you provide to settlement agency will not be shared with us.
+
+                                            When you use your CASIO ID in connection with the Casio Services, we collect any information that you actively submit to us, including any information that you provide on any forms that you submit to us or through any other communications or interactions you have with us. We also automatically collect information during your use and navigation of Casio Services, specifically: your IP-address, host name, user agent, browser identification, referrer, and the date/time of your access to the website or apps of Casio Services while using your CASIO ID.
+
+                                            We refer to the information about you described above as “Your Information”.
+                                            2. Legal basis for and purpose of usage
+
+                                            We will process Your Information based on any of the following legal basis (unless such data processing will conflict with applicable laws and regulations) or any other grounds as permitted under applicable laws;
+
+                                            (i) Contract. When we need to process Your Information to perform a contract we enter into with you;
+                                            (ii) Legal Obligation. When we need to comply with a legal obligation;
+                                            (iii) Legitimate Interests. When the processing of Your Information is necessary for the fulfilment of legitimate interests pursued by us or a third party and your interests and fundamental rights do not override those interests; and
+                                            (iv) Consent. When you have given consent for us to process Your Information. However, even if we did not obtain consent from you, we may process Your Information based on other applicable legal grounds. The withdrawal of your consent shall not affect the lawfulness of processing performed based on the consent before your withdrawal.
+
+                                            We use Your Information for the following purposes (“Purposes”);
+
+                                            (i) to (a) complete your registration for and use a CASIO ID, and (b) to verify your identity when providing you with Casio Services, to make relevant Casio Services available to you in connection with your CASIO ID, to provide Casio Services to you, and to manage and administer your CASIO ID;
+                                            (ii) to personalize and optimize Casio Services for you and to enhance the user experience of Casio Services;
+                                            (iii) to conduct market research and/or analysis for statistical or other purposes for us to review, develop and improve the quality of and to promote sales of our products and services (including Casio Services);
+                                            (iv) to (a) send questionnaires to you by Casio or its affiliates for design and improve our products or services (including Casio Services) customized to interests of consumers, and (b) as permitted by applicable law, send you information by Casio or its affiliates about our products, services (including Casio Services which you have not yet used) and benefits (including without limitation special events, promotions and campaigns held by Casio or its affiliates) which might be of interest to you;
+                                            (v) to obtain authorization from your parent (the holder of parental responsibility over you) in accordance with applicable law governing minors if you have not yet reached the age of legal majority; and
+                                            (vi) to contact you concerning your queries, or for any security and fraud prevention purposes.
+
+                                            During the period you register and maintain your CASIO ID, Your Information may be processed and used in the form(s) of printed documents and/or electronic files or otherwise by us and the parties prescribed in Clauses 6 and 7.
+                                            3. Management of Your Information
+
+                                            We have taken steps to protect Your Information in an appropriate manner, including to protect personally identifiable information included in Your Information. We collect, use and disclose (including cross-border transfer) Your Information to the extent permitted or required under applicable laws and guidelines. In addition to this Privacy Notice, we follow our "Privacy Policy".
+                                            4. Children’s privacy
+
+                                            Casio Services are not available to persons under 13 years of age. If you are under 13 years of age, please do not register for a CASIO ID or use Casio Services. We do not knowingly collect or maintain information about persons under 13 years of age. If we learn that information about persons under 13 has been collected on or through Casio Services, we will take appropriate steps to delete this information. If you are the parent or legal guardian of a child under 13 who has registered for a CASIO ID, please contact us using the contact information below to have that child’s account terminated and personal information deleted.
+
+                                            Even if you are over 13 years of age, when you haven’t reached the age of majority under applicable laws, the consent to this Privacy Notice and relevant privacy policy, or the consent to processing of Your Information shall be given by your parents or legal guardian in accordance with applicable laws.
+                                            5. Storage location
+
+                                            Your Information is transmitted to and stored in a server operated by our service providers, which server may be located outside of your country.
+                                            6. Data sharing
+
+                                            In accordance with applicable data protection laws, including Japanese law in connection with the framework of joint use, we share Your Information with our affiliate companies including local corporations in each country which operates or provides Casio Services. The items of your Information that is shared is the same as in the items stated in Clause1 of this Privacy Notice. The purposes of sharing are the same as the Purposes stated in Clause 2 hereof. Each entity is responsible for the management of Your Information which it collects from you.
+                                            7. Disclosing Your Information to third parties
+
+                                            Your Information may be disclosed to our sales subsidiaries, distributors, service providers and subcontractors as necessary to accomplish the Purposes.
+                                            Additionally,
+                                            DPO’s contact information:
+                                            Company Name: Casio Computer Co., Ltd,
+                                            Address: 6-2, Hon-machi 1 chome, Shibuya-ku, Tokyo 151-8543, Japan
+                                            E-mail :  dataprotection@casio.co.jp
+
+
+                                        </p>
+                                </div>
+                            </div>
+
+                            <!----- THE CHECK BOX   ----->
+                            <div class="formGroup formGroup-checkbox">
+                                <input
+                                type="checkbox"
+                                required
+                                name=""
+                                id="check">
+                                <label for="check" class="checkbox-label">I agree to the terms listed in the CASIO ID Service Terms and acknowledge the CASIO ID Privacy Notice.*</label>
+                                <div class="error">
+                                </div>
+                            </div>
+
+
+                            <button type="submit" class="casio-id-btn  register-btn">SUBMIT</button>
+                        </form>
+                    </main>
+                    <footer>
+                        <div class="casio-id-footer">
+                            <div class="casio-id-footer-links">
+                                <div class="casio-id-footer-utility">
+                                    <ul>
+                                        <li>
+                                            <a href="#" target="_blank" rel="noopener ">Privacy Notice</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank" rel="noopener ">Cookie policy</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank" rel="noopener ">What is the CASIO ID</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank" rel="noopener ">FAQ</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="casio-id-footer-copyright">
+                                    <a href="#" target="_blank" rel="noopener">© 2022 CASIO COMPUTER CO., LTD.</a>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+    </div>
+    <script src="../scripts/registerEmail.js" ></script>
+</body>
+</html>

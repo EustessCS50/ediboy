@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17.64" height="18" viewBox="0 0 17.64 18">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="交差_2" data-name="交差 2" d="M539.917,606.82v-2.259a4.133,4.133,0,0,0,1.8-2.715H536.87v-3.481h8.476a10.34,10.34,0,0,1,.164,1.84,8.778,8.778,0,0,1-2.684,6.615Z" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <path id="交差_4" data-name="交差 4" d="M528.827,604.042V601.71h3.007a5.429,5.429,0,0,0,8.083,2.85l2.909,2.259A8.592,8.592,0,0,1,536.87,609,9,9,0,0,1,528.827,604.042Z" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <path id="交差_6" data-name="交差 6" d="M527.87,600a8.988,8.988,0,0,1,.958-4.042h3.007v2.332a5.3,5.3,0,0,0,0,3.42l-3.007,2.332A8.991,8.991,0,0,1,527.87,600Z" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-4">
+      <path id="交差_8" data-name="交差 8" d="M528.827,595.958A8.995,8.995,0,0,1,536.87,591a8.649,8.649,0,0,1,6.021,2.344l-2.581,2.581a4.863,4.863,0,0,0-3.44-1.346,5.361,5.361,0,0,0-5.036,3.711Z" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="グループ_14218" data-name="グループ 14218" transform="translate(-527.87 -591)">
+    <g id="グループ_14211" data-name="グループ 14211">
+      <g id="グループ_14210" data-name="グループ 14210" clip-path="url(#clip-path)">
+        <rect id="長方形_20255" data-name="長方形 20255" width="18.64" height="18.456" transform="translate(531.87 593.364)" fill="#008aeb"/>
+      </g>
+    </g>
+    <g id="グループ_14213" data-name="グループ 14213">
+      <g id="グループ_14212" data-name="グループ 14212" clip-path="url(#clip-path-2)">
+        <rect id="長方形_20257" data-name="長方形 20257" width="23.999" height="17.29" transform="translate(523.827 596.71)" fill="#00a55a"/>
+      </g>
+    </g>
+    <g id="グループ_14215" data-name="グループ 14215">
+      <g id="グループ_14214" data-name="グループ 14214" clip-path="url(#clip-path-3)">
+        <rect id="長方形_20259" data-name="長方形 20259" width="13.964" height="18.084" transform="translate(522.87 590.958)" fill="#ffb837"/>
+      </g>
+    </g>
+    <g id="グループ_14217" data-name="グループ 14217">
+      <g id="グループ_14216" data-name="グループ 14216" clip-path="url(#clip-path-4)">
+        <rect id="長方形_20261" data-name="長方形 20261" width="24.065" height="17.29" transform="translate(523.827 586)" fill="#ff413d"/>
+      </g>
+    </g>
+  </g>
+</svg>

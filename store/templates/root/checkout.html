@@ -1,0 +1,626 @@
+{% load static  %}
+{% load i18n %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="title" content="Checkout | CASIO">
+    <meta name="keywords" content="Magento, Varien, E-commerce">
+    <meta name="robots" content="INDEX,FOLLOW">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="{% static 'store/USimages/favicon_2.png' %}">
+    <link rel="stylesheet" href="{% static 'store/css/registerEmail.css' %}">
+    <link rel="stylesheet" href="{% static 'store/css/media.css' %}">
+
+<!--     <script defer src="../scripts/Data.js" ></script>-->
+    <title>Checkout _ CASIO</title>
+</head>
+<style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+    @media screen and (max-width: 766px){
+        .grid-container {
+        display: grid;
+        grid-template-columns: repeat(1,100%);
+        gap: 34px;
+        padding: 15px 12px;
+        max-width: 100%;
+      }
+      .formGroup {
+    position: relative;
+    width: 100%;
+    }
+    .error {
+  color: red;
+  font-size: 11px;
+  font-weight: normal;
+}
+    select, input {
+    font-size: 65%;
+    padding: 1rem 1rem;
+    }
+    .casio-id-btn.register-btn {
+    width: 100%;
+    margin-left: 0;
+    padding: 14px 2px;
+    }
+    }
+</style>
+<body>
+    <div class="container1">
+        <div class="shippinginformation-alert watchesContainer close">
+            <div class="header-closebtn">
+                <h3>Shipping Information</h3>
+                <div class="toggle-btn">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="info">
+                <p>{% blocktrans %}All orders, including Express and Next Day require 1-2 days of processing time to package and ship{% endblocktrans %}.</p>
+               <p>{% blocktrans %}We do not process or deliver orders on weekends{% endblocktrans %}. <br>
+                {% blocktrans %}Delivery to P.O Box shipping addresses is only possible with Economy. All other shipping methods will fail for P.O Box deliveries. The delivery time frames below include average processing times:{% endblocktrans %}
+                </p>
+                <ul>
+                    <li>{% blocktrans %}Economy - 6 to 10 Buisness Days{% endblocktrans %}</li>
+                    <li>{% blocktrans %}Premium Ground - 3 to 5 Buisness Days{% endblocktrans%}</li>
+                    <li>{% blocktrans %}Express Shipping - 2 to 3 Buisness Days{% endblocktrans%}</li>
+                    <li>{% blocktrans%}Next Day Shipping - 1 to 2 Buisness Days{%endblocktrans%}</li>
+                </ul>
+                <p>{% blocktrans%}For delivery to Hawaii and Alaska, please allow additional time for shipping.{% endblocktrans%} <br></p>
+                    <p><b>{% trans 'Alaska' %}</b> -{% blocktrans%} total transit time will be 18-20 days. If it is peak holiday season or due inclement weather, total transit time can be up to 25-30 days.{% endblocktrans%} <br></p>
+                    <p>
+                        <b>{% trans 'Hawaii' %}</b>- {% blocktrans %}total transit time will be 20 - 30 days or longer if it is peak holiday season or during inclement weather{% endblocktrans%}
+                    </p>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="navs">
+            <div class="logo">
+                <a href="us.html">
+                    <img src="{% static 'store/USimages/edifice-logo.jpg' %}" alt="edifice">
+                </a>
+            </div>
+            <div class="cart">
+                <div class="bag-number">
+                    <a href="{% url 'cart' %}">
+                    <img src="{% static 'store/USimages/bag.svg' %}" alt="">
+                    <span class="notification" ></span></a>
+                </div>
+            </div>
+        </div>
+        <main>
+            <div class="progress-bar">
+                    <div class="stoke">
+                      <!--Progress Bar-->
+                        <div class="progressbar">
+                            <div class="progress" id="progress">
+
+                            </div>
+                            <div class="container" data-title="{% blocktrans %}Purchase Method{% endblocktrans%}">
+                                <div class="progress-step progress-step-active "data-title="{% blocktrans %}Purchase Method{% endblocktrans%}">
+
+                                </div>
+                            </div>
+                            <div class="container" data-title="{% trans 'Shipping' %}">
+                                <div class="progress-step" >
+                                    <span></span>
+                                    <span></span>
+                                </div>
+
+                            </div>
+                            <div class="container" data-title="{% trans 'Payment' %}">
+                                <div class="progress-step">
+                                        <span></span>
+                                        <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="continue-mandatory">
+               <a href="us.html"> <p class="continue">&lt; {% blocktrans %}Continue Shopping{% endblocktrans %}</p></a>
+                <p class="mandatory">* {% blocktrans %}Mandatory Field{% endblocktrans %}</p>
+            </div>
+            <div class="grid-container">
+                    <div class="content">
+                        <div class="method-id-buttons">
+                            <div class="method">
+                                <p>1. {% blocktrans%}Purchase Method{% endblocktrans%}</p>
+                                <div class="round">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+
+                            <form action="" method="POST" class="input" id="registrationForm">
+                                <div class="formstep formstep-active">
+                                <div class="id">
+                                    <span>{% blocktrans%}Use CASIO ID Account{% endblocktrans%}</span>
+                                    <P class="text">{% blocktrans%}Log in or create a CASIO ID account to easily manage and track your order. An account is required for Tax Exempt orders{%endblocktrans%}.</P>
+                                </div>
+                                <div class="line">
+                                    <div class="buttons">
+                                        <button class="login"><a href="logIn.html">{%blocktrans%} LOG IN{%endblocktrans%}</a></button>
+                                        <button class="pre-register"><a href="pre-register.html"></a>{%blocktrans%}JOIN US{%endblocktrans%}</button></a>
+                                     </div>
+                                </div>
+
+                                <div class="guest-input-buttons">
+                                    <div class="guest">
+                                        <b>{%blocktrans%}Continue as guest{%endblocktrans%}</b>
+                                    </div>
+                                        <div class="formStepTest">
+                                            <div class="formGroup">
+                                                <label class="labelForGuesBtn" for="">{%blocktrans%}Email Address{%endblocktrans%}*</label>
+                                                <input
+                                                required
+                                                autofocus
+                                                pattern="^(.+)@(.+)$"
+                                                type="email"
+                                                name="guest_email"
+                                                >
+
+                                                <span class="check" style="visibility: hidden;">
+                                                    <i class="fa-solid fa-check"></i>
+                                                </span>
+                                                <span class="xmark" style="visibility: hidden;">
+                                                    <i class="fa-solid fa-xmark"></i>
+                                                </span>
+
+                                                <div class="error">
+                                                </div>
+                                            </div>
+                                            <button type="submit" class="casio-id-btn  register-btn next-btn" id="continueAsGuess">
+                                                {% blocktrans %}CONTINUE AS GUEST{% endblocktrans%}
+                                            </button>
+                                        </div>
+
+                                </div>
+
+                                </div>
+                                <div class="formstep">
+                                    <div class="shippinginfo-payment">
+                                        <div class="shippinginfo bg-border">
+                                            <p>2. {%blocktrans%}Shipping Information{%endblocktrans%}</p>
+                                        </div>
+                                        <div class="formGroup">
+                                            <label for="">{% blocktrans%}Phone number{%endblocktrans%}*</label>
+                                            <input
+                                            required
+                                            placeholder="{%blocktrans%}Phone Number{%endblocktrans%}"
+                                            type="text"
+                                            name="number"
+                                            >
+                                            <span class="check" style="visibility: hidden;">
+                                                <i class="fa-solid fa-check"></i>
+                                            </span>
+                                            <span class="xmark" style="visibility: hidden;">
+                                                <i class="fa-solid fa-xmark"></i>
+                                            </span>
+                                            <div class="error">
+                                            </div>
+                                        </div>
+                                        <div class="formGroup">
+                                            <label for="">{%blocktrans%}First Name{% endblocktrans %}*</label>
+                                            <input
+                                            required
+                                            placeholder="{%blocktrans%}First Name{% endblocktrans%}"
+                                            type="text"
+                                            name="first_name"
+                                            >
+                                            <span class="check" style="visibility: hidden;">
+                                                <i class="fa-solid fa-check"></i>
+                                            </span>
+                                            <span class="xmark" style="visibility: hidden;">
+                                                <i class="fa-solid fa-xmark"></i>
+                                        </span>
+                                            <div class="error">
+                                            </div>
+                                        </div>
+                                        <div class="formGroup">
+                                            <label for="">{%blocktrans%}Last Name{%endblocktrans%}*</label>
+                                            <input
+                                            required
+                                            placeholder="{%blocktrans%}Last Name{%endblocktrans%}"
+                                            type="text"
+                                            name="last_name"
+                                            >
+                                            <span class="check" style="visibility: hidden;">
+                                                <i class="fa-solid fa-check"></i>
+                                            </span>
+                                            <span class="xmark" style="visibility: hidden;">
+                                                <i class="fa-solid fa-xmark"></i>
+                                            </span>
+                                            <div class="error">
+                                            </div>
+                                        </div>
+                                        <div class="formGroup">
+                                            <label for="">{%blocktrans%}Address Line 1{% endblocktrans%}*</label>
+                                            <input
+                                            required
+                                            type="text"
+                                            placeholder=""
+                                            name="address1"
+                                            >
+                                            <span class="check" style="visibility: hidden;">
+                                                <i class="fa-solid fa-check"></i>
+                                            </span>
+                                            <span class="xmark" style="visibility: hidden;">
+                                                <i class="fa-solid fa-xmark"></i>
+                                            </span>
+                                            <div class="error">
+                                            </div>
+                                        </div>
+                                        <div class="formGroup">
+                                            <label for="">{%blocktrans%}Address Line 2{%endblocktrans%}*</label>
+                                            <input type="text" name="address2">
+                                            <span class="check" style="visibility: hidden;">
+                                                <i class="fa-solid fa-check"></i>
+                                            </span>
+                                            <span class="xmark" style="visibility: hidden;">
+                                                <i class="fa-solid fa-xmark"></i>
+                                            </span>
+                                            <div class="error">
+                                            </div>
+                                        </div>
+                                        <div class="formGroup">
+                                            <label for="">{%blocktrans%}City{%endblocktrans%}*</label>
+                                            <input
+                                            required
+                                            type="text"
+                                            name="city"
+                                            >
+                                            <span class="check" style="visibility: hidden;">
+                                                <i class="fa-solid fa-check"></i>
+                                            </span>
+                                            <span class="xmark" style="visibility: hidden;">
+                                                <i class="fa-solid fa-xmark"></i>
+                                            </span>
+                                            <div class="error">
+                                            </div>
+                                        </div>
+                                        <div class="formGroup">
+                                            <label for="Country">{%blocktrans%}State/Province{%endblocktrans%}*</label>
+                                            <input type="text" name="state" placeholder="Please Select a region, state or province">
+                                            <div class="error">
+                                            </div>
+                                        </div>
+                                        <div class="formGroup">
+                                            <label for="">{%blocktrans%}Company Name{%endblocktrans%}*</label>
+                                            <input
+                                            required
+                                            type="text"
+                                            name="company_name"
+                                            >
+                                            <span class="check" style="visibility: hidden;">
+                                                <i class="fa-solid fa-check"></i>
+                                            </span>
+                                            <span class="xmark" style="visibility: hidden;">
+                                                <i class="fa-solid fa-xmark"></i>
+                                            </span>
+                                            <div class="error">
+                                            </div>
+                                        </div>
+                                        <div class="formGroup">
+                                            <label for="">{%blocktrans%}Zip/Postal Code{%endblocktrans%}*</label>
+                                            <input
+                                            required
+                                            type="text"
+                                            name="postal_code"
+                                            >
+                                            <span class="check" style="visibility: hidden;">
+                                                <i class="fa-solid fa-check"></i>
+                                            </span>
+                                            <span class="xmark" style="visibility: hidden;">
+                                                <i class="fa-solid fa-xmark"></i>
+                                            </span>
+                                            <div class="error">
+                                            </div>
+                                        </div>
+                                        <div class="formGroup">
+                                            <label for="Country">{%blocktrans%}Country{% endblocktrans%}*</label>
+                                            <input type="text" name="country" placeholder="United States">
+                                                <div class="error"></div>
+                                        </div>
+                                         <!----- THE CHECK BOX   ----->
+                                         <div class="formGroup formGroup-checkbox">
+                                            <input
+                                            type="checkbox"
+                                            name="yes-to-mails"
+                                            id="check">
+                                            <label for="check" class="checkbox-label">{% blocktrans %}Yes, i'd like to receive emails about special offers and new products{%endblocktrans%}*</label>
+                                            <div class="error">
+                                            </div>
+                                        </div>
+                                        <!--THE RADIO BTNS-->
+                                        <div class=" shippingMethods">
+                                            <h3>{% blocktrans%}Shipping Methods{% endblocktrans%}</h3>
+                                            <div class="formgroup radioBtns">
+                                                <input type="radio" name="shippingMethod" id="" value="free">
+                                                <label for="free">{%blocktrans%}Free - Premium Ground (3-5 buisness days){% endblocktrans %}</label>
+                                                <input type="radio" name="shippingMethod" id="" value="Economy">
+                                                <label for="Economy">{% blocktrans%}$5.84 - Economy (6-10 buisness days){%endblocktrans%}</label>
+                                                <input type="radio" name="shippingMethod" id="" value="Express">
+                                                <label for="Express">{% blocktrans%}$18.43 - Express Shipping (2-3 buisness days){% endblocktrans%}</label>
+                                                <input type="radio" name="shippingMethod" id="" value="nextDAy">
+                                                <label for="nextDAy">{%blocktrans%}$27.95 - Next Day Shipping (1-2 buisness days){%endblocktrans%}</label>
+                                            </div>
+                                            <p class="importantshippinginfo">{%blocktrans%}Important Shipping Information{%endblocktrans%}</p>
+                                        </div>
+                                        <!--PROCEED TO PAYMENT BTN-->
+                                        <button type="submit" class="casio-id-btn  register-btn next-btn" id="proceedToPayment">
+                                            {%blocktrans%}PROCEED TO PAYMENT{%endblocktrans%}
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+
+                    </div>
+                    <div class="sidebar height">
+                        <div class="general-style sum-edit">
+                            <span class="summary">{%blocktrans%}Order Summary{%endblocktrans%}</span>
+                            <span class="edit">
+                                <a href="cart.html"><u> {% trans 'Edit' %}</u></a>
+                            </span>
+                        </div>
+                        {% for item in items %}
+                        <div class="image-code-price">
+                            <div class="image">
+                                <img src="{{ item.product.imageURL }}" alt="watch-id" width="60" >
+                            </div>
+                            <div class="code-quantiy">
+                                <div class="code">{{ item.product.model }}</div>
+                                <div class="quantity">{% trans 'Quantity' %}: {{ item.quantity }}</div>
+                            </div>
+                            <div class="price">${{ item.product.price|floatformat:2 }}</div>
+                        </div>
+                        {% endfor %}
+                        <div class="general-style  amount">{%blocktrans%}Order Amount{% endblocktrans %}</div>
+                        <div class="total-shipping-tax">
+                            <div class="total">
+                                <span>Cart Subtotal</span>
+                                <span id="sub-total-price">${{ order.total_amount|floatformat:2 }}</span>
+                            </div>
+                            <div class="total">
+                                <span>{% trans 'Shipping' %}</span>
+                                <span id="shipping">$0.00</span>
+                            </div>
+                            <div class="total">
+                                <span>Tax</span>
+                                <span id="tax">$0.00</span>
+                            </div>
+                        </div>
+                        <div class="general-style" id="estimatedTotal">
+                            <span id="est-total">{% blocktrans%}Estimated Total{% endblocktrans%}</span>
+                            <span class="estimated-total" >$ 700.00</span>
+                        </div>
+                    </div>
+            </div>
+            <div class="shippinginfo-payment">
+                <div class="shippinginfo bg-border close">
+                    <div class="shippingInfo-check">
+                        <p>2. {%blocktrans%}Shipping Information{% endblocktrans%}</p>
+                        <div class="round progress-step-check">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+<!--                    <div class="shipping-info-details">-->
+<!--                        <p id="customer-name">JAY BOY</p>-->
+<!--                        <p id="address">BITINGI MRKT</p>-->
+<!--                        <p id="state">CARLIFORNIA</p>-->
+<!--                    </div>-->
+                    <div class="shipping-sucess">
+                        <h3>{% blocktrans %}Shipping Method{% endblocktrans%}</h3>
+                        <p id="shipping-method">{% blocktrans %}Free - Economy (6-10 business days){% endblocktrans %}</p>
+                        <p class="importantshippinginfo">{% blocktrans %}Important Shipping Information{% endblocktrans %}</p>
+                    </div>
+                </div>
+                <div class="payment bg-border method">
+                    <p class="serialnumber">3. {% blocktrans%}Payment{% endblocktrans %}</p>
+                    <div class="formstep">
+                        <div class="promotioncode-container">
+                            <div class="promotioncode">
+                                <div class="plus-sign">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <p>{% blocktrans %}Promotion Code{% endblocktrans %}</p>
+                            </div>
+                        </div>
+
+                        <form action="" method="POST">
+                            <h4 class="heading-4"> <b>{% blocktrans %} Payment Method{% endblocktrans %}</b></h4>
+                            <div class="inputgroup">
+                                <input type="checkbox" name="" id="">
+                                <label for=""> <b> {% blocktrans %}Billing Address is same as Shipping Address{% endblocktrans %}.</b></label>
+                            </div>
+                            <div class="inputgroup flex-dir">
+                                <input type="radio" name="paywith" id="paywith" value="creditCard">
+                                <label for="">{% blocktrans %}Pay with a Credit Card VISA, Mastercard's, Discover, American express{%endblocktrans%} <img src="{% static 'store/USimages/credit-cards.webp' %}" alt="" width="125"></label>
+                            </div>
+                            <!--For credit card box-->
+                            <div class="inputgroup">
+                                <input type="datetime" name="" id="">
+                            </div>
+<!--                            <div class="inputgroup">-->
+<!--                                <input type="radio" name="paywith" id="">-->
+<!--                                <label for="">Pay with <img src="" alt=""></label>-->
+<!--                            </div>-->
+                            <p class="termsparagraph">
+                                {%blocktrans%}By submitting my order, I agree to pay the total price as stated, to the{% endblocktrans %} <a target="_blank" href="https://www.casio.com/us/terms/">{% blocktrans %}Terms of Sale{%endblocktrans%}</a> {%blocktrans%}and the {%endblocktrans%}<a target="_blank" href="https://www.casio.com/us/privacy">{%blocktrans%}Privacy Policy{%endblocktrans%}</a> {%blocktrans%}of Casio America, Inc.
+                                Could not connect to the reCAPTCHA service. Please check your internet connection and reload to get a reCAPTCHA challenge{%endblocktrans%}.
+                            </p>
+                            <button type="submit" class="casio-id-btn  register-btn" id="completeOrder">
+                                {% blocktrans %}COMPLETE ORDER{% endblocktrans %}
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                </div>
+
+            </div>
+        </main>
+    </header>
+    <footer>
+        <div class="privacy-terms-cookies">
+            <span>{% blocktrans %}Privacy Policy{% endblocktrans %}</span>
+            <span>{% blocktrans %}Terms of Sale{% endblocktrans %}</span>
+            <span>{% blocktrans %}Cookie Policy{% endblocktrans %}</span>
+        </div>
+        <div class="copyrights">
+            <p>© 2022 CASIO AMERICA, INC.</p>
+        </div>
+    </footer>
+    <script src="{% static 'store/scripts/registerEmail.js' %}" ></script>
+    <script src="{% static 'store/scripts/checkout.js' %}" ></script>
+    <script type="text/javascript">
+        var user = '{{ request.user }}'
+        var total = '{{order.total_amount|floatformat:2}}'
+
+        console.log(user)
+
+        function getToken(name) {
+            var cookieValue = null;
+            if (document.cookie && document.cookie !== ''){
+                var cookies = document.cookie.split(';');
+                for (var i=0; i<cookies.length; i++){
+                    var cookie = cookies[i].trim();
+                    // Does this cookie string begin with the name we want ?
+                    if (cookie.substring(0, name.length + 1) === (name + '=')){
+                        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                        break;
+                    }
+                }
+            }
+            return cookieValue;
+        }
+        var csrftoken = getToken('csrftoken');
+
+        function getCookie(name){
+            // split cookie strings and get individual name=values pairs in an array
+            var cookieArr = document.cookie.split(";");
+
+            // Loop through the array elements
+            for (var i=0; i < cookieArr.length; i++){
+                var cookiePair = cookieArr[i].split("=");
+
+                // Removing whitespaces at the beginning of the cookie name
+                // and compare it with the given string
+                if (name == cookiePair[0].trim()){
+                    // Decode the cookie value and return
+                    return decodeURIComponent(cookiePair[1]);
+                }
+
+            }
+            // Return null if not found
+            return null;
+        }
+        var cart = JSON.parse(getCookie('cart'))
+
+        if (cart == undefined){
+            cart = {}
+            console.log('Cart Created!', cart)
+            document.cookie = 'cart=' + JSON.stringify(cart) + ";domain=;path=/"
+        }
+        console.log('cart:', cart)
+
+        var total = '{{order.total_amount|floatformat:2}}'
+
+        if (user != 'AnonymousUser'){
+            document.getElementById('method-content').innerHTML = ""
+        }
+        if (shipping == 'False' && user != 'AnonymousUser'){
+            //Hide the entire form if user is logged in and shipping is false
+            document.getElementById('sh-address').classList.add("hidden");
+            //Show payment if logged in user wants to buy an item that does not require shipping
+            document.getElementById('pmt-method').classList.remove("hidden");
+        }
+
+        var form = document.getElementById('registrationForm');
+
+        var emailGuest = null;
+        form.addEventListener('submit', function(e){
+            e.preventDefault()
+            emailGuest = form.guest_email.value;
+            console.log('Form Submitted...', emailGuest)
+
+        })
+
+        document.getElementById('proceedToPayment').addEventListener('click', function(e){
+            console.log('Form Submitted again...', emailGuest)
+            submitFormData()
+        })
+
+        function submitFormData(){
+            console.log('Form button clicked')
+
+            var userFormData = {
+                'email': null,
+            }
+
+            var shippingInfo = {
+                'first_name': null,
+                'last_name': null,
+                'number': null,
+                'address1': null,
+                'address2': null,
+                'city': null,
+                'state': null,
+                'zipcode': null,
+                'country': null,
+                'company': null
+            }
+
+
+            shippingInfo.first_name = form.first_name.value
+            shippingInfo.last_name = form.last_name.value
+            shippingInfo.number = form.number.value
+            shippingInfo.state = form.state.value
+            shippingInfo.zipcode = form.postal_code.value
+            shippingInfo.address1 = form.address1.value
+            shippingInfo.address2 = form.address2.value
+            shippingInfo.city = form.city.value
+            shippingInfo.country = form.country.value
+            shippingInfo.company = form.company_name.value
+
+
+            if(user == 'AnonymousUser'){
+            userFormData.email = emailGuest
+            console.log(userFormData);
+            }
+
+            var url = '/process'
+
+            fetch(url, {
+                method: 'POST',
+                headers:{
+                    'Content-Type':'application/json',
+                    'X-CSRFToken': csrftoken,
+                },
+                body:JSON.stringify({
+                    'email':emailGuest,
+                    'form': userFormData,
+                    'shipping': shippingInfo,
+                    'total': total
+                    })
+            })
+            .then((response) =>response.json())
+            .then((data) =>{
+                console.log('data:', data)
+                cart = {}
+                document.cookie = 'cart=' + JSON.stringify(cart) + ";domain=;path=/"
+                alert('Transaction Completed');
+                window.location.href = "{% url 'main' %}"
+            })
+        }
+
+    </script>
+</body>
+</html>

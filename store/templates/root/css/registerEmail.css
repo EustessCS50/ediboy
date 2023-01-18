@@ -1,0 +1,161 @@
+/*
+    ALL UNIVERSAL DECLERATIONS HAVE BEEN DONE IN THE OTHER STYLE SHEET  (pre-register.css)
+*/
+
+select,
+input{
+    padding: 0.8rem 8rem;
+    width: 100%;
+    border: 1px solid black;
+    background-color: #fff;
+    text-align: start;
+    box-sizing: border-box;
+}
+.errorStyle{
+    border-bottom: 2px solid red;
+}
+.noError{
+    border-bottom: 2px solid green;
+}
+.error {
+    color: red;
+    font-size: smaller;
+  }
+  #registrationForm {
+    margin-left: 5%;
+  }
+#registrationForm > *{
+    margin-top: 4%;
+}
+label {
+    background-color: white;
+    font-size: 11px;
+    position: absolute;
+    top: -18%;
+    left: 3%;
+    padding: 0.1rem;
+  }
+  .error {
+    color: red;
+    font-size: 11px;
+
+  }
+  .formGroup p {
+    font-size: 11px;
+    display: ruby;
+  }
+  .dateofbirth p {
+    display: block;
+    padding: 1rem 0;
+  }
+  .formGroup.adjust-width {
+    display: inline-block;
+    width: min-content;
+  }
+  .formGroup {
+    position: relative;
+    width: 45%;
+  }
+  .fa-solid {
+   color:green;
+    position: absolute;
+    right: 1%;
+    top: 41%;
+  }
+  .fa-solid{
+    color:red;
+    position: absolute;
+    right: 1%;
+    top: 28%;
+  }
+  .show{
+    visibility: visible;
+  }
+  .casio-id-btn.register-btn {
+    font-weight: bold;
+    max-width: 285px;
+  }
+  .terms-conditions {
+    width: 70%;
+    height: 150px;
+    overflow-y: scroll;
+    border: 1px solid #0000004d;
+    padding: 23px;
+    text-align: start;
+  }
+  .checkbox-label {
+    background-color: white;
+    font-size: 11px;
+    position: relative;
+    top: -0%;
+    left: 0%;
+  }
+  .formGroup.formGroup-checkbox {
+    display: flex;
+  }
+  input[type="checkbox"]{
+    border: none;
+    width: 70px;
+    padding: 0;
+    cursor: pointer;
+    accent-color: black;
+  }
+
+  @media screen and (max-width: 766px){
+    .formGroup {
+      position: relative;
+      width: 96%;
+    }
+    .casio-id-btn.register-btn {
+      width: 90%;
+      font-weight: bold;
+      max-width: unset;
+    }
+    input[type="checkbox"] {
+      border: none;
+      width: 25px;
+    }
+    .terms-conditions {
+      width: 84%;
+      }
+      .formGroup p {
+        font-size: 10px;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .formGroup.adjust-width {
+        display: inline-block;
+        width: 95%;
+        margin-top: 18px;
+
+      }
+  }
+    @media screen and (min-width: 1024px){
+        select,input{
+        width:unset;
+        }
+    }
+  @media screen and (max-width: 1023px){
+    .formGroup {
+      position: relative;
+      width: 96%;
+    }
+    input[type="checkbox"] {
+      border: none;
+      width: 25px;
+    }
+    .terms-conditions {
+      width: 84%;
+      }
+      .formGroup p {
+        font-size: 10px;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .formGroup.adjust-width {
+        display: inline-block;
+        width: 95%;
+        margin-top: 18px;
+
+      }
+  }

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="imagetoolbar" content="no">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7, Edge">
+    <meta name="application-name" content="EDIFICE - CASIO">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="EDIFICE, edifice,watch,Watch,CASIO,casio">
+    <meta name="description" content="The EDIFICE is CASIO's peak achievement in a metal analog watch">
+    <meta property="og:title" content="International Links - EDIFCE - CASIO">
+    <meta property="og:url" content="http:www.edifice_watches.com">
+    <link rel="icon" type="image/x-icon" href="{% static 'store/images/favicon.jpg' %}">
+    <link rel="stylesheet" href="{% static 'store/css/index_edifice.css' %}">
+    <meta name="robots" content="no">
+    <title>International Links - EDIFICE_CASIO</title>
+</head>
+<body id="home">
+    <div id="pre-loader" >
+        <div class="pre-loader-image" >
+            <span></span>
+        </div>
+    </div>
+    <div id="box-container">
+        <!--    Header  -->
+        <div id="header" class="header">
+            <div class="logo">EDIFCE</div>
+        </div>
+        <div id="main">
+            <h1 class="off">Pick up products</h1>
+            <img src="{% static 'store/images/bg_sp.jpg' %}" srcset="{% static 'store/images/second.jpg' %} 800w,
+            {% static 'store/images/third.jpg' %} 2600w"
+            class="main_img" alt="" >
+        </div>
+        <div id="contents">
+            <div id="content">
+                <header id="content_header">
+                    <h2>Choose your country or region</h2>
+                </header>
+                <div class="col4">
+                    <div class="col4_1">
+                        <div class="col">
+                            <h3>NORTH AMERICA</h3>
+                            <ul>
+                                <li>
+                                    <a href="{% url 'us' %}"><span class="icon"></span> U.S.A</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'canadaE' %}"> <span class="icon"></span> Canada (English)</a>
+                                </li>
+                                <li><a href="{% url 'canadaF' %}"> <span class="icon"></span>Canada (French)</a></li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <h3>LATIN AMERICA</h3>
+                            <ul>
+                                <li>
+                                    <a href="{% url 'mexico' %}"><span class="icon"></span>Mexico</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'brazil' %}"> <span class="icon"></span> Brazil</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'latinA' %}"> <span class="icon"></span> Latin America</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <h3>MIDDLE EAST & AFRICA</h3>
+                            <ul>
+                                <li>
+                                    <a href="{% url 'MEA' %}"> <span class="icon"></span>Middle East (Arabic)</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'MEE' %}"> <span class="icon"></span> Middle East (English) </a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'MEP' %}"> <span class="icon"></span> Middle East (Persian) </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col4_2">
+                        <div class="col">
+                            <h3>EUROPE <span>(Select your language)</span></h3>
+                            <UL>
+                                <li>
+                                    <a href="{% url 'englishUK' %}"> <span class="icon"></span> English (UK&Ireland)</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'englishO' %}"> <span class="icon"></span> English (Other countries)</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'french' %}"> <span class="icon"></span> French / Français</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'german' %}"> <span class="icon"></span> German / Deutsch</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'italian' %}"> <span class="icon"></span> Italian / Italiano</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'spanish' %}"> <span class="icon"></span> Spanish / Español (Spain)</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'netherlands' %}"> <span class="icon"></span> Netherlands / Nederlands</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'russian' %}"> <span class="icon"></span> Russian / Pусский</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'norwegian' %}"> <span class="icon"></span> Norwegian / Norsk</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'czech' %}"> <span class="icon"></span> Czech / Čeština</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'portuguese' %}"> <span class="icon"></span> Portuguese / Português</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'swedish' %}"> <span class="icon"></span> Swedish / Svenska</a>
+                                </li>
+                            </UL>
+                        </div>
+                    </div>
+                    <div class="col4_3">
+                        <div class="col">
+                            <h3>ASIA</h3>
+                            <ul>
+                                <li>
+                                    <a href="{% url 'asiaE' %}"> <span class="icon"></span> Asia (English)</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'japan' %}"> <span class="icon"></span> Japan</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'hongKong' %}"> <span class="icon"></span> Hong Kong</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'china' %}"> <span class="icon"></span> China</a>
+                                </li>
+                                <li>
+                                    <a href="taiwan"> <span class="icon"></span> Taiwan</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'southKorea' %}"> <span class="icon"></span> South korea</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'thailand' %}"> <span class="icon"></span> Thailand</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'indonesia' %}"> <span class="icon"></span> Indonesia</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'singapore' %}"> <span class="icon"></span> Singapore</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col4_4" id="col4">
+                        <div class="col">
+                            <h3>OCEANIA</h3>
+                            <ul>
+                                <li>
+                                    <a href="{% url 'oceaniaE' %}"> <span class="icon"></span> Oceania (English)</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <h1 class="off_screen">Footer Navigation</h1>
+            <small> &copy; 2022 COMPUTER CO., LTD. </small>
+            <a href="#" target="_blank" class="casio">CASIO</a>
+        </div>
+    </div>
+    <script src="{% static 'store/scripts/index.js' %}"></script>
+</body>
+</html>

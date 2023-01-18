@@ -1,0 +1,1961 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-12-31 21:15+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n >= 2 && n "
+"<= 4 && n % 1 == 0) ? 1: (n % 1 != 0 ) ? 2 : 3;\n"
+
+#: .\edifice\settings.py:153
+msgid "English"
+msgstr ""
+
+#: .\edifice\settings.py:154
+msgid "French"
+msgstr ""
+
+#: .\edifice\settings.py:155
+msgid "Spanish"
+msgstr ""
+
+#: .\edifice\settings.py:156
+msgid "Italian"
+msgstr ""
+
+#: .\edifice\settings.py:157
+msgid "German"
+msgstr ""
+
+#: .\edifice\settings.py:158
+msgid "Japanese"
+msgstr ""
+
+#: .\edifice\settings.py:159
+msgid "Chinese"
+msgstr ""
+
+#: .\edifice\settings.py:160
+msgid "Korean"
+msgstr ""
+
+#: .\edifice\settings.py:161
+msgid "Swedish"
+msgstr ""
+
+#: .\edifice\settings.py:162
+msgid "Russian"
+msgstr ""
+
+#: .\edifice\settings.py:163
+msgid "Portuguese"
+msgstr ""
+
+#: .\edifice\settings.py:164
+msgid "Arabic"
+msgstr ""
+
+#: .\edifice\settings.py:165
+msgid "Czech"
+msgstr ""
+
+#: .\edifice\settings.py:166
+msgid "Thai"
+msgstr ""
+
+#: .\store\forms.py:9 .\store\forms.py:14
+msgid "username"
+msgstr ""
+
+#: .\store\forms.py:9
+msgid "email"
+msgstr ""
+
+#: .\store\forms.py:9 .\store\forms.py:14
+msgid "password1"
+msgstr ""
+
+#: .\store\forms.py:9
+msgid "password2"
+msgstr ""
+
+#: .\store\models.py:26
+msgid "date of birth"
+msgstr ""
+
+#: .\store\models.py:27
+msgid "country"
+msgstr ""
+
+#: .\store\models.py:36
+msgid "price"
+msgstr ""
+
+#: .\store\models.py:37
+msgid "description"
+msgstr ""
+
+#: .\store\models.py:38
+msgid "image"
+msgstr ""
+
+#: .\store\models.py:101
+msgid "address"
+msgstr ""
+
+#: .\store\models.py:102
+msgid "city"
+msgstr ""
+
+#: .\store\models.py:103
+msgid "state"
+msgstr ""
+
+#: .\store\models.py:104
+msgid "zipcode"
+msgstr ""
+
+#: .\store\templates\cart.html:202 .\store\templates\cart.html:222
+msgid "Shopping Cart"
+msgstr ""
+
+#: .\store\templates\cart.html:263 .\store\templates\cart.html:290
+msgid "Summary"
+msgstr ""
+
+#: .\store\templates\cart.html:266 .\store\templates\cart.html:293
+#: .\store\templates\checkout.html:129
+#: .\store\templates\root\casio\checkout.html:147
+#: .\store\templates\root\checkout.html:147
+msgid "Cart Subtotal"
+msgstr ""
+
+#: .\store\templates\cart.html:270 .\store\templates\cart.html:297
+#: .\store\templates\checkout.html:133
+#: .\store\templates\root\casio\checkout.html:151
+#: .\store\templates\root\checkout.html:151
+msgid "Shipping"
+msgstr ""
+
+#: .\store\templates\cart.html:274 .\store\templates\cart.html:301
+#: .\store\templates\checkout.html:137
+#: .\store\templates\root\casio\checkout.html:155
+#: .\store\templates\root\checkout.html:155
+msgid "Tax"
+msgstr ""
+
+#: .\store\templates\cart.html:278 .\store\templates\cart.html:305
+#: .\store\templates\checkout.html:142
+#: .\store\templates\root\casio\checkout.html:160
+#: .\store\templates\root\checkout.html:160
+msgid "Estimated Total"
+msgstr ""
+
+#: .\store\templates\cart.html:284 .\store\templates\cart.html:311
+#: .\store\templates\cart.html:316
+msgid "PROCEED TO CHECKOUT"
+msgstr ""
+
+#: .\store\templates\cart.html:323 .\store\templates\casio\MEA.html:197
+#: .\store\templates\casio\MEE.html:197 .\store\templates\casio\MEP.html:197
+#: .\store\templates\casio\asiaE.html:197
+#: .\store\templates\casio\brazil.html:197
+#: .\store\templates\casio\canadaE.html:197
+#: .\store\templates\casio\canadaF.html:197
+#: .\store\templates\casio\china.html:197
+#: .\store\templates\casio\czech.html:197
+#: .\store\templates\casio\englishO.html:197
+#: .\store\templates\casio\englishUK.html:197
+#: .\store\templates\casio\french.html:197
+#: .\store\templates\casio\german.html:197
+#: .\store\templates\casio\hongKong.html:197
+#: .\store\templates\casio\indonesia.html:197
+#: .\store\templates\casio\italian.html:197
+#: .\store\templates\casio\japan.html:197
+#: .\store\templates\casio\latinA.html:197
+#: .\store\templates\casio\mexico.html:197
+#: .\store\templates\casio\netherlands.html:197
+#: .\store\templates\casio\norwegian.html:197
+#: .\store\templates\casio\portuguese.html:197
+#: .\store\templates\casio\russian.html:197
+#: .\store\templates\casio\singapore.html:197
+#: .\store\templates\casio\southKorea.html:197
+#: .\store\templates\casio\spanish.html:197
+#: .\store\templates\casio\swedish.html:197
+#: .\store\templates\casio\taiwan.html:197
+#: .\store\templates\casio\thailand.html:378
+#: .\store\templates\casio\thailand.html:539
+#: .\store\templates\casio\us.html:197 .\store\templates\checkout.html:159
+#: .\store\templates\root\checkout.html:338
+#: .\store\templates\root\firstproduct.html:483
+msgid "Privacy Policy"
+msgstr ""
+
+#: .\store\templates\cart.html:324 .\store\templates\checkout.html:160
+#: .\store\templates\root\casio\checkout.html:339
+#: .\store\templates\root\checkout.html:339
+msgid "Terms of Sale"
+msgstr ""
+
+#: .\store\templates\cart.html:325 .\store\templates\checkout.html:161
+#: .\store\templates\root\casio\checkout.html:340
+#: .\store\templates\root\checkout.html:340
+msgid "Cookie Policy"
+msgstr ""
+
+#: .\store\templates\cart.html:455 .\store\templates\casio\MEA.html:331
+#: .\store\templates\casio\MEE.html:331 .\store\templates\casio\MEP.html:331
+#: .\store\templates\casio\asiaE.html:331
+#: .\store\templates\casio\brazil.html:331
+#: .\store\templates\casio\canadaE.html:331
+#: .\store\templates\casio\canadaF.html:331
+#: .\store\templates\casio\china.html:331
+#: .\store\templates\casio\czech.html:331
+#: .\store\templates\casio\englishO.html:331
+#: .\store\templates\casio\englishUK.html:331
+#: .\store\templates\casio\french.html:331
+#: .\store\templates\casio\german.html:331
+#: .\store\templates\casio\hongKong.html:331
+#: .\store\templates\casio\indonesia.html:331
+#: .\store\templates\casio\italian.html:331
+#: .\store\templates\casio\japan.html:331
+#: .\store\templates\casio\latinA.html:331
+#: .\store\templates\casio\mexico.html:331
+#: .\store\templates\casio\netherlands.html:331
+#: .\store\templates\casio\norwegian.html:331
+#: .\store\templates\casio\portuguese.html:331
+#: .\store\templates\casio\russian.html:331
+#: .\store\templates\casio\singapore.html:331
+#: .\store\templates\casio\southKorea.html:331
+#: .\store\templates\casio\spanish.html:331
+#: .\store\templates\casio\swedish.html:331
+#: .\store\templates\casio\taiwan.html:331
+#: .\store\templates\casio\thailand.html:512
+#: .\store\templates\casio\thailand.html:673
+#: .\store\templates\casio\us.html:331
+#: .\store\templates\root\firstproduct.html:616
+msgid "Maximum order per Watch is 3 !"
+msgstr ""
+
+#: .\store\templates\casio\MEA.html:23 .\store\templates\casio\MEE.html:23
+#: .\store\templates\casio\MEP.html:23 .\store\templates\casio\asiaE.html:23
+#: .\store\templates\casio\brazil.html:23
+#: .\store\templates\casio\canadaE.html:23
+#: .\store\templates\casio\canadaF.html:23
+#: .\store\templates\casio\china.html:23 .\store\templates\casio\czech.html:23
+#: .\store\templates\casio\englishO.html:23
+#: .\store\templates\casio\englishUK.html:23
+#: .\store\templates\casio\french.html:23
+#: .\store\templates\casio\german.html:23
+#: .\store\templates\casio\hongKong.html:23
+#: .\store\templates\casio\indonesia.html:23
+#: .\store\templates\casio\italian.html:23
+#: .\store\templates\casio\japan.html:23 .\store\templates\casio\latinA.html:23
+#: .\store\templates\casio\mexico.html:23
+#: .\store\templates\casio\netherlands.html:23
+#: .\store\templates\casio\norwegian.html:23
+#: .\store\templates\casio\portuguese.html:23
+#: .\store\templates\casio\russian.html:23
+#: .\store\templates\casio\singapore.html:23
+#: .\store\templates\casio\southKorea.html:23
+#: .\store\templates\casio\spanish.html:23
+#: .\store\templates\casio\swedish.html:23
+#: .\store\templates\casio\taiwan.html:23
+#: .\store\templates\casio\thailand.html:23
+#: .\store\templates\casio\thailand.html:204 .\store\templates\casio\us.html:23
+msgid " Available online, newest "
+msgstr ""
+
+#: .\store\templates\casio\MEA.html:37 .\store\templates\casio\MEE.html:37
+#: .\store\templates\casio\MEP.html:37 .\store\templates\casio\asiaE.html:37
+#: .\store\templates\casio\brazil.html:37
+#: .\store\templates\casio\canadaE.html:37
+#: .\store\templates\casio\canadaF.html:37
+#: .\store\templates\casio\china.html:37 .\store\templates\casio\czech.html:37
+#: .\store\templates\casio\englishO.html:37
+#: .\store\templates\casio\englishUK.html:37
+#: .\store\templates\casio\french.html:37
+#: .\store\templates\casio\german.html:37
+#: .\store\templates\casio\hongKong.html:37
+#: .\store\templates\casio\indonesia.html:37
+#: .\store\templates\casio\italian.html:37
+#: .\store\templates\casio\japan.html:37 .\store\templates\casio\latinA.html:37
+#: .\store\templates\casio\mexico.html:37
+#: .\store\templates\casio\netherlands.html:37
+#: .\store\templates\casio\norwegian.html:37
+#: .\store\templates\casio\portuguese.html:37
+#: .\store\templates\casio\russian.html:37
+#: .\store\templates\casio\singapore.html:37
+#: .\store\templates\casio\southKorea.html:37
+#: .\store\templates\casio\spanish.html:37
+#: .\store\templates\casio\swedish.html:37
+#: .\store\templates\casio\taiwan.html:37
+#: .\store\templates\casio\thailand.html:37
+#: .\store\templates\casio\thailand.html:218 .\store\templates\casio\us.html:37
+msgid "WATCHES"
+msgstr ""
+
+#: .\store\templates\casio\MEA.html:38 .\store\templates\casio\MEE.html:38
+#: .\store\templates\casio\MEP.html:38 .\store\templates\casio\asiaE.html:38
+#: .\store\templates\casio\brazil.html:38
+#: .\store\templates\casio\canadaE.html:38
+#: .\store\templates\casio\canadaF.html:38
+#: .\store\templates\casio\china.html:38 .\store\templates\casio\czech.html:38
+#: .\store\templates\casio\englishO.html:38
+#: .\store\templates\casio\englishUK.html:38
+#: .\store\templates\casio\french.html:38
+#: .\store\templates\casio\german.html:38
+#: .\store\templates\casio\hongKong.html:38
+#: .\store\templates\casio\indonesia.html:38
+#: .\store\templates\casio\italian.html:38
+#: .\store\templates\casio\japan.html:38 .\store\templates\casio\latinA.html:38
+#: .\store\templates\casio\mexico.html:38
+#: .\store\templates\casio\netherlands.html:38
+#: .\store\templates\casio\norwegian.html:38
+#: .\store\templates\casio\portuguese.html:38
+#: .\store\templates\casio\russian.html:38
+#: .\store\templates\casio\singapore.html:38
+#: .\store\templates\casio\southKorea.html:38
+#: .\store\templates\casio\spanish.html:38
+#: .\store\templates\casio\swedish.html:38
+#: .\store\templates\casio\taiwan.html:38
+#: .\store\templates\casio\thailand.html:38
+#: .\store\templates\casio\thailand.html:219 .\store\templates\casio\us.html:38
+msgid "ELECTRONIC MUSICAL INSTRUMENTS"
+msgstr ""
+
+#: .\store\templates\casio\MEA.html:39 .\store\templates\casio\MEE.html:39
+#: .\store\templates\casio\MEP.html:39 .\store\templates\casio\asiaE.html:39
+#: .\store\templates\casio\brazil.html:39
+#: .\store\templates\casio\canadaE.html:39
+#: .\store\templates\casio\canadaF.html:39
+#: .\store\templates\casio\china.html:39 .\store\templates\casio\czech.html:39
+#: .\store\templates\casio\englishO.html:39
+#: .\store\templates\casio\englishUK.html:39
+#: .\store\templates\casio\french.html:39
+#: .\store\templates\casio\german.html:39
+#: .\store\templates\casio\hongKong.html:39
+#: .\store\templates\casio\indonesia.html:39
+#: .\store\templates\casio\italian.html:39
+#: .\store\templates\casio\japan.html:39 .\store\templates\casio\latinA.html:39
+#: .\store\templates\casio\mexico.html:39
+#: .\store\templates\casio\netherlands.html:39
+#: .\store\templates\casio\norwegian.html:39
+#: .\store\templates\casio\portuguese.html:39
+#: .\store\templates\casio\russian.html:39
+#: .\store\templates\casio\singapore.html:39
+#: .\store\templates\casio\southKorea.html:39
+#: .\store\templates\casio\spanish.html:39
+#: .\store\templates\casio\swedish.html:39
+#: .\store\templates\casio\taiwan.html:39
+#: .\store\templates\casio\thailand.html:39
+#: .\store\templates\casio\thailand.html:220 .\store\templates\casio\us.html:39
+msgid "CALCULATORS"
+msgstr ""
+
+#: .\store\templates\casio\MEA.html:40 .\store\templates\casio\MEE.html:40
+#: .\store\templates\casio\MEP.html:40 .\store\templates\casio\asiaE.html:40
+#: .\store\templates\casio\brazil.html:40
+#: .\store\templates\casio\canadaE.html:40
+#: .\store\templates\casio\canadaF.html:40
+#: .\store\templates\casio\china.html:40 .\store\templates\casio\czech.html:40
+#: .\store\templates\casio\englishO.html:40
+#: .\store\templates\casio\englishUK.html:40
+#: .\store\templates\casio\french.html:40
+#: .\store\templates\casio\german.html:40
+#: .\store\templates\casio\hongKong.html:40
+#: .\store\templates\casio\indonesia.html:40
+#: .\store\templates\casio\italian.html:40
+#: .\store\templates\casio\japan.html:40 .\store\templates\casio\latinA.html:40
+#: .\store\templates\casio\mexico.html:40
+#: .\store\templates\casio\netherlands.html:40
+#: .\store\templates\casio\norwegian.html:40
+#: .\store\templates\casio\portuguese.html:40
+#: .\store\templates\casio\russian.html:40
+#: .\store\templates\casio\singapore.html:40
+#: .\store\templates\casio\southKorea.html:40
+#: .\store\templates\casio\spanish.html:40
+#: .\store\templates\casio\swedish.html:40
+#: .\store\templates\casio\taiwan.html:40
+#: .\store\templates\casio\thailand.html:40
+#: .\store\templates\casio\thailand.html:221 .\store\templates\casio\us.html:40
+msgid "MEDICAL DEVICES"
+msgstr ""
+
+#: .\store\templates\casio\MEA.html:42 .\store\templates\casio\MEE.html:42
+#: .\store\templates\casio\MEP.html:42 .\store\templates\casio\asiaE.html:42
+#: .\store\templates\casio\brazil.html:42
+#: .\store\templates\casio\canadaE.html:42
+#: .\store\templates\casio\canadaF.html:42
+#: .\store\templates\casio\china.html:42 .\store\templates\casio\czech.html:42
+#: .\store\templates\casio\englishO.html:42
+#: .\store\templates\casio\englishUK.html:42
+#: .\store\templates\casio\french.html:42
+#: .\store\templates\casio\german.html:42
+#: .\store\templates\casio\hongKong.html:42
+#: .\store\templates\casio\indonesia.html:42
+#: .\store\templates\casio\italian.html:42
+#: .\store\templates\casio\japan.html:42 .\store\templates\casio\latinA.html:42
+#: .\store\templates\casio\mexico.html:42
+#: .\store\templates\casio\netherlands.html:42
+#: .\store\templates\casio\norwegian.html:42
+#: .\store\templates\casio\portuguese.html:42
+#: .\store\templates\casio\russian.html:42
+#: .\store\templates\casio\singapore.html:42
+#: .\store\templates\casio\southKorea.html:42
+#: .\store\templates\casio\spanish.html:42
+#: .\store\templates\casio\swedish.html:42
+#: .\store\templates\casio\taiwan.html:42
+#: .\store\templates\casio\thailand.html:42
+#: .\store\templates\casio\thailand.html:223 .\store\templates\casio\us.html:42
+msgid "Search..."
+msgstr ""
+
+#: .\store\templates\casio\MEA.html:56 .\store\templates\casio\MEE.html:56
+#: .\store\templates\casio\MEP.html:56 .\store\templates\casio\asiaE.html:56
+#: .\store\templates\casio\brazil.html:56
+#: .\store\templates\casio\canadaE.html:56
+#: .\store\templates\casio\canadaF.html:56
+#: .\store\templates\casio\china.html:56 .\store\templates\casio\czech.html:56
+#: .\store\templates\casio\englishO.html:56
+#: .\store\templates\casio\englishUK.html:56
+#: .\store\templates\casio\french.html:56
+#: .\store\templates\casio\german.html:56
+#: .\store\templates\casio\hongKong.html:56
+#: .\store\templates\casio\indonesia.html:56
+#: .\store\templates\casio\italian.html:56
+#: .\store\templates\casio\japan.html:56 .\store\templates\casio\latinA.html:56
+#: .\store\templates\casio\mexico.html:56
+#: .\store\templates\casio\netherlands.html:56
+#: .\store\templates\casio\norwegian.html:56
+#: .\store\templates\casio\portuguese.html:56
+#: .\store\templates\casio\russian.html:56
+#: .\store\templates\casio\singapore.html:56
+#: .\store\templates\casio\southKorea.html:56
+#: .\store\templates\casio\spanish.html:56
+#: .\store\templates\casio\swedish.html:56
+#: .\store\templates\casio\taiwan.html:56
+#: .\store\templates\casio\thailand.html:56
+#: .\store\templates\casio\thailand.html:237 .\store\templates\casio\us.html:56
+msgid "Free Shipping on Watches, Calculators and Musical Instruments over $99"
+msgstr ""
+
+#: .\store\templates\casio\MEA.html:70 .\store\templates\casio\MEA.html:85
+#: .\store\templates\casio\MEE.html:70 .\store\templates\casio\MEE.html:85
+#: .\store\templates\casio\MEP.html:70 .\store\templates\casio\MEP.html:85
+#: .\store\templates\casio\asiaE.html:70 .\store\templates\casio\asiaE.html:85
+#: .\store\templates\casio\brazil.html:70
+#: .\store\templates\casio\brazil.html:85
+#: .\store\templates\casio\canadaE.html:70
+#: .\store\templates\casio\canadaE.html:85
+#: .\store\templates\casio\canadaF.html:70
+#: .\store\templates\casio\canadaF.html:85
+#: .\store\templates\casio\china.html:70 .\store\templates\casio\china.html:85
+#: .\store\templates\casio\czech.html:70 .\store\templates\casio\czech.html:85
+#: .\store\templates\casio\englishO.html:70
+#: .\store\templates\casio\englishO.html:85
+#: .\store\templates\casio\englishUK.html:70
+#: .\store\templates\casio\englishUK.html:85
+#: .\store\templates\casio\french.html:70
+#: .\store\templates\casio\french.html:85
+#: .\store\templates\casio\german.html:70
+#: .\store\templates\casio\german.html:85
+#: .\store\templates\casio\hongKong.html:70
+#: .\store\templates\casio\hongKong.html:85
+#: .\store\templates\casio\indonesia.html:70
+#: .\store\templates\casio\indonesia.html:85
+#: .\store\templates\casio\italian.html:70
+#: .\store\templates\casio\italian.html:85
+#: .\store\templates\casio\japan.html:70 .\store\templates\casio\japan.html:85
+#: .\store\templates\casio\latinA.html:70
+#: .\store\templates\casio\latinA.html:85
+#: .\store\templates\casio\mexico.html:70
+#: .\store\templates\casio\mexico.html:85
+#: .\store\templates\casio\netherlands.html:70
+#: .\store\templates\casio\netherlands.html:85
+#: .\store\templates\casio\norwegian.html:70
+#: .\store\templates\casio\norwegian.html:85
+#: .\store\templates\casio\portuguese.html:70
+#: .\store\templates\casio\portuguese.html:85
+#: .\store\templates\casio\russian.html:70
+#: .\store\templates\casio\russian.html:85
+#: .\store\templates\casio\singapore.html:70
+#: .\store\templates\casio\singapore.html:85
+#: .\store\templates\casio\southKorea.html:70
+#: .\store\templates\casio\southKorea.html:85
+#: .\store\templates\casio\spanish.html:70
+#: .\store\templates\casio\spanish.html:85
+#: .\store\templates\casio\swedish.html:70
+#: .\store\templates\casio\swedish.html:85
+#: .\store\templates\casio\taiwan.html:70
+#: .\store\templates\casio\taiwan.html:85
+#: .\store\templates\casio\thailand.html:70
+#: .\store\templates\casio\thailand.html:85
+#: .\store\templates\casio\thailand.html:251
+#: .\store\templates\casio\thailand.html:266 .\store\templates\casio\us.html:70
+#: .\store\templates\casio\us.html:85
+msgid "SUSPENSION ARM DESIGN"
+msgstr ""
+
+#: .\store\templates\casio\MEA.html:74 .\store\templates\casio\MEE.html:74
+#: .\store\templates\casio\MEP.html:74 .\store\templates\casio\asiaE.html:74
+#: .\store\templates\casio\brazil.html:74
+#: .\store\templates\casio\canadaE.html:74
+#: .\store\templates\casio\canadaF.html:74
+#: .\store\templates\casio\china.html:74 .\store\templates\casio\czech.html:74
+#: .\store\templates\casio\englishO.html:74
+#: .\store\templates\casio\englishUK.html:74
+#: .\store\templates\casio\french.html:74
+#: .\store\templates\casio\german.html:74
+#: .\store\templates\casio\hongKong.html:74
+#: .\store\templates\casio\indonesia.html:74
+#: .\store\templates\casio\italian.html:74
+#: .\store\templates\casio\japan.html:74 .\store\templates\casio\latinA.html:74
+#: .\store\templates\casio\mexico.html:74
+#: .\store\templates\casio\netherlands.html:74
+#: .\store\templates\casio\norwegian.html:74
+#: .\store\templates\casio\portuguese.html:74
+#: .\store\templates\casio\russian.html:74
+#: .\store\templates\casio\singapore.html:74
+#: .\store\templates\casio\southKorea.html:74
+#: .\store\templates\casio\spanish.html:74
+#: .\store\templates\casio\swedish.html:74
+#: .\store\templates\casio\taiwan.html:74
+#: .\store\templates\casio\thailand.html:74
+#: .\store\templates\casio\thailand.html:255 .\store\templates\casio\us.html:74
+msgid "LEARN MORE"
+msgstr ""
+
+#: .\store\templates\casio\MEA.html:80 .\store\templates\casio\MEA.html:136
+#: .\store\templates\casio\MEA.html:157 .\store\templates\casio\MEA.html:174
+#: .\store\templates\casio\MEE.html:80 .\store\templates\casio\MEE.html:136
+#: .\store\templates\casio\MEE.html:157 .\store\templates\casio\MEE.html:174
+#: .\store\templates\casio\MEP.html:80 .\store\templates\casio\MEP.html:136
+#: .\store\templates\casio\MEP.html:157 .\store\templates\casio\MEP.html:174
+#: .\store\templates\casio\asiaE.html:80 .\store\templates\casio\asiaE.html:136
+#: .\store\templates\casio\asiaE.html:157
+#: .\store\templates\casio\asiaE.html:174
+#: .\store\templates\casio\brazil.html:80
+#: .\store\templates\casio\brazil.html:136
+#: .\store\templates\casio\brazil.html:157
+#: .\store\templates\casio\brazil.html:174
+#: .\store\templates\casio\canadaE.html:80
+#: .\store\templates\casio\canadaE.html:136
+#: .\store\templates\casio\canadaE.html:157
+#: .\store\templates\casio\canadaE.html:174
+#: .\store\templates\casio\canadaF.html:80
+#: .\store\templates\casio\canadaF.html:136
+#: .\store\templates\casio\canadaF.html:157
+#: .\store\templates\casio\canadaF.html:174
+#: .\store\templates\casio\china.html:80 .\store\templates\casio\china.html:136
+#: .\store\templates\casio\china.html:157
+#: .\store\templates\casio\china.html:174 .\store\templates\casio\czech.html:80
+#: .\store\templates\casio\czech.html:136
+#: .\store\templates\casio\czech.html:157
+#: .\store\templates\casio\czech.html:174
+#: .\store\templates\casio\englishO.html:80
+#: .\store\templates\casio\englishO.html:136
+#: .\store\templates\casio\englishO.html:157
+#: .\store\templates\casio\englishO.html:174
+#: .\store\templates\casio\englishUK.html:80
+#: .\store\templates\casio\englishUK.html:136
+#: .\store\templates\casio\englishUK.html:157
+#: .\store\templates\casio\englishUK.html:174
+#: .\store\templates\casio\french.html:80
+#: .\store\templates\casio\french.html:136
+#: .\store\templates\casio\french.html:157
+#: .\store\templates\casio\french.html:174
+#: .\store\templates\casio\german.html:80
+#: .\store\templates\casio\german.html:136
+#: .\store\templates\casio\german.html:157
+#: .\store\templates\casio\german.html:174
+#: .\store\templates\casio\hongKong.html:80
+#: .\store\templates\casio\hongKong.html:136
+#: .\store\templates\casio\hongKong.html:157
+#: .\store\templates\casio\hongKong.html:174
+#: .\store\templates\casio\indonesia.html:80
+#: .\store\templates\casio\indonesia.html:136
+#: .\store\templates\casio\indonesia.html:157
+#: .\store\templates\casio\indonesia.html:174
+#: .\store\templates\casio\italian.html:80
+#: .\store\templates\casio\italian.html:136
+#: .\store\templates\casio\italian.html:157
+#: .\store\templates\casio\italian.html:174
+#: .\store\templates\casio\japan.html:80 .\store\templates\casio\japan.html:136
+#: .\store\templates\casio\japan.html:157
+#: .\store\templates\casio\japan.html:174
+#: .\store\templates\casio\latinA.html:80
+#: .\store\templates\casio\latinA.html:136
+#: .\store\templates\casio\latinA.html:157
+#: .\store\templates\casio\latinA.html:174
+#: .\store\templates\casio\mexico.html:80
+#: .\store\templates\casio\mexico.html:136
+#: .\store\templates\casio\mexico.html:157
+#: .\store\templates\casio\mexico.html:174
+#: .\store\templates\casio\netherlands.html:80
+#: .\store\templates\casio\netherlands.html:136
+#: .\store\templates\casio\netherlands.html:157
+#: .\store\templates\casio\netherlands.html:174
+#: .\store\templates\casio\norwegian.html:80
+#: .\store\templates\casio\norwegian.html:136
+#: .\store\templates\casio\norwegian.html:157
+#: .\store\templates\casio\norwegian.html:174
+#: .\store\templates\casio\portuguese.html:80
+#: .\store\templates\casio\portuguese.html:136
+#: .\store\templates\casio\portuguese.html:157
+#: .\store\templates\casio\portuguese.html:174
+#: .\store\templates\casio\russian.html:80
+#: .\store\templates\casio\russian.html:136
+#: .\store\templates\casio\russian.html:157
+#: .\store\templates\casio\russian.html:174
+#: .\store\templates\casio\singapore.html:80
+#: .\store\templates\casio\singapore.html:136
+#: .\store\templates\casio\singapore.html:157
+#: .\store\templates\casio\singapore.html:174
+#: .\store\templates\casio\southKorea.html:80
+#: .\store\templates\casio\southKorea.html:136
+#: .\store\templates\casio\southKorea.html:157
+#: .\store\templates\casio\southKorea.html:174
+#: .\store\templates\casio\spanish.html:80
+#: .\store\templates\casio\spanish.html:136
+#: .\store\templates\casio\spanish.html:157
+#: .\store\templates\casio\spanish.html:174
+#: .\store\templates\casio\swedish.html:80
+#: .\store\templates\casio\swedish.html:136
+#: .\store\templates\casio\swedish.html:157
+#: .\store\templates\casio\swedish.html:174
+#: .\store\templates\casio\taiwan.html:80
+#: .\store\templates\casio\taiwan.html:136
+#: .\store\templates\casio\taiwan.html:157
+#: .\store\templates\casio\taiwan.html:174
+#: .\store\templates\casio\thailand.html:80
+#: .\store\templates\casio\thailand.html:136
+#: .\store\templates\casio\thailand.html:157
+#: .\store\templates\casio\thailand.html:174
+#: .\store\templates\casio\thailand.html:261
+#: .\store\templates\casio\thailand.html:317
+#: .\store\templates\casio\thailand.html:338
+#: .\store\templates\casio\thailand.html:355 .\store\templates\casio\us.html:80
+#: .\store\templates\casio\us.html:136 .\store\templates\casio\us.html:157
+#: .\store\templates\casio\us.html:174
+#: .\store\templates\root\firstproduct.html:338
+msgid "Watches"
+msgstr ""
+
+#: .\store\templates\casio\MEA.html:83 .\store\templates\casio\MEE.html:83
+#: .\store\templates\casio\MEP.html:83 .\store\templates\casio\asiaE.html:83
+#: .\store\templates\casio\brazil.html:83
+#: .\store\templates\casio\canadaE.html:83
+#: .\store\templates\casio\canadaF.html:83
+#: .\store\templates\casio\china.html:83 .\store\templates\casio\czech.html:83
+#: .\store\templates\casio\englishO.html:83
+#: .\store\templates\casio\englishUK.html:83
+#: .\store\templates\casio\french.html:83
+#: .\store\templates\casio\german.html:83
+#: .\store\templates\casio\hongKong.html:83
+#: .\store\templates\casio\indonesia.html:83
+#: .\store\templates\casio\italian.html:83
+#: .\store\templates\casio\japan.html:83 .\store\templates\casio\latinA.html:83
+#: .\store\templates\casio\mexico.html:83
+#: .\store\templates\casio\netherlands.html:83
+#: .\store\templates\casio\norwegian.html:83
+#: .\store\templates\casio\portuguese.html:83
+#: .\store\templates\casio\russian.html:83
+#: .\store\templates\casio\singapore.html:83
+#: .\store\templates\casio\southKorea.html:83
+#: .\store\templates\casio\spanish.html:83
+#: .\store\templates\casio\swedish.html:83
+#: .\store\templates\casio\taiwan.html:83
+#: .\store\templates\casio\thailand.html:83
+#: .\store\templates\casio\thailand.html:264 .\store\templates\casio\us.html:83
+msgid "G-SHOCK Website"
+msgstr ""
+
+#: .\store\templates\casio\MEA.html:84 .\store\templates\casio\MEE.html:84
+#: .\store\templates\casio\MEP.html:84 .\store\templates\casio\asiaE.html:84
+#: .\store\templates\casio\brazil.html:84
+#: .\store\templates\casio\canadaE.html:84
+#: .\store\templates\casio\canadaF.html:84
+#: .\store\templates\casio\china.html:84 .\store\templates\casio\czech.html:84
+#: .\store\templates\casio\englishO.html:84
+#: .\store\templates\casio\englishUK.html:84
+#: .\store\templates\casio\french.html:84
+#: .\store\templates\casio\german.html:84
+#: .\store\templates\casio\hongKong.html:84
+#: .\store\templates\casio\indonesia.html:84
+#: .\store\templates\casio\italian.html:84
+#: .\store\templates\casio\japan.html:84 .\store\templates\casio\latinA.html:84
+#: .\store\templates\casio\mexico.html:84
+#: .\store\templates\casio\netherlands.html:84
+#: .\store\templates\casio\norwegian.html:84
+#: .\store\templates\casio\portuguese.html:84
+#: .\store\templates\casio\russian.html:84
+#: .\store\templates\casio\singapore.html:84
+#: .\store\templates\casio\southKorea.html:84
+#: .\store\templates\casio\spanish.html:84
+#: .\store\templates\casio\swedish.html:84
+#: .\store\templates\casio\taiwan.html:84
+#: .\store\templates\casio\thailand.html:84
+#: .\store\templates\casio\thailand.html:265 .\store\templates\casio\us.html:84
+msgid "Store Search"
+msgstr ""
+
+#: .\store\templates\casio\MEA.html:95 .\store\templates\casio\MEE.html:95
+#: .\store\templates\casio\MEP.html:95 .\store\templates\casio\asiaE.html:95
+#: .\store\templates\casio\brazil.html:95
+#: .\store\templates\casio\canadaE.html:95
+#: .\store\templates\casio\canadaF.html:95
+#: .\store\templates\casio\china.html:95 .\store\templates\casio\czech.html:95
+#: .\store\templates\casio\englishO.html:95
+#: .\store\templates\casio\englishUK.html:95
+#: .\store\templates\casio\french.html:95
+#: .\store\templates\casio\german.html:95
+#: .\store\templates\casio\hongKong.html:95
+#: .\store\templates\casio\indonesia.html:95
+#: .\store\templates\casio\italian.html:95
+#: .\store\templates\casio\japan.html:95 .\store\templates\casio\latinA.html:95
+#: .\store\templates\casio\mexico.html:95
+#: .\store\templates\casio\netherlands.html:95
+#: .\store\templates\casio\norwegian.html:95
+#: .\store\templates\casio\portuguese.html:95
+#: .\store\templates\casio\russian.html:95
+#: .\store\templates\casio\singapore.html:95
+#: .\store\templates\casio\southKorea.html:95
+#: .\store\templates\casio\spanish.html:95
+#: .\store\templates\casio\swedish.html:95
+#: .\store\templates\casio\taiwan.html:95
+#: .\store\templates\casio\thailand.html:95
+#: .\store\templates\casio\thailand.html:276 .\store\templates\casio\us.html:95
+msgid "All"
+msgstr ""
+
+#: .\store\templates\casio\MEA.html:96 .\store\templates\casio\MEE.html:96
+#: .\store\templates\casio\MEP.html:96 .\store\templates\casio\asiaE.html:96
+#: .\store\templates\casio\brazil.html:96
+#: .\store\templates\casio\canadaE.html:96
+#: .\store\templates\casio\canadaF.html:96
+#: .\store\templates\casio\china.html:96 .\store\templates\casio\czech.html:96
+#: .\store\templates\casio\englishO.html:96
+#: .\store\templates\casio\englishUK.html:96
+#: .\store\templates\casio\french.html:96
+#: .\store\templates\casio\german.html:96
+#: .\store\templates\casio\hongKong.html:96
+#: .\store\templates\casio\indonesia.html:96
+#: .\store\templates\casio\italian.html:96
+#: .\store\templates\casio\japan.html:96 .\store\templates\casio\latinA.html:96
+#: .\store\templates\casio\mexico.html:96
+#: .\store\templates\casio\netherlands.html:96
+#: .\store\templates\casio\norwegian.html:96
+#: .\store\templates\casio\portuguese.html:96
+#: .\store\templates\casio\russian.html:96
+#: .\store\templates\casio\singapore.html:96
+#: .\store\templates\casio\southKorea.html:96
+#: .\store\templates\casio\spanish.html:96
+#: .\store\templates\casio\swedish.html:96
+#: .\store\templates\casio\taiwan.html:96
+#: .\store\templates\casio\thailand.html:96
+#: .\store\templates\casio\thailand.html:277 .\store\templates\casio\us.html:96
+msgid "New products"
+msgstr ""
+
+#: .\store\templates\casio\MEA.html:113 .\store\templates\casio\MEE.html:113
+#: .\store\templates\casio\MEP.html:113 .\store\templates\casio\asiaE.html:113
+#: .\store\templates\casio\brazil.html:113
+#: .\store\templates\casio\canadaE.html:113
+#: .\store\templates\casio\canadaF.html:113
+#: .\store\templates\casio\china.html:113
+#: .\store\templates\casio\czech.html:113
+#: .\store\templates\casio\englishO.html:113
+#: .\store\templates\casio\englishUK.html:113
+#: .\store\templates\casio\french.html:113
+#: .\store\templates\casio\german.html:113
+#: .\store\templates\casio\hongKong.html:113
+#: .\store\templates\casio\indonesia.html:113
+#: .\store\templates\casio\italian.html:113
+#: .\store\templates\casio\japan.html:113
+#: .\store\templates\casio\latinA.html:113
+#: .\store\templates\casio\mexico.html:113
+#: .\store\templates\casio\netherlands.html:113
+#: .\store\templates\casio\norwegian.html:113
+#: .\store\templates\casio\portuguese.html:113
+#: .\store\templates\casio\russian.html:113
+#: .\store\templates\casio\singapore.html:113
+#: .\store\templates\casio\southKorea.html:113
+#: .\store\templates\casio\spanish.html:113
+#: .\store\templates\casio\swedish.html:113
+#: .\store\templates\casio\taiwan.html:113
+#: .\store\templates\casio\thailand.html:113
+#: .\store\templates\casio\thailand.html:294
+#: .\store\templates\casio\us.html:113
+msgid "NEW"
+msgstr ""
+
+#: .\store\templates\casio\MEA.html:125 .\store\templates\casio\MEE.html:125
+#: .\store\templates\casio\MEP.html:125 .\store\templates\casio\asiaE.html:125
+#: .\store\templates\casio\brazil.html:125
+#: .\store\templates\casio\canadaE.html:125
+#: .\store\templates\casio\canadaF.html:125
+#: .\store\templates\casio\china.html:125
+#: .\store\templates\casio\czech.html:125
+#: .\store\templates\casio\englishO.html:125
+#: .\store\templates\casio\englishUK.html:125
+#: .\store\templates\casio\french.html:125
+#: .\store\templates\casio\german.html:125
+#: .\store\templates\casio\hongKong.html:125
+#: .\store\templates\casio\indonesia.html:125
+#: .\store\templates\casio\italian.html:125
+#: .\store\templates\casio\japan.html:125
+#: .\store\templates\casio\latinA.html:125
+#: .\store\templates\casio\mexico.html:125
+#: .\store\templates\casio\netherlands.html:125
+#: .\store\templates\casio\norwegian.html:125
+#: .\store\templates\casio\portuguese.html:125
+#: .\store\templates\casio\russian.html:125
+#: .\store\templates\casio\singapore.html:125
+#: .\store\templates\casio\southKorea.html:125
+#: .\store\templates\casio\spanish.html:125
+#: .\store\templates\casio\swedish.html:125
+#: .\store\templates\casio\taiwan.html:125
+#: .\store\templates\casio\thailand.html:125
+#: .\store\templates\casio\thailand.html:306
+#: .\store\templates\casio\us.html:125
+msgid " BUY NOW "
+msgstr ""
+
+#: .\store\templates\casio\MEA.html:133 .\store\templates\casio\MEE.html:133
+#: .\store\templates\casio\MEP.html:133 .\store\templates\casio\asiaE.html:133
+#: .\store\templates\casio\brazil.html:133
+#: .\store\templates\casio\canadaE.html:133
+#: .\store\templates\casio\canadaF.html:133
+#: .\store\templates\casio\china.html:133
+#: .\store\templates\casio\czech.html:133
+#: .\store\templates\casio\englishO.html:133
+#: .\store\templates\casio\englishUK.html:133
+#: .\store\templates\casio\french.html:133
+#: .\store\templates\casio\german.html:133
+#: .\store\templates\casio\hongKong.html:133
+#: .\store\templates\casio\indonesia.html:133
+#: .\store\templates\casio\italian.html:133
+#: .\store\templates\casio\japan.html:133
+#: .\store\templates\casio\latinA.html:133
+#: .\store\templates\casio\mexico.html:133
+#: .\store\templates\casio\netherlands.html:133
+#: .\store\templates\casio\norwegian.html:133
+#: .\store\templates\casio\portuguese.html:133
+#: .\store\templates\casio\russian.html:133
+#: .\store\templates\casio\singapore.html:133
+#: .\store\templates\casio\southKorea.html:133
+#: .\store\templates\casio\spanish.html:133
+#: .\store\templates\casio\swedish.html:133
+#: .\store\templates\casio\taiwan.html:133
+#: .\store\templates\casio\thailand.html:133
+#: .\store\templates\casio\thailand.html:314
+#: .\store\templates\casio\us.html:133
+#: .\store\templates\root\firstproduct.html:335
+#: .\store\templates\root\firstproduct.html:350
+msgid "Home"
+msgstr ""
+
+#: .\store\templates\casio\MEA.html:139 .\store\templates\casio\MEE.html:139
+#: .\store\templates\casio\MEP.html:139 .\store\templates\casio\asiaE.html:139
+#: .\store\templates\casio\brazil.html:139
+#: .\store\templates\casio\canadaE.html:139
+#: .\store\templates\casio\canadaF.html:139
+#: .\store\templates\casio\china.html:139
+#: .\store\templates\casio\czech.html:139
+#: .\store\templates\casio\englishO.html:139
+#: .\store\templates\casio\englishUK.html:139
+#: .\store\templates\casio\french.html:139
+#: .\store\templates\casio\german.html:139
+#: .\store\templates\casio\hongKong.html:139
+#: .\store\templates\casio\indonesia.html:139
+#: .\store\templates\casio\italian.html:139
+#: .\store\templates\casio\japan.html:139
+#: .\store\templates\casio\latinA.html:139
+#: .\store\templates\casio\mexico.html:139
+#: .\store\templates\casio\netherlands.html:139
+#: .\store\templates\casio\norwegian.html:139
+#: .\store\templates\casio\portuguese.html:139
+#: .\store\templates\casio\russian.html:139
+#: .\store\templates\casio\singapore.html:139
+#: .\store\templates\casio\southKorea.html:139
+#: .\store\templates\casio\spanish.html:139
+#: .\store\templates\casio\swedish.html:139
+#: .\store\templates\casio\taiwan.html:139
+#: .\store\templates\casio\thailand.html:139
+#: .\store\templates\casio\thailand.html:320
+#: .\store\templates\casio\us.html:139
+#: .\store\templates\root\firstproduct.html:341
+msgid "Edifice"
+msgstr ""
+
+#: .\store\templates\casio\MEA.html:150 .\store\templates\casio\MEA.html:167
+#: .\store\templates\casio\MEE.html:150 .\store\templates\casio\MEE.html:167
+#: .\store\templates\casio\MEP.html:150 .\store\templates\casio\MEP.html:167
+#: .\store\templates\casio\asiaE.html:150
+#: .\store\templates\casio\asiaE.html:167
+#: .\store\templates\casio\brazil.html:150
+#: .\store\templates\casio\brazil.html:167
+#: .\store\templates\casio\canadaE.html:150
+#: .\store\templates\casio\canadaE.html:167
+#: .\store\templates\casio\canadaF.html:150
+#: .\store\templates\casio\canadaF.html:167
+#: .\store\templates\casio\china.html:150
+#: .\store\templates\casio\china.html:167
+#: .\store\templates\casio\czech.html:150
+#: .\store\templates\casio\czech.html:167
+#: .\store\templates\casio\englishO.html:150
+#: .\store\templates\casio\englishO.html:167
+#: .\store\templates\casio\englishUK.html:150
+#: .\store\templates\casio\englishUK.html:167
+#: .\store\templates\casio\french.html:150
+#: .\store\templates\casio\french.html:167
+#: .\store\templates\casio\german.html:150
+#: .\store\templates\casio\german.html:167
+#: .\store\templates\casio\hongKong.html:150
+#: .\store\templates\casio\hongKong.html:167
+#: .\store\templates\casio\indonesia.html:150
+#: .\store\templates\casio\indonesia.html:167
+#: .\store\templates\casio\italian.html:150
+#: .\store\templates\casio\italian.html:167
+#: .\store\templates\casio\japan.html:150
+#: .\store\templates\casio\japan.html:167
+#: .\store\templates\casio\latinA.html:150
+#: .\store\templates\casio\latinA.html:167
+#: .\store\templates\casio\mexico.html:150
+#: .\store\templates\casio\mexico.html:167
+#: .\store\templates\casio\netherlands.html:150
+#: .\store\templates\casio\netherlands.html:167
+#: .\store\templates\casio\norwegian.html:150
+#: .\store\templates\casio\norwegian.html:167
+#: .\store\templates\casio\portuguese.html:150
+#: .\store\templates\casio\portuguese.html:167
+#: .\store\templates\casio\russian.html:150
+#: .\store\templates\casio\russian.html:167
+#: .\store\templates\casio\singapore.html:150
+#: .\store\templates\casio\singapore.html:167
+#: .\store\templates\casio\southKorea.html:150
+#: .\store\templates\casio\southKorea.html:167
+#: .\store\templates\casio\spanish.html:150
+#: .\store\templates\casio\spanish.html:167
+#: .\store\templates\casio\swedish.html:150
+#: .\store\templates\casio\swedish.html:167
+#: .\store\templates\casio\taiwan.html:150
+#: .\store\templates\casio\taiwan.html:167
+#: .\store\templates\casio\thailand.html:150
+#: .\store\templates\casio\thailand.html:167
+#: .\store\templates\casio\thailand.html:331
+#: .\store\templates\casio\thailand.html:348
+#: .\store\templates\casio\us.html:150 .\store\templates\casio\us.html:167
+#: .\store\templates\root\firstproduct.html:349
+msgid "Products"
+msgstr ""
+
+#: .\store\templates\casio\MEA.html:159 .\store\templates\casio\MEA.html:176
+#: .\store\templates\casio\MEE.html:159 .\store\templates\casio\MEE.html:176
+#: .\store\templates\casio\MEP.html:159 .\store\templates\casio\MEP.html:176
+#: .\store\templates\casio\asiaE.html:159
+#: .\store\templates\casio\asiaE.html:176
+#: .\store\templates\casio\brazil.html:159
+#: .\store\templates\casio\brazil.html:176
+#: .\store\templates\casio\canadaE.html:159
+#: .\store\templates\casio\canadaE.html:176
+#: .\store\templates\casio\canadaF.html:159
+#: .\store\templates\casio\canadaF.html:176
+#: .\store\templates\casio\china.html:159
+#: .\store\templates\casio\china.html:176
+#: .\store\templates\casio\czech.html:159
+#: .\store\templates\casio\czech.html:176
+#: .\store\templates\casio\englishO.html:159
+#: .\store\templates\casio\englishO.html:176
+#: .\store\templates\casio\englishUK.html:159
+#: .\store\templates\casio\englishUK.html:176
+#: .\store\templates\casio\french.html:159
+#: .\store\templates\casio\french.html:176
+#: .\store\templates\casio\german.html:159
+#: .\store\templates\casio\german.html:176
+#: .\store\templates\casio\hongKong.html:159
+#: .\store\templates\casio\hongKong.html:176
+#: .\store\templates\casio\indonesia.html:159
+#: .\store\templates\casio\indonesia.html:176
+#: .\store\templates\casio\italian.html:159
+#: .\store\templates\casio\italian.html:176
+#: .\store\templates\casio\japan.html:159
+#: .\store\templates\casio\japan.html:176
+#: .\store\templates\casio\latinA.html:159
+#: .\store\templates\casio\latinA.html:176
+#: .\store\templates\casio\mexico.html:159
+#: .\store\templates\casio\mexico.html:176
+#: .\store\templates\casio\netherlands.html:159
+#: .\store\templates\casio\netherlands.html:176
+#: .\store\templates\casio\norwegian.html:159
+#: .\store\templates\casio\norwegian.html:176
+#: .\store\templates\casio\portuguese.html:159
+#: .\store\templates\casio\portuguese.html:176
+#: .\store\templates\casio\russian.html:159
+#: .\store\templates\casio\russian.html:176
+#: .\store\templates\casio\singapore.html:159
+#: .\store\templates\casio\singapore.html:176
+#: .\store\templates\casio\southKorea.html:159
+#: .\store\templates\casio\southKorea.html:176
+#: .\store\templates\casio\spanish.html:159
+#: .\store\templates\casio\spanish.html:176
+#: .\store\templates\casio\swedish.html:159
+#: .\store\templates\casio\swedish.html:176
+#: .\store\templates\casio\taiwan.html:159
+#: .\store\templates\casio\taiwan.html:176
+#: .\store\templates\casio\thailand.html:159
+#: .\store\templates\casio\thailand.html:176
+#: .\store\templates\casio\thailand.html:340
+#: .\store\templates\casio\thailand.html:357
+#: .\store\templates\casio\us.html:159 .\store\templates\casio\us.html:176
+msgid "Calculators"
+msgstr ""
+
+#: .\store\templates\casio\MEA.html:160 .\store\templates\casio\MEA.html:177
+#: .\store\templates\casio\MEE.html:160 .\store\templates\casio\MEE.html:177
+#: .\store\templates\casio\MEP.html:160 .\store\templates\casio\MEP.html:177
+#: .\store\templates\casio\asiaE.html:160
+#: .\store\templates\casio\asiaE.html:177
+#: .\store\templates\casio\brazil.html:160
+#: .\store\templates\casio\brazil.html:177
+#: .\store\templates\casio\canadaE.html:160
+#: .\store\templates\casio\canadaE.html:177
+#: .\store\templates\casio\canadaF.html:160
+#: .\store\templates\casio\canadaF.html:177
+#: .\store\templates\casio\china.html:160
+#: .\store\templates\casio\china.html:177
+#: .\store\templates\casio\czech.html:160
+#: .\store\templates\casio\czech.html:177
+#: .\store\templates\casio\englishO.html:160
+#: .\store\templates\casio\englishO.html:177
+#: .\store\templates\casio\englishUK.html:160
+#: .\store\templates\casio\englishUK.html:177
+#: .\store\templates\casio\french.html:160
+#: .\store\templates\casio\french.html:177
+#: .\store\templates\casio\german.html:160
+#: .\store\templates\casio\german.html:177
+#: .\store\templates\casio\hongKong.html:160
+#: .\store\templates\casio\hongKong.html:177
+#: .\store\templates\casio\indonesia.html:160
+#: .\store\templates\casio\indonesia.html:177
+#: .\store\templates\casio\italian.html:160
+#: .\store\templates\casio\italian.html:177
+#: .\store\templates\casio\japan.html:160
+#: .\store\templates\casio\japan.html:177
+#: .\store\templates\casio\latinA.html:160
+#: .\store\templates\casio\latinA.html:177
+#: .\store\templates\casio\mexico.html:160
+#: .\store\templates\casio\mexico.html:177
+#: .\store\templates\casio\netherlands.html:160
+#: .\store\templates\casio\netherlands.html:177
+#: .\store\templates\casio\norwegian.html:160
+#: .\store\templates\casio\norwegian.html:177
+#: .\store\templates\casio\portuguese.html:160
+#: .\store\templates\casio\portuguese.html:177
+#: .\store\templates\casio\russian.html:160
+#: .\store\templates\casio\russian.html:177
+#: .\store\templates\casio\singapore.html:160
+#: .\store\templates\casio\singapore.html:177
+#: .\store\templates\casio\southKorea.html:160
+#: .\store\templates\casio\southKorea.html:177
+#: .\store\templates\casio\spanish.html:160
+#: .\store\templates\casio\spanish.html:177
+#: .\store\templates\casio\swedish.html:160
+#: .\store\templates\casio\swedish.html:177
+#: .\store\templates\casio\taiwan.html:160
+#: .\store\templates\casio\taiwan.html:177
+#: .\store\templates\casio\thailand.html:160
+#: .\store\templates\casio\thailand.html:177
+#: .\store\templates\casio\thailand.html:341
+#: .\store\templates\casio\thailand.html:358
+#: .\store\templates\casio\us.html:160 .\store\templates\casio\us.html:177
+msgid "Medical Devices"
+msgstr ""
+
+#: .\store\templates\casio\MEA.html:175 .\store\templates\casio\MEE.html:175
+#: .\store\templates\casio\MEP.html:175 .\store\templates\casio\asiaE.html:175
+#: .\store\templates\casio\brazil.html:175
+#: .\store\templates\casio\canadaE.html:175
+#: .\store\templates\casio\canadaF.html:175
+#: .\store\templates\casio\china.html:175
+#: .\store\templates\casio\czech.html:175
+#: .\store\templates\casio\englishO.html:175
+#: .\store\templates\casio\englishUK.html:175
+#: .\store\templates\casio\french.html:175
+#: .\store\templates\casio\german.html:175
+#: .\store\templates\casio\hongKong.html:175
+#: .\store\templates\casio\indonesia.html:175
+#: .\store\templates\casio\italian.html:175
+#: .\store\templates\casio\japan.html:175
+#: .\store\templates\casio\latinA.html:175
+#: .\store\templates\casio\mexico.html:175
+#: .\store\templates\casio\netherlands.html:175
+#: .\store\templates\casio\norwegian.html:175
+#: .\store\templates\casio\portuguese.html:175
+#: .\store\templates\casio\russian.html:175
+#: .\store\templates\casio\singapore.html:175
+#: .\store\templates\casio\southKorea.html:175
+#: .\store\templates\casio\spanish.html:175
+#: .\store\templates\casio\swedish.html:175
+#: .\store\templates\casio\taiwan.html:175
+#: .\store\templates\casio\thailand.html:175
+#: .\store\templates\casio\thailand.html:356
+#: .\store\templates\casio\us.html:175
+msgid "Electronic Musical Instruments"
+msgstr ""
+
+#: .\store\templates\casio\MEA.html:198 .\store\templates\casio\MEE.html:198
+#: .\store\templates\casio\MEP.html:198 .\store\templates\casio\asiaE.html:198
+#: .\store\templates\casio\brazil.html:198
+#: .\store\templates\casio\canadaE.html:198
+#: .\store\templates\casio\canadaF.html:198
+#: .\store\templates\casio\china.html:198
+#: .\store\templates\casio\czech.html:198
+#: .\store\templates\casio\englishO.html:198
+#: .\store\templates\casio\englishUK.html:198
+#: .\store\templates\casio\french.html:198
+#: .\store\templates\casio\german.html:198
+#: .\store\templates\casio\hongKong.html:198
+#: .\store\templates\casio\indonesia.html:198
+#: .\store\templates\casio\italian.html:198
+#: .\store\templates\casio\japan.html:198
+#: .\store\templates\casio\latinA.html:198
+#: .\store\templates\casio\mexico.html:198
+#: .\store\templates\casio\netherlands.html:198
+#: .\store\templates\casio\norwegian.html:198
+#: .\store\templates\casio\portuguese.html:198
+#: .\store\templates\casio\russian.html:198
+#: .\store\templates\casio\singapore.html:198
+#: .\store\templates\casio\southKorea.html:198
+#: .\store\templates\casio\spanish.html:198
+#: .\store\templates\casio\swedish.html:198
+#: .\store\templates\casio\taiwan.html:198
+#: .\store\templates\casio\thailand.html:379
+#: .\store\templates\casio\thailand.html:540
+#: .\store\templates\casio\us.html:198
+#: .\store\templates\root\firstproduct.html:484
+msgid " ADA compliance"
+msgstr ""
+
+#: .\store\templates\casio\MEA.html:199 .\store\templates\casio\MEE.html:199
+#: .\store\templates\casio\MEP.html:199 .\store\templates\casio\asiaE.html:199
+#: .\store\templates\casio\brazil.html:199
+#: .\store\templates\casio\canadaE.html:199
+#: .\store\templates\casio\canadaF.html:199
+#: .\store\templates\casio\china.html:199
+#: .\store\templates\casio\czech.html:199
+#: .\store\templates\casio\englishO.html:199
+#: .\store\templates\casio\englishUK.html:199
+#: .\store\templates\casio\french.html:199
+#: .\store\templates\casio\german.html:199
+#: .\store\templates\casio\hongKong.html:199
+#: .\store\templates\casio\indonesia.html:199
+#: .\store\templates\casio\italian.html:199
+#: .\store\templates\casio\japan.html:199
+#: .\store\templates\casio\latinA.html:199
+#: .\store\templates\casio\mexico.html:199
+#: .\store\templates\casio\netherlands.html:199
+#: .\store\templates\casio\norwegian.html:199
+#: .\store\templates\casio\portuguese.html:199
+#: .\store\templates\casio\russian.html:199
+#: .\store\templates\casio\singapore.html:199
+#: .\store\templates\casio\southKorea.html:199
+#: .\store\templates\casio\spanish.html:199
+#: .\store\templates\casio\swedish.html:199
+#: .\store\templates\casio\taiwan.html:199
+#: .\store\templates\casio\thailand.html:380
+#: .\store\templates\casio\thailand.html:541
+#: .\store\templates\casio\us.html:199
+#: .\store\templates\root\firstproduct.html:485
+msgid "Terms Of sale"
+msgstr ""
+
+#: .\store\templates\casio\MEA.html:200 .\store\templates\casio\MEE.html:200
+#: .\store\templates\casio\MEP.html:200 .\store\templates\casio\asiaE.html:200
+#: .\store\templates\casio\brazil.html:200
+#: .\store\templates\casio\canadaE.html:200
+#: .\store\templates\casio\canadaF.html:200
+#: .\store\templates\casio\china.html:200
+#: .\store\templates\casio\czech.html:200
+#: .\store\templates\casio\englishO.html:200
+#: .\store\templates\casio\englishUK.html:200
+#: .\store\templates\casio\french.html:200
+#: .\store\templates\casio\german.html:200
+#: .\store\templates\casio\hongKong.html:200
+#: .\store\templates\casio\indonesia.html:200
+#: .\store\templates\casio\italian.html:200
+#: .\store\templates\casio\japan.html:200
+#: .\store\templates\casio\latinA.html:200
+#: .\store\templates\casio\mexico.html:200
+#: .\store\templates\casio\netherlands.html:200
+#: .\store\templates\casio\norwegian.html:200
+#: .\store\templates\casio\portuguese.html:200
+#: .\store\templates\casio\russian.html:200
+#: .\store\templates\casio\singapore.html:200
+#: .\store\templates\casio\southKorea.html:200
+#: .\store\templates\casio\spanish.html:200
+#: .\store\templates\casio\swedish.html:200
+#: .\store\templates\casio\taiwan.html:200
+#: .\store\templates\casio\thailand.html:381
+#: .\store\templates\casio\thailand.html:542
+#: .\store\templates\casio\us.html:200
+#: .\store\templates\root\firstproduct.html:486
+msgid "Return Policy"
+msgstr ""
+
+#: .\store\templates\casio\MEA.html:201 .\store\templates\casio\MEE.html:201
+#: .\store\templates\casio\MEP.html:201 .\store\templates\casio\asiaE.html:201
+#: .\store\templates\casio\brazil.html:201
+#: .\store\templates\casio\canadaE.html:201
+#: .\store\templates\casio\canadaF.html:201
+#: .\store\templates\casio\china.html:201
+#: .\store\templates\casio\czech.html:201
+#: .\store\templates\casio\englishO.html:201
+#: .\store\templates\casio\englishUK.html:201
+#: .\store\templates\casio\french.html:201
+#: .\store\templates\casio\german.html:201
+#: .\store\templates\casio\hongKong.html:201
+#: .\store\templates\casio\indonesia.html:201
+#: .\store\templates\casio\italian.html:201
+#: .\store\templates\casio\japan.html:201
+#: .\store\templates\casio\latinA.html:201
+#: .\store\templates\casio\mexico.html:201
+#: .\store\templates\casio\netherlands.html:201
+#: .\store\templates\casio\norwegian.html:201
+#: .\store\templates\casio\portuguese.html:201
+#: .\store\templates\casio\russian.html:201
+#: .\store\templates\casio\singapore.html:201
+#: .\store\templates\casio\southKorea.html:201
+#: .\store\templates\casio\spanish.html:201
+#: .\store\templates\casio\swedish.html:201
+#: .\store\templates\casio\taiwan.html:201
+#: .\store\templates\casio\thailand.html:382
+#: .\store\templates\casio\thailand.html:543
+#: .\store\templates\casio\us.html:201
+#: .\store\templates\root\firstproduct.html:487
+msgid "Site Map"
+msgstr ""
+
+#: .\store\templates\checkout.html:17
+msgid "Checkout"
+msgstr ""
+
+#: .\store\templates\checkout.html:66
+msgid "Continue Shopping"
+msgstr ""
+
+#: .\store\templates\checkout.html:67
+msgid "Mandatory Field"
+msgstr ""
+
+#: .\store\templates\checkout.html:71
+msgid "Purchase Method"
+msgstr ""
+
+#: .\store\templates\checkout.html:74
+msgid "Use CASIO ID Account"
+msgstr ""
+
+#: .\store\templates\checkout.html:75
+msgid ""
+"Log in or create a CASIO ID account to easily manage and track your order. "
+"An account is required for Tax Exempt orders."
+msgstr ""
+
+#: .\store\templates\checkout.html:79
+msgid "LOG IN"
+msgstr ""
+
+#: .\store\templates\checkout.html:80
+msgid "JOIN US"
+msgstr ""
+
+#: .\store\templates\checkout.html:86
+msgid " Continue as guest "
+msgstr ""
+
+#: .\store\templates\checkout.html:91
+#: .\store\templates\root\registerEmail.html:148
+msgid "Email Address"
+msgstr ""
+
+#: .\store\templates\checkout.html:104
+msgid "CONTINUE AS GUEST "
+msgstr ""
+
+#: .\store\templates\checkout.html:111
+msgid "Order Summary"
+msgstr ""
+
+#: .\store\templates\checkout.html:112
+msgid "Edit"
+msgstr ""
+
+#: .\store\templates\checkout.html:126
+#: .\store\templates\root\casio\checkout.html:144
+#: .\store\templates\root\checkout.html:144
+msgid "Order Amount"
+msgstr ""
+
+#: .\store\templates\checkout.html:149
+#: .\store\templates\root\casio\checkout.html:169
+#: .\store\templates\root\checkout.html:169
+msgid "Shipping Information"
+msgstr ""
+
+#: .\store\templates\checkout.html:152
+#: .\store\templates\root\casio\checkout.html:331
+#: .\store\templates\root\checkout.html:331
+msgid "Payment"
+msgstr ""
+
+#: .\store\templates\lang.html:28 .\store\views.py:40
+msgid "hello"
+msgstr ""
+
+#: .\store\templates\login.html:22 .\store\templates\root\logIn.html:81
+msgid "LOGIN"
+msgstr ""
+
+#: .\store\templates\login.html:24
+msgid "Facebook Login"
+msgstr ""
+
+#: .\store\templates\register.html:28 .\store\templates\root\logIn.html:34
+#: .\store\templates\root\registerEmail.html:34
+msgid "Register CASIO ID"
+msgstr ""
+
+#: .\store\templates\register.html:32
+msgid "Register with email address"
+msgstr ""
+
+#: .\store\templates\register.html:35
+msgid "CONTINUE"
+msgstr ""
+
+#: .\store\templates\register.html:42
+msgid "Already a Member? Log in here"
+msgstr ""
+
+#: .\store\templates\register.html:50 .\store\templates\root\logIn.html:93
+msgid "Register with a social media account"
+msgstr ""
+
+#: .\store\templates\register.html:56 .\store\templates\root\logIn.html:99
+msgid "Continue with Apple"
+msgstr ""
+
+#: .\store\templates\register.html:64 .\store\templates\root\logIn.html:107
+msgid "Continue with Facebook"
+msgstr ""
+
+#: .\store\templates\register.html:72 .\store\templates\root\logIn.html:115
+msgid "Continue with Google"
+msgstr ""
+
+#: .\store\templates\register.html:80 .\store\templates\root\logIn.html:123
+msgid "Continue with Twitter"
+msgstr ""
+
+#: .\store\templates\register.html:95 .\store\templates\root\logIn.html:138
+#: .\store\templates\root\registerEmail.html:332
+msgid "Privacy Notice"
+msgstr ""
+
+#: .\store\templates\register.html:98 .\store\templates\root\logIn.html:141
+#: .\store\templates\root\registerEmail.html:335
+msgid "Cookie policy"
+msgstr ""
+
+#: .\store\templates\register.html:101 .\store\templates\root\logIn.html:144
+#: .\store\templates\root\registerEmail.html:338
+msgid "What is the CASIO ID"
+msgstr ""
+
+#: .\store\templates\register.html:104 .\store\templates\root\logIn.html:147
+#: .\store\templates\root\registerEmail.html:341
+msgid "FAQ"
+msgstr ""
+
+#: .\store\templates\root\casio\checkout.html:174
+#: .\store\templates\root\checkout.html:174
+msgid "Phone number"
+msgstr ""
+
+#: .\store\templates\root\casio\checkout.html:177
+#: .\store\templates\root\checkout.html:177
+msgid "Phone Number"
+msgstr ""
+
+#: .\store\templates\root\casio\checkout.html:190
+#: .\store\templates\root\casio\checkout.html:193
+#: .\store\templates\root\checkout.html:190
+#: .\store\templates\root\checkout.html:193
+#: .\store\templates\root\registerEmail.html:187
+#: .\store\templates\root\registerEmail.html:190
+msgid "First Name"
+msgstr ""
+
+#: .\store\templates\root\casio\checkout.html:206
+#: .\store\templates\root\casio\checkout.html:209
+#: .\store\templates\root\checkout.html:206
+#: .\store\templates\root\checkout.html:209
+#: .\store\templates\root\registerEmail.html:204
+#: .\store\templates\root\registerEmail.html:207
+msgid "Last Name"
+msgstr ""
+
+#: .\store\templates\root\casio\checkout.html:222
+#: .\store\templates\root\checkout.html:222
+msgid "Address Line 1"
+msgstr ""
+
+#: .\store\templates\root\casio\checkout.html:237
+#: .\store\templates\root\checkout.html:237
+msgid "Address Line 2"
+msgstr ""
+
+#: .\store\templates\root\casio\checkout.html:252
+#: .\store\templates\root\checkout.html:252
+msgid "City"
+msgstr ""
+
+#: .\store\templates\root\casio\checkout.html:267
+#: .\store\templates\root\checkout.html:267
+msgid "State/Province"
+msgstr ""
+
+#: .\store\templates\root\casio\checkout.html:269
+#: .\store\templates\root\checkout.html:269
+msgid "Please Select a region, state or province"
+msgstr ""
+
+#: .\store\templates\root\casio\checkout.html:279
+#: .\store\templates\root\checkout.html:279
+msgid "Zip/Postal Code"
+msgstr ""
+
+#: .\store\templates\root\casio\checkout.html:294
+#: .\store\templates\root\checkout.html:294
+msgid "Country"
+msgstr ""
+
+#: .\store\templates\root\casio\checkout.html:296
+#: .\store\templates\root\checkout.html:296
+#: .\store\templates\root\firstproduct.html:488
+msgid "United States"
+msgstr ""
+
+#: .\store\templates\root\casio\checkout.html:301
+#: .\store\templates\root\checkout.html:301
+msgid "Company Name"
+msgstr ""
+
+#: .\store\templates\root\casio\checkout.html:323
+#: .\store\templates\root\checkout.html:323
+msgid "Yes, i'd like to receive emails about special offers and new products"
+msgstr ""
+
+#: .\store\templates\root\firstproduct.html:85
+msgid "Stable solar power"
+msgstr ""
+
+#: .\store\templates\root\firstproduct.html:89
+msgid "Keeps yourself in time"
+msgstr ""
+
+#: .\store\templates\root\firstproduct.html:93
+msgid "Easy to operate via smartphone"
+msgstr ""
+
+#: .\store\templates\root\firstproduct.html:97
+msgid "Great for motorsports"
+msgstr ""
+
+#: .\store\templates\root\firstproduct.html:102
+msgid "Specifications"
+msgstr ""
+
+#: .\store\templates\root\firstproduct.html:107
+msgid "Basic Information"
+msgstr ""
+
+#: .\store\templates\root\firstproduct.html:116
+msgid "Case size (L× W× H)"
+msgstr ""
+
+#: .\store\templates\root\firstproduct.html:122
+#: .\store\templates\root\firstproduct.html:128
+#: .\store\templates\root\firstproduct.html:134
+msgid "Weight"
+msgstr ""
+
+#: .\store\templates\root\firstproduct.html:144
+#: .\store\templates\root\firstproduct.html:175
+msgid "SmartPhone link/ App Connectivity Feautures"
+msgstr ""
+
+#: .\store\templates\root\firstproduct.html:153
+#: .\store\templates\root\firstproduct.html:184
+msgid "Smartphone Link feature"
+msgstr ""
+
+#: .\store\templates\root\firstproduct.html:155
+#: .\store\templates\root\firstproduct.html:186
+msgid "Mobile link (Wireless linking using Bluetooth®)"
+msgstr ""
+
+#: .\store\templates\root\firstproduct.html:159
+#: .\store\templates\root\firstproduct.html:190
+msgid "Apps"
+msgstr ""
+
+#: .\store\templates\root\firstproduct.html:161
+#: .\store\templates\root\firstproduct.html:192
+#: .\store\templates\root\firstproduct.html:296
+msgid "CASIO WATCHES"
+msgstr ""
+
+#: .\store\templates\root\firstproduct.html:165
+#: .\store\templates\root\firstproduct.html:196
+msgid "App connectivity feature"
+msgstr ""
+
+#: .\store\templates\root\firstproduct.html:167
+#: .\store\templates\root\firstproduct.html:198
+msgid "Auto time adjustment"
+msgstr ""
+
+#: .\store\templates\root\firstproduct.html:207
+#: .\store\templates\root\firstproduct.html:313
+msgid "Operational Guide"
+msgstr ""
+
+#: .\store\templates\root\firstproduct.html:224
+msgid ""
+"The form, functionality, and sophistication to support racing teams — "
+"offered to all motorsports fans"
+msgstr ""
+
+#: .\store\templates\root\firstproduct.html:225
+msgid ""
+"Integrating the advanced technologies and design of the EDIFICE line, with "
+"features including a new case shape inspired by the suspension arms on "
+"formula race cars, precision timekeeping, and the enhanced convenience of "
+"world time offered by Smartphone Link. A high-performance chronograph born "
+"of a “real motorsports” concept."
+msgstr ""
+
+#: .\store\templates\root\firstproduct.html:237
+#: .\store\templates\root\firstproduct.html:247
+#: .\store\templates\root\firstproduct.html:257
+msgid ""
+"Unique case design with a motif inspired by formula car suspension. Just "
+"like the four-arm double wishbone suspension used in race cars, with two "
+"arms above and two below, the lugs are configured in a four-arm arrangement."
+msgstr ""
+
+#: .\store\templates\root\firstproduct.html:263
+msgid "DETAILS"
+msgstr ""
+
+#: .\store\templates\root\firstproduct.html:270
+msgid ""
+"Insert dials alone transmit enough light for power, freeing up dial design"
+msgstr ""
+
+#: .\store\templates\root\firstproduct.html:271
+msgid ""
+"The insert dials, solar-receptive area alone takes in plenty of light to "
+"power the watch, enabling the use of opaque materials even with solar dial "
+"design."
+msgstr ""
+
+#: .\store\templates\root\firstproduct.html:272
+msgid "*Graphic is included for illustrative purposes."
+msgstr ""
+
+#: .\store\templates\root\firstproduct.html:280
+msgid "Black IP for a confident look"
+msgstr ""
+
+#: .\store\templates\root\firstproduct.html:281
+msgid ""
+"Black IP is applied to the stainless-steel bezel, which is engraved with "
+"tachymeter markings. "
+msgstr ""
+
+#: .\store\templates\root\firstproduct.html:292
+msgid "Multiple functions, all at your fingertips"
+msgstr ""
+
+#: .\store\templates\root\firstproduct.html:301
+msgid "Automatic time adjustment (four times a day)"
+msgstr ""
+
+#: .\store\templates\root\firstproduct.html:302
+msgid "Easy watch setting:"
+msgstr ""
+
+#: .\store\templates\root\firstproduct.html:303
+msgid "-Stopwatch data transfer:"
+msgstr ""
+
+#: .\store\templates\root\firstproduct.html:304
+msgid ""
+"Displays lap times down to the millisecond.See lap time differences and "
+"fastest time at a glance."
+msgstr ""
+
+#: .\store\templates\root\firstproduct.html:306
+msgid "World time"
+msgstr ""
+
+#: .\store\templates\root\firstproduct.html:307
+msgid "Phone finder"
+msgstr ""
+
+#: .\store\templates\root\firstproduct.html:318
+msgid "SPECIFICATIONS"
+msgstr ""
+
+#: .\store\templates\root\firstproduct.html:322
+msgid "10-bar water resistance"
+msgstr ""
+
+#: .\store\templates\root\firstproduct.html:323
+msgid "Tough Solar"
+msgstr ""
+
+#: .\store\templates\root\firstproduct.html:323
+msgid "(solar powered)"
+msgstr ""
+
+#: .\store\templates\root\firstproduct.html:324
+msgid "Smartphone Link"
+msgstr ""
+
+#: .\store\templates\root\firstproduct.html:325
+msgid "Dual time"
+msgstr ""
+
+#: .\store\templates\root\firstproduct.html:326
+msgid "Stopwatch"
+msgstr ""
+
+#: .\store\templates\root\firstproduct.html:327
+msgid "Daily alarm"
+msgstr ""
+
+#: .\store\templates\root\firstproduct.html:328
+msgid "Date and day display"
+msgstr ""
+
+#: .\store\templates\root\firstproduct.html:354
+msgid "Customer Support"
+msgstr ""
+
+#: .\store\templates\root\firstproduct.html:355
+msgid "Support"
+msgstr ""
+
+#: .\store\templates\root\firstproduct.html:361
+#: .\store\templates\root\firstproduct.html:363
+msgid "Corporate"
+msgstr ""
+
+#: .\store\templates\root\firstproduct.html:401
+msgid "New"
+msgstr ""
+
+#: .\store\templates\root\firstproduct.html:450
+msgid "FAVORITE"
+msgstr ""
+
+#: .\store\templates\root\firstproduct.html:453
+msgid "ADD TO CART"
+msgstr ""
+
+#: .\store\templates\root\firstproduct.html:456
+msgid "Store Locator"
+msgstr ""
+
+#: .\store\templates\root\firstproduct.html:459
+msgid ""
+"Introducing true motorsports form, functionality, and sophistication with "
+"the flagship EDIFICE chronograph, the SOSPENSIONE EQB-2000."
+msgstr ""
+
+#: .\store\templates\root\firstproduct.html:460
+msgid ""
+"Bringing innovation and high-performance technology to EDIFICE Speed & "
+"Intelligence, the four-arm lug configuration is inspired by the four-arm "
+"double wishbone suspension on formula race cars. Key dial components are "
+"color-coded like race car steering wheels to deliver quick recognition. The "
+"red second hand provides the stand-out visibility that racing teams need to "
+"make every second count. The ion-plated bezel and band and the sapphire "
+"crystal make for a scratch-resistant timepiece with the look and feel of a "
+"race car."
+msgstr ""
+
+#: .\store\templates\root\firstproduct.html:461
+msgid ""
+"It’s a snap to sync with your smartphone via Bluetooth®. Tap into the app to "
+"access functions that are so important for racing teams — get automatically "
+"adjusted to-the-second precision timekeeping, effortlessly manage world "
+"time, and transfer stopwatch data measured to the millisecond for up to 200 "
+"lap times to your smartphone."
+msgstr ""
+
+#: .\store\templates\root\firstproduct.html:462
+msgid ""
+"Tough Solar can charge the watch from sunlight or even fluorescent lamp "
+"light, storing enough power for 5 months of normal use."
+msgstr ""
+
+#: .\store\templates\root\logIn.html:38
+msgid "Log In to CASIO ID"
+msgstr ""
+
+#: .\store\templates\root\logIn.html:43
+#: .\store\templates\root\registerEmail.html:224
+msgid "Username"
+msgstr ""
+
+#: .\store\templates\root\logIn.html:44
+msgid "example@casio.com"
+msgstr ""
+
+#: .\store\templates\root\logIn.html:57 .\store\templates\root\logIn.html:60
+msgid "Password"
+msgstr ""
+
+#: .\store\templates\root\logIn.html:77
+msgid "Forgot Your Password?"
+msgstr ""
+
+#: .\store\templates\root\logIn.html:86
+msgid "Not a Member Yet? Create an Account"
+msgstr ""
+
+#: .\store\templates\root\registerEmail.html:39
+msgid "Country/Region"
+msgstr ""
+
+#: .\store\templates\root\registerEmail.html:42
+msgid "Select"
+msgstr ""
+
+#: .\store\templates\root\registerEmail.html:182
+msgid ""
+"The password must be at least 8 characters including uppercase letters, "
+"lowercase letters and numbers."
+msgstr ""
+
+#: .\store\templates\root\registerEmail.html:221
+msgid "User Name"
+msgstr ""
+
+#: .\store\templates\root\registerEmail.html:240
+msgid "CASIO ID Privacy Notice"
+msgstr ""
+
+#: .\store\templates\root\registerEmail.html:245
+msgid "Effective: Oct 14, 2021"
+msgstr ""
+
+#: .\store\templates\root\registerEmail.html:247
+msgid ""
+"This Casio ID Privacy Notice (“Privacy Notice”) sets forth the ways in which "
+"we, Casio Computer Co., Ltd., (hereinafter “Casio”, “our”, or “us”) collect, "
+"use and disclose your information when you register for and use your CASIO "
+"ID. This Privacy Notice applies to the creation and use of your CASIO ID "
+"only. Each Casio service provided through Casio or its affiliates’ website "
+"or apps which requires or linked with CASIO ID (“Casio Service(s)”) has its "
+"own privacy policy, so when you use any Casio Services, the privacy policy "
+"for each such Casio Service applies to you. Casio’s affiliates mean local "
+"corporations in each country which operates or provides Casio Services."
+msgstr ""
+
+#: .\store\templates\root\registerEmail.html:249
+msgid ""
+"This website uses cookies. For further information please read our cookie "
+"policy – which you will find here."
+msgstr ""
+
+#: .\store\templates\root\registerEmail.html:251
+msgid ""
+"Please read the following carefully to understand how we will treat your "
+"information provided via your creation and use of CASIO ID."
+msgstr ""
+
+#: .\store\templates\root\registerEmail.html:255
+msgid ""
+".Your Information\n"
+"\n"
+"                                            When you register for a CASIO "
+"ID, we collect the following information about you: full name, email "
+"address, gender, birth date and country. It is necessary for you to supply "
+"these categories of information to us to register. If you do not provide us "
+"with these categories of information, you may not be able to receive all of "
+"our services including Casio Service and CASIO ID itself.\n"
+"                                            In addition, if you make a "
+"transaction facilitated by us with CASIO ID, including purchases on our "
+"platform, we may collect information about the purchase. This information "
+"could include contact information such as your name, billing address, "
+"shipping address, and the date, billing amount, our products and services "
+"which you purchased; provided, however, payment information, such as your "
+"credit card number and account authentication information that you provide "
+"to settlement agency will not be shared with us.\n"
+"\n"
+"                                            When you use your CASIO ID in "
+"connection with the Casio Services, we collect any information that you "
+"actively submit to us, including any information that you provide on any "
+"forms that you submit to us or through any other communications or "
+"interactions you have with us. We also automatically collect information "
+"during your use and navigation of Casio Services, specifically: your IP-"
+"address, host name, user agent, browser identification, referrer, and the "
+"date/time of your access to the website or apps of Casio Services while "
+"using your CASIO ID.\n"
+"\n"
+"                                            We refer to the information "
+"about you described above as “Your Information”.\n"
+"                                            2. Legal basis for and purpose "
+"of usage\n"
+"\n"
+"                                            We will process Your Information "
+"based on any of the following legal basis (unless such data processing will "
+"conflict with applicable laws and regulations) or any other grounds as "
+"permitted under applicable laws;\n"
+"\n"
+"                                            (i) Contract. When we need to "
+"process Your Information to perform a contract we enter into with you;\n"
+"                                            (ii) Legal Obligation. When we "
+"need to comply with a legal obligation;\n"
+"                                            (iii) Legitimate Interests. When "
+"the processing of Your Information is necessary for the fulfilment of "
+"legitimate interests pursued by us or a third party and your interests and "
+"fundamental rights do not override those interests; and\n"
+"                                            (iv) Consent. When you have "
+"given consent for us to process Your Information. However, even if we did "
+"not obtain consent from you, we may process Your Information based on other "
+"applicable legal grounds. The withdrawal of your consent shall not affect "
+"the lawfulness of processing performed based on the consent before your "
+"withdrawal.\n"
+"\n"
+"                                            We use Your Information for the "
+"following purposes (“Purposes”);\n"
+"\n"
+"                                            (i) to (a) complete your "
+"registration for and use a CASIO ID, and (b) to verify your identity when "
+"providing you with Casio Services, to make relevant Casio Services available "
+"to you in connection with your CASIO ID, to provide Casio Services to you, "
+"and to manage and administer your CASIO ID;\n"
+"                                            (ii) to personalize and optimize "
+"Casio Services for you and to enhance the user experience of Casio "
+"Services;\n"
+"                                            (iii) to conduct market research "
+"and/or analysis for statistical or other purposes for us to review, develop "
+"and improve the quality of and to promote sales of our products and services "
+"(including Casio Services);\n"
+"                                            (iv) to (a) send questionnaires "
+"to you by Casio or its affiliates for design and improve our products or "
+"services (including Casio Services) customized to interests of consumers, "
+"and (b) as permitted by applicable law, send you information by Casio or its "
+"affiliates about our products, services (including Casio Services which you "
+"have not yet used) and benefits (including without limitation special "
+"events, promotions and campaigns held by Casio or its affiliates) which "
+"might be of interest to you;\n"
+"                                            (v) to obtain authorization from "
+"your parent (the holder of parental responsibility over you) in accordance "
+"with applicable law governing minors if you have not yet reached the age of "
+"legal majority; and\n"
+"                                            (vi) to contact you concerning "
+"your queries, or for any security and fraud prevention purposes.\n"
+"\n"
+"                                            During the period you register "
+"and maintain your CASIO ID, Your Information may be processed and used in "
+"the form(s) of printed documents and/or electronic files or otherwise by us "
+"and the parties prescribed in Clauses 6 and 7.\n"
+"                                            3. Management of Your "
+"Information\n"
+"\n"
+"                                            We have taken steps to protect "
+"Your Information in an appropriate manner, including to protect personally "
+"identifiable information included in Your Information. We collect, use and "
+"disclose (including cross-border transfer) Your Information to the extent "
+"permitted or required under applicable laws and guidelines. In addition to "
+"this Privacy Notice, we follow our \"Privacy Policy\".\n"
+"                                            4. Children’s privacy\n"
+"\n"
+"                                            Casio Services are not available "
+"to persons under 13 years of age. If you are under 13 years of age, please "
+"do not register for a CASIO ID or use Casio Services. We do not knowingly "
+"collect or maintain information about persons under 13 years of age. If we "
+"learn that information about persons under 13 has been collected on or "
+"through Casio Services, we will take appropriate steps to delete this "
+"information. If you are the parent or legal guardian of a child under 13 who "
+"has registered for a CASIO ID, please contact us using the contact "
+"information below to have that child’s account terminated and personal "
+"information deleted.\n"
+"\n"
+"                                            Even if you are over 13 years of "
+"age, when you haven’t reached the age of majority under applicable laws, the "
+"consent to this Privacy Notice and relevant privacy policy, or the consent "
+"to processing of Your Information shall be given by your parents or legal "
+"guardian in accordance with applicable laws.\n"
+"                                            5. Storage location\n"
+"\n"
+"                                            Your Information is transmitted "
+"to and stored in a server operated by our service providers, which server "
+"may be located outside of your country.\n"
+"                                            6. Data sharing\n"
+"\n"
+"                                            In accordance with applicable "
+"data protection laws, including Japanese law in connection with the "
+"framework of joint use, we share Your Information with our affiliate "
+"companies including local corporations in each country which operates or "
+"provides Casio Services. The items of your Information that is shared is the "
+"same as in the items stated in Clause1 of this Privacy Notice. The purposes "
+"of sharing are the same as the Purposes stated in Clause 2 hereof. Each "
+"entity is responsible for the management of Your Information which it "
+"collects from you.\n"
+"                                            7. Disclosing Your Information "
+"to third parties\n"
+"\n"
+"                                            Your Information may be "
+"disclosed to our sales subsidiaries, distributors, service providers and "
+"subcontractors as necessary to accomplish the Purposes.\n"
+"                                            Additionally,\n"
+"                                            DPO’s contact information:\n"
+"                                            Company Name: Casio Computer "
+"Co., Ltd,\n"
+"                                            Address: 6-2, Hon-machi 1 chome, "
+"Shibuya-ku, Tokyo 151-8543, Japan\n"
+"                                            E-mail :  dataprotection@casio."
+"co.jp "
+msgstr ""
+
+#: .\store\templates\root\registerEmail.html:317
+msgid ""
+"I agree to the terms listed in the CASIO ID Service Terms and acknowledge "
+"the CASIO ID Privacy Notice."
+msgstr ""
+
+#: .\store\templates\root\registerEmail.html:323
+msgid "SUBMIT"
+msgstr ""

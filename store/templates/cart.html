@@ -1,0 +1,463 @@
+{% load static %}
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="{% static 'store/USimages/favicon_2.png' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+<!--    <script rel="script" type="text/javascript" src="{% static 'store/scripts/cart2.js' %}"></script>-->
+    <style>
+        :root{
+            --bg-color-body:#0000000a;
+            --aux-color:#00000026;
+            --default-bg-color:#fff;
+        }
+        *{
+            margin: 0;
+        }
+        a,i,button{
+            text-decoration: none;
+            color: inherit;
+            cursor: pointer;
+        }
+        header .navs{
+            display: flex;
+            justify-content: space-between;
+            padding: 30px;
+        }
+        .notification {
+            width: 20px;
+            display: flex;
+            height: 20px;
+            border-radius: 50%;
+            background: black;
+            position: absolute;
+            top: -44%;
+            right: 52%;
+            color: white;
+            text-align: center;
+            font-size: 12px;
+            justify-content: center;
+            align-content: center;
+        }
+        .cart {
+            position: relative;
+            width: 60px;
+        }
+        .progress-bar {
+            position: sticky;
+            top: 0;
+            height: auto;
+            /* border: 1px solid white; */
+            /* box-sizing: border-box; */
+        }
+        main{
+            padding: 3% 2.3%;
+        }
+        .shoppingheader{
+            padding: 24px 70px;
+            font-size: 1.5rem;
+        }
+        /**
+        *! style when the cart is empty
+        **/
+        .empty-cart {
+            text-align: center;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        /**
+        *! style For the footer
+        **/
+        footer {
+            margin-top: 5rem;
+            padding: 7px 66px;
+            font-size: 0.6rem;
+            background-color: var(--bg-color-body);
+            position: static;
+            bottom: 0;
+            width: auto;
+        }
+        footer > *{
+            line-height: 1.01rem;
+        }
+        .copyrights {
+            color: #00000030;
+        }
+        .privacy-terms-cookies {
+            display: flex;
+            justify-content: space-between;
+            width: 20%;
+        }
+        .division {
+            display: grid;
+            grid-template-columns: 65% 35%;
+            padding: 7px 40px;
+        }
+        .main-section {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            padding: 10px 27px;
+            height: fit-content;
+            margin-top: 3%;
+        }
+
+        .image-productid{
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+        .productid-qty-trash{
+            display: flex;
+            flex-direction: column;
+        }
+        .productid-qty-trash >*{
+            margin-top: 18px;
+        }
+        /**
+        *! Styles for Every bold text
+        */
+        .bold-text{
+            font-weight: 700;
+        }
+        .decrease-qty-increase {
+            border: 1px solid var(--aux-color);
+            display: flex;
+            justify-content: space-between;
+        }
+        .decrease-qty-increase span{
+            border: 1px solid var(--aux-color);
+            display: flex;
+            justify-content: space-between;
+            padding: .2rem;
+            transition: all 350ms ease-in-out;
+        }
+        .decrease-qty-increase span:hover{
+            border: 1px solid black;
+            transition: all 350ms ease-in-out;
+        }
+        #quantity {
+            border: none;
+        }
+        .image {
+            background: var(--bg-color-body);
+            margin-right: 20px;
+        }
+       .line::after {
+            content: "";
+            width: 100%;
+            background:#00000045;
+            height: 1px;
+            margin-top: -11%;
+            display: inline-block;
+        }
+        #summary-section {
+            padding: 10px 1px;
+            background-color: var(--bg-color-body);
+            height: fit-content;
+        }
+        .summary-header {
+            padding: 15px 14px;
+            font-size: 1.6rem;
+        }
+        .summary-details {
+            display: flex;
+            flex-direction: column;
+        }
+        .subtotal {
+            display: flex;
+            justify-content: space-between;
+            padding:12px 15px;
+        }
+        .proceedToCheckout-button {
+            text-align: center;
+        }
+        button {
+            padding: 11px 70px;
+            background: black;
+            color: white;
+            font-size: 15px;
+            font-weight: 700;
+            margin-top: 9%;
+            border: none;
+        }
+        .order-summary {
+            width: 60%;
+            margin-left: 5%;
+        }
+        #summary-details {
+            padding-left: 28%;
+        }
+        .subtotal.bold-text.background {
+                    background: var(--bg-color-body);
+        }
+    </style>
+<!-- <script defer src="{% static 'store/scripts/Data.js}" ></script>-->
+
+    <title>{% blocktrans %}Shopping Cart{% endblocktrans %}</title>
+</head>
+<body>
+    <header>
+        <div class="navs">
+            <div class="logo">
+                <a href="{% url 'us' %}">
+                    <img src="{% static 'store/USimages/edifice-logo.jpg' %}" alt="edifice">
+                </a>
+            </div>
+            <div class="cart">
+                <div class="bag-number"> <a href="{% url 'cart' %}">
+                    <img src="{% static 'store/USimages/bag.svg' %}" alt="">
+                    <span class="notification" >{{ cartItems }}</span></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="shoppingheader">
+            <h2>{% blocktrans %}Shopping Cart{% endblocktrans%}</h2>
+        </div >
+        <div class="division">
+            <section id="main">
+                 <div class="grid-container" id="product-id-${search.id}">
+                    <div class="flex-container">
+                        {% for item in items %}
+                        <div class="line">
+                            <div class="main-section" id="main-section">
+                                <div class="image-productid">
+                                    <div class="image">
+                                        <img src="{{ item.product.imageURL }}" alt="" width="200" heigth="250">
+                                    </div>
+                                    <div class="productid-qty-trash">
+                                        <div class="productid bold-text">{{ item.product.model }}</div>
+                                        <div class="decrease-qty-increase">
+                                            <span>
+                                                <i data-product="{{item.product.id}}" data-action="remove" class="bi bi-dash update-cart"></i>
+                                            </span>
+                                            <span id="${search.id}" class="quantity">
+                                                {{ item.quantity }}
+                                            </span>
+                                            <span>
+                                                <i data-product="{{item.product.id}}" data-action="add" class="bi bi-plus update-cart"></i>
+                                            </span>
+                                        </div>
+                                        <div class="trash">
+                                            <i class="bi bi-trash3 update-cart " data-product="{{item.product.id}}" data-action="delete"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="price bold-text">
+                                    <p>${{ item.product.price|floatformat:2 }}</p>
+                                </div>
+                        </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="sumarry-section" id="summary-section">
+                <div class="summary-header bold-text">{% trans 'Summary' %}</div>
+                <div class="summary-details">
+                    <p class="subtotal">
+                        <span>{% blocktrans %}Cart Subtotal{% endblocktrans %}: <i class="bi bi-question-circle-fill"></i></span>
+                        <span class="bold-text" >${{ order.total_amount|floatformat:2 }}</span>
+                    </p>
+                    <p class="subtotal">
+                        <span>{% trans 'Shipping' %}: <i class="bi bi-question-circle-fill"></i></span>
+                        <span>$0.00</span>
+                    </p>
+                    <p class="subtotal">
+                        <span>{% trans 'Tax' %}: <i class="bi bi-question-circle-fill"></i></span>
+                        <span>$0.00</span>
+                    </p>
+                    <p class="subtotal bold-text">
+                        <span>{% blocktrans %}Estimated Total{% endblocktrans %}</span>
+                        <span class="bold-text" >${{ order.total_amount|floatformat:2 }}</span>
+                    </p>
+                </div>
+                <div class="proceedToCheckout-button">
+                    <a href="{% url 'checkout' %}">
+                        <button>{% blocktrans %}PROCEED TO CHECKOUT{% endblocktrans %}</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="order-summary" id="order-summary">
+            <div class="summary-header bold-text">{% trans 'Summary' %}</div>
+                <div class="summary-details">
+                    <p class="subtotal">
+                        <span>{% blocktrans %}Cart Subtotal{% endblocktrans %}: <i class="bi bi-question-circle-fill"></i></span>
+                        <span class="bold-text" >${{ order.total_amount|floatformat:2 }}</span>
+                    </p>
+                    <p class="subtotal">
+                        <span>{% trans 'Shipping' %}: <i class="bi bi-question-circle-fill"></i></span>
+                        <span>$0.00</span>
+                    </p>
+                    <p class="subtotal">
+                        <span>{% trans 'Tax' %}: <i class="bi bi-question-circle-fill"></i></span>
+                        <span>$0.00</span>
+                    </p>
+                    <p class="subtotal bold-text">
+                        <span>{% blocktrans %}Estimated Total{% endblocktrans %}</span>
+                        <span class="bold-text" >${{ order.total_amount|floatformat:2 }}</span>
+                    </p>
+                </div>
+<!--                <div class="proceedToCheckout-button">-->
+<!--                    <a href="{% url 'checkout' %}">-->
+<!--                        <button>{% blocktrans %}PROCEED TO CHECKOUT{% endblocktrans %}</button>-->
+<!--                    </a>-->
+<!--                </div>-->
+            <div class="proceedToCheckout-button">
+                <a href="{% url 'checkout' %}">
+                    <button>{% blocktrans %}PROCEED TO CHECKOUT{% endblocktrans %}</button>
+                </a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="privacy-terms-cookies">
+            <span>{% blocktrans %}Privacy Policy{% endblocktrans %}</span>
+            <span>{% blocktrans %}Terms of Sale{% endblocktrans %}</span>
+            <span>{% blocktrans %}Cookie Policy{% endblocktrans %}</span>
+        </div>
+        <div class="copyrights">
+            <p>© 2022 CASIO AMERICA, INC.</p>
+        </div>
+    </footer>
+</body>
+<script>
+        var user = '{{ request.user }}'
+
+        console.log(user)
+
+        function getToken(name) {
+            var cookieValue = null;
+            if (document.cookie && document.cookie !== ''){
+                var cookies = document.cookie.split(';');
+                for (var i=0; i<cookies.length; i++){
+                    var cookie = cookies[i].trim();
+                    // Does this cookie string begin with the name we want ?
+                    if (cookie.substring(0, name.length + 1) === (name + '=')){
+                        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                        break;
+                    }
+                }
+            }
+            return cookieValue;
+        }
+        var csrftoken = getToken('csrftoken');
+
+        function getCookie(name){
+            // split cookie strings and get individual name=values pairs in an array
+            var cookieArr = document.cookie.split(";");
+
+            // Loop through the array elements
+            for (var i=0; i < cookieArr.length; i++){
+                var cookiePair = cookieArr[i].split("=");
+
+                // Removing whitespaces at the beginning of the cookie name
+                // and compare it with the given string
+                if (name == cookiePair[0].trim()){
+                    // Decode the cookie value and return
+                    return decodeURIComponent(cookiePair[1]);
+                }
+
+            }
+            // Return null if not found
+            return null;
+        }
+        var cart = JSON.parse(getCookie('cart'))
+
+        if (cart == undefined){
+            cart = {}
+            console.log('Cart Created!', cart)
+            document.cookie = 'cart=' + JSON.stringify(cart) + ";domain=;path=/"
+        }
+        console.log('cart:', cart)
+
+
+        var updateBtns = document.getElementsByClassName('update-cart')
+
+
+        for(var i=0; i < updateBtns.length; i++){
+            updateBtns[i].addEventListener('click', function(){
+                var productId = this.dataset.product
+                var action = this.dataset.action
+                console.log('productId:', productId, 'action:', action)
+
+                console.log('USER:', user)
+                if(user === 'AnonymousUser'){
+                    addCookieItem(productId, action)
+                }else{
+                    updateUserOrder(productId, action)
+                }
+            })
+        }
+
+        function addCookieItem(productId, action){
+            console.log("Not Logged in...")
+            if (action == 'add'){
+                if (cart[productId] == undefined){
+                    cart[productId] = {'quantity':1}
+                }else if (cart[productId]['quantity'] < 3) {
+                    cart[productId]['quantity'] += 1
+                }
+            }
+
+            if (action == 'remove'){
+                cart[productId]['quantity'] -= 1
+
+                if (cart[productId]['quantity'] <= 0){
+                    console.log("Item should be deleted")
+                    delete cart[productId];
+                }
+            }
+
+            if (action == 'delete'){
+                    console.log("Item should be deleted")
+                    delete cart[productId];
+            }
+
+
+            console.log("Cart: ", cart)
+            document.cookie = 'cart=' + JSON.stringify(cart) + ";domain=;path=/"
+            location.reload()
+
+
+        //    cart = {
+        //          1:{'quantity':2},
+        //          3:{'quantity':1},
+        //          4:{'quantity':1},
+        //    }
+        }
+
+        function updateUserOrder(productId, action){
+            console.log('User is logged in, sending Data..')
+
+            var url = '/update_item'
+
+            fetch(url, {
+                method: 'POST',
+                headers:{
+                    'Content-Type':'application/json',
+                    'X-CSRFToken': csrftoken,
+                },
+                body:JSON.stringify({'productId':productId, 'action': action})
+            })
+            .then((response) =>response.json())
+            .then((data) =>{
+                console.log('data:', data['data'])
+                location.reload()
+                var max_message = "{% blocktrans %}Maximum order per Watch is 3 !{%endblocktrans%}"
+                if (data['exceed'] == true){
+                    alert(max_message);
+                }
+            })
+        }
+
+    </script>
+</html>
